@@ -31,7 +31,7 @@ function begin(){
 }
 
 function settings(){
-    window.location.assign("settings.html");
+    window.location.assign("https://bmcautismfriendly.github.io/socialstories/doctorsoffice/settings/");
 }
 
 function resume(pos, start, building, department){
