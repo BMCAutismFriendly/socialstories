@@ -6,7 +6,7 @@
  */
 
 function mainmenu(){
-    window.location.assign("index.html");
+    window.location.assign("https://bmcautismfriendly.github.io/socialstories/");
 }
 
 function doctorsoffice(){
