@@ -42,10 +42,10 @@ and open the template in the editor.
                 case 0:
                     document.getElementById("step").innerHTML="This story is about how I will get to my "+person+"’s appointment.";
                     if ((urlParams.get("department")==="y2") || (urlParams.get("department")==="y6")){
-                        document.getElementById("pic").src= "../img/gettingtoBMC/1B.jpg";
+                        document.getElementById("pic").src= "img/gettingtoBMC/1B.jpg";
                     }
                     else{
-                    document.getElementById("pic").src= "../img/gettingtoBMC/1A.jpg";
+                    document.getElementById("pic").src= "img/gettingtoBMC/1A.jpg";
                     }
                     i = i + 1;
                     str = str + "pos=" + i;
@@ -55,10 +55,10 @@ and open the template in the editor.
                 case 1:
                     document.getElementById("step").innerHTML="I need to go see my " + person + " so I can be healthy and strong.";
                     if ((urlParams.get("department")==="y2") || (urlParams.get("department")==="y6")){
-                        document.getElementById("pic").src= "../img/gettingtoBMC/2B.jpg";
+                        document.getElementById("pic").src= "img/gettingtoBMC/2B.jpg";
                     }
                     else{
-                    document.getElementById("pic").src= "../img/gettingtoBMC/2A.jpg";
+                    document.getElementById("pic").src= "img/gettingtoBMC/2A.jpg";
                     }
                     i = i + 1;
                     str = str + "pos=" + i;
@@ -69,15 +69,15 @@ and open the template in the editor.
                     var start_ex="";
                     if (urlParams.get("start")==="parkinggarage"){
                         start_ex="parking garage.";
-                        document.getElementById("pic").src= "../img/gettingtoBMC/start/parkinggarage.jpg";
+                        document.getElementById("pic").src= "img/gettingtoBMC/start/parkinggarage.jpg";
                     }
                     else if (urlParams.get("start")==="busstop"){
                         start_ex="bus stop.";
-                        document.getElementById("pic").src= "../img/gettingtoBMC/start/busstop.jpg";
+                        document.getElementById("pic").src= "img/gettingtoBMC/start/busstop.jpg";
                     }
                     else{
                         start_ex="sidewalk by the BMC gate sign.";
-                        document.getElementById("pic").src= "../img/gettingtoBMC/start/sidewalk.jpg";
+                        document.getElementById("pic").src= "img/gettingtoBMC/start/sidewalk.jpg";
                     }
                     
                     document.getElementById("step").innerHTML="I will first arrive at the "+start_ex;
@@ -90,39 +90,39 @@ and open the template in the editor.
                 case 5:
                     if (urlParams.get("building")==="menino"){
                         document.getElementById("step").innerHTML="I will walk to the Menino building.";
-                        document.getElementById("pic").src= "../img/gettingtoBMC/menino/outside.jpg";
+                        document.getElementById("pic").src= "img/gettingtoBMC/menino/outside.jpg";
                     }
                     else if (urlParams.get("building")==="dowling"){
                         document.getElementById("step").innerHTML="I will walk to the Dowling building by entering through the Yawkey building.";
-                        document.getElementById("pic").src= "../img/gettingtoBMC/dowling/outside.jpg";
+                        document.getElementById("pic").src= "img/gettingtoBMC/dowling/outside.jpg";
                     }
                     else if (urlParams.get("building")==="yawkey"){
                         document.getElementById("step").innerHTML="I will walk to the Yawkey building.";
-                        document.getElementById("pic").src= "../img/gettingtoBMC/yawkey/outside.jpg";
+                        document.getElementById("pic").src= "img/gettingtoBMC/yawkey/outside.jpg";
                     }
                     else if (urlParams.get("building")==="moakley"){
                         document.getElementById("step").innerHTML="I will walk to the Moakley building.";
-                        document.getElementById("pic").src= "../img/gettingtoBMC/moakley/outside.jpg";
+                        document.getElementById("pic").src= "img/gettingtoBMC/moakley/outside.jpg";
                     }
                     else if (urlParams.get("building")==="shapiro"){
                         document.getElementById("step").innerHTML="I will walk to the Shapiro building.";
-                        document.getElementById("pic").src= "../img/gettingtoBMC/shapiro/outside.jpg";
+                        document.getElementById("pic").src= "img/gettingtoBMC/shapiro/outside.jpg";
                     }
                     else if (urlParams.get("building")==="familymedicine"){
                         document.getElementById("step").innerHTML="I will walk to the Family Medicine building.";
-                        document.getElementById("pic").src= "../img/gettingtoBMC/familymedicine/outside.jpg";
+                        document.getElementById("pic").src= "img/gettingtoBMC/familymedicine/outside.jpg";
                     }
                     else if (urlParams.get("building")==="preston"){
                         document.getElementById("step").innerHTML="I will walk to the Preston building.";
-                        document.getElementById("pic").src= "../img/gettingtoBMC/preston/outside.jpg";
+                        document.getElementById("pic").src= "img/gettingtoBMC/preston/outside.jpg";
                     }
                     else{
                         document.getElementById("step").innerHTML="I will walk to the Doctor's Office building.";
                         if (urlParams.get("start")==="parkinggarage"){
-                            document.getElementById("pic").src= "../img/gettingtoBMC/doctorsoffice/outside_parking.jpg";
+                            document.getElementById("pic").src= "img/gettingtoBMC/doctorsoffice/outside_parking.jpg";
                         }
                         else{
-                            document.getElementById("pic").src= "../img/gettingtoBMC/doctorsoffice/outside.jpg";
+                            document.getElementById("pic").src= "img/gettingtoBMC/doctorsoffice/outside.jpg";
                         }
                     }
                     i = i + 1;
@@ -133,41 +133,41 @@ and open the template in the editor.
                 case 7:
                     if (urlParams.get("department")==="p0" || urlParams.get("department")==="y1"){
                         document.getElementById("step").innerHTML="I will go inside and walk to the Blood Draw Station.";
-                        document.getElementById("pic").src= "../img/gettingtoBMC/"+urlParams.get("building")+"/"+urlParams.get("department")+"/1.jpg";
+                        document.getElementById("pic").src= "img/gettingtoBMC/"+urlParams.get("building")+"/"+urlParams.get("department")+"/1.jpg";
                         i = i+5;
                     }
                     else if (urlParams.get("department")==="p3"){
                         document.getElementById("step").innerHTML="I will go inside and walk to the Occupational Therapy/Physical Therapy office.";
-                        document.getElementById("pic").src= "../img/gettingtoBMC/"+urlParams.get("building")+"/"+urlParams.get("department")+"/1.jpg";
+                        document.getElementById("pic").src= "img/gettingtoBMC/"+urlParams.get("building")+"/"+urlParams.get("department")+"/1.jpg";
                         i = i+5;
                     }
                     else if (urlParams.get("department")==="f0"){
                         document.getElementById("step").innerHTML="I will go inside and walk to the front desk. Then, I will tell the person my name and that I am here to see my "+person+".";
-                        document.getElementById("pic").src= "../img/gettingtoBMC/"+urlParams.get("building")+"/"+urlParams.get("department")+"/frontdesk.jpg";
+                        document.getElementById("pic").src= "img/gettingtoBMC/"+urlParams.get("building")+"/"+urlParams.get("department")+"/frontdesk.jpg";
                         i = i+7;
                     }
                     else if (urlParams.get("department")==="m0"){
                         document.getElementById("step").innerHTML="I will go inside and walk to the Radiology department.";
-                        document.getElementById("pic").src= "../img/gettingtoBMC/"+urlParams.get("building")+"/"+urlParams.get("department")+"/1.jpg";
+                        document.getElementById("pic").src= "img/gettingtoBMC/"+urlParams.get("building")+"/"+urlParams.get("department")+"/1.jpg";
                         i = i+5;
                     }
                     else if (urlParams.get("department")==="mo0"){
                         document.getElementById("step").innerHTML="I will go inside and walk to the Audiology department.";
-                        document.getElementById("pic").src= "../img/gettingtoBMC/"+urlParams.get("building")+"/"+urlParams.get("department")+"/1.jpg";
+                        document.getElementById("pic").src= "img/gettingtoBMC/"+urlParams.get("building")+"/"+urlParams.get("department")+"/1.jpg";
                         i = i+5;
                     }
                     else if (urlParams.get("department")==="mo5"){
                         document.getElementById("step").innerHTML="I will go inside and walk to the Otolaryngology department.";
-                        document.getElementById("pic").src= "../img/gettingtoBMC/"+urlParams.get("building")+"/"+urlParams.get("department")+"/1.jpg";
+                        document.getElementById("pic").src= "img/gettingtoBMC/"+urlParams.get("building")+"/"+urlParams.get("department")+"/1.jpg";
                         i = i+5;
                     }
                     else{
                         document.getElementById("step").innerHTML="I will go inside and walk to the elevator.";
                         if ((urlParams.get("start")==="parkinggarage") && urlParams.get("building")==="doctorsoffice"){
-                            document.getElementById("pic").src="../img/gettingtoBMC/doctorsoffice/lobby2.jpg";
+                            document.getElementById("pic").src="img/gettingtoBMC/doctorsoffice/lobby2.jpg";
                         }
                         else{
-                            document.getElementById("pic").src= "../img/gettingtoBMC/"+urlParams.get("building")+"/lobby.jpg";
+                            document.getElementById("pic").src= "img/gettingtoBMC/"+urlParams.get("building")+"/lobby.jpg";
                         }
                             i = i + 1;
                     }
@@ -180,10 +180,10 @@ and open the template in the editor.
                     var dict = {do0:"Psychiatry Research Center", d0:"Behavioral Health department", d1:"Child Psychiatry department", f0:"Family Medicine department", p0:"Blood Draw Station", p1:"Cardiovascular Center", p2:"Center for Endocrinology, Diabetes, Nutrition & Weight Management", p3:"Occupational Therapy/Physical Therapy department", p4:"Renal Medicine department", p5:"TB Clinic", s0:"Adult Primary Care department", s1:"Blood Collection Station", s2:"Dermatology", s3:"Neurology department", s4:"Pediatric Neurology department", y0:"Adolescent Medicine department", y1:"Blood Draw Station", y2:"Dentistry department", y3:"Family Medicine department", y4:"Ophthalmology department", y5:"Pediatric Primary Care department", y6:"Pediatric Dentistry department", y7:"Pediatric Specialty department", m0:"Radiology department", mo0:"Audiology department", mo1:"Blood Draw Station", mo2:"Hematology department", mo3:"Gastroenterology department", mo4:"Oncology department", mo5:"Otolaryngology department"};
                     document.getElementById("step").innerHTML="I will take the elevator to the floor that the "+dict[urlParams.get("department")]+" is on.";
                     if ((urlParams.get("start")==="parkinggarage") && urlParams.get("building")==="doctorsoffice"){
-                        document.getElementById("pic").src="../img/gettingtoBMC/doctorsoffice/elevator2.jpg";
+                        document.getElementById("pic").src="img/gettingtoBMC/doctorsoffice/elevator2.jpg";
                     }
                     else{
-                    document.getElementById("pic").src= "../img/gettingtoBMC/"+urlParams.get("building")+"/elevator.jpg";
+                    document.getElementById("pic").src= "img/gettingtoBMC/"+urlParams.get("building")+"/elevator.jpg";
                     }
                     i = i + 1;
                     str = str + "pos=" + i;
@@ -192,7 +192,7 @@ and open the template in the editor.
                     
                 case 11:
                     document.getElementById("step").innerHTML="I will walk to the "+person+"'s office.";
-                    document.getElementById("pic").src= "../img/gettingtoBMC/"+urlParams.get("building")+"/"+urlParams.get("department")+"/hallway.jpg";
+                    document.getElementById("pic").src= "img/gettingtoBMC/"+urlParams.get("building")+"/"+urlParams.get("department")+"/hallway.jpg";
                     i = i + 1;
                     str = str + "pos=" + i;
                     str1 = str1 + "pos=" + i;
@@ -200,7 +200,7 @@ and open the template in the editor.
                     
                 case 13:
                     document.getElementById("step").innerHTML="I will go to the front desk. Then, I will tell the person my name and that I am here to see my "+person+".";
-                    document.getElementById("pic").src= "../img/gettingtoBMC/"+urlParams.get("building")+"/"+urlParams.get("department")+"/frontdesk.jpg";
+                    document.getElementById("pic").src= "img/gettingtoBMC/"+urlParams.get("building")+"/"+urlParams.get("department")+"/frontdesk.jpg";
                     i = i + 1;
                     str = str + "pos=" + i;
                     str1 = str1 + "pos=" + i;
@@ -208,7 +208,7 @@ and open the template in the editor.
                     
                 case 15:
                     document.getElementById("step").innerHTML="I will sit in the waiting room and wait for my name to be called. I can choose to do an activity.";
-                    document.getElementById("pic").src= "../img/gettingtoBMC/"+urlParams.get("building")+"/"+urlParams.get("department")+"/waitingroom.jpg";
+                    document.getElementById("pic").src= "img/gettingtoBMC/"+urlParams.get("building")+"/"+urlParams.get("department")+"/waitingroom.jpg";
                     i = i + 1;
                     str = str + "pos=" + i;
                     str1 = str1 + "pos=" + i;
@@ -216,7 +216,7 @@ and open the template in the editor.
                     
                 case 17:
                     document.getElementById("step").innerHTML="When my name is called, I will follow the nurse.";
-                    document.getElementById("pic").src= "../img/gettingtoBMC/"+urlParams.get("building")+"/"+urlParams.get("department")+"/follownurse.jpg";
+                    document.getElementById("pic").src= "img/gettingtoBMC/"+urlParams.get("building")+"/"+urlParams.get("department")+"/follownurse.jpg";
                     i = i + 1;
                     str = str + "pos=" + i;
                     str1 = str1 + "pos=" + i;
@@ -224,7 +224,7 @@ and open the template in the editor.
                     
                 case 18:
                     document.getElementById("step").innerHTML="I did a great job getting to my "+person+"'s appointment!";
-                    document.getElementById("body").background= "../img/star1.gif";
+                    document.getElementById("body").background= "img/star1.gif";
                     i = i + 1;
                     str = str + "pos=" + i;
                     str1 = str1 + "pos=" + i;
