@@ -10,7 +10,7 @@ function mainmenu(){
 }
 
 function doctorsoffice(){
-    window.location.assign("settings.html");
+    window.location.assign("https://bmcautismfriendly.github.io/socialstories/doctorsoffice/settings/");
 }
 
 function aboutapp(){
