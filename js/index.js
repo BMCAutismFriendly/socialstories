@@ -18,7 +18,7 @@ function aboutapp(){
 }
 
 function aboutbmcautism(){
-    window.location.assign("aboutbmcautism.html");
+    window.location.assign("https://bmcautismfriendly.github.io/socialstories/about-bmc-autism/");
 }
 
 //Writes settings.html form values to str, which is appended to end of URL
