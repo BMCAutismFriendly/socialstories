@@ -14,7 +14,7 @@ function doctorsoffice(){
 }
 
 function aboutapp(){
-    window.location.assign("aboutapp.html");
+    window.location.assign("https://bmcautismfriendly.github.io/socialstories/about-app/");
 }
 
 function aboutbmcautism(){
