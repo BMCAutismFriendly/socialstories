@@ -27,7 +27,7 @@ function begin(){
 	str = str + "&start="+start[start.selectedIndex].value;
 	str = str + "&building="+building[building.selectedIndex].value;
 	str = str + "&department="+department[department.selectedIndex].value;
-	window.location.assign("gettingtoBMC.html?pos=0"+str);
+	window.location.assign("https://bmcautismfriendly.github.io/gettingtoBMC.html?pos=0"+str);
 }
 
 function settings(){
@@ -35,14 +35,14 @@ function settings(){
 }
 
 function resume(pos, start, building, department){
-    window.location.assign("gettingtoBMC.html?"+"pos="+pos+"&start="+start+"&building="+building+"&department="+department);
+    window.location.assign("https://bmcautismfriendly.github.io/gettingtoBMC.html?"+"pos="+pos+"&start="+start+"&building="+building+"&department="+department);
 }
 
 function previous(pos, start, building, department){
     var p=0;
     
     if (pos===0){
-        window.location.assign("settings.html");
+        window.location.assign("https://bmcautismfriendly.github.io/doctorsoffice/settings/");
     }
     
     else{
@@ -64,12 +64,12 @@ function previous(pos, start, building, department){
             else{p=pos-2;}
         }
     
-        window.location.assign("gettingtoBMC.html?"+"pos="+p+"&start="+start+"&building="+building+"&department="+department);
+        window.location.assign("https://bmcautismfriendly.github.io/gettingtoBMC.html?"+"pos="+p+"&start="+start+"&building="+building+"&department="+department);
     }
 }
 
 function restart(start, building, department){
-    window.location.assign("gettingtoBMC.html?"+"pos=0"+"&start="+start+"&building="+building+"&department="+department);
+    window.location.assign("https://bmcautismfriendly.github.io/gettingtoBMC.html?"+"pos=0"+"&start="+start+"&building="+building+"&department="+department);
 }
 
 function medicalprocedures(){
