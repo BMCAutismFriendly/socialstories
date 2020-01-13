@@ -1,0 +1,193 @@
+@font-face {
+	font-family: 'Avenir-Roman';
+	src: url('../fonts/Avenir/Avenir-Roman.eot');
+	src: url('../fonts/Avenir/Avenir-Roman.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Avenir/Avenir-Roman.otf')  format('opentype'),
+		url('../fonts/Avenir/Avenir-Roman.woff2') format('woff2'),
+		url('../fonts/Avenir/Avenir-Roman.woff') format('woff'),
+		url('../fonts/Avenir/Avenir-Roman.ttf') format('truetype'),
+		url('../fonts/Avenir/Avenir-Roman.svg#Avenir-Roman') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir-Black';
+	src: url('../fonts/Avenir/Avenir-Black.eot');
+	src: url('../fonts/Avenir/Avenir-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Avenir/Avenir-Black.otf')  format('opentype'),
+		url('../fonts/Avenir/Avenir-Black.woff2') format('woff2'),
+		url('../fonts/Avenir/Avenir-Black.woff') format('woff'),
+		url('../fonts/Avenir/Avenir-Black.ttf') format('truetype'),
+		url('../fonts/Avenir/Avenir-Black.svg#Avenir-Black') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+*{
+    font-family: "Avenir-Roman", Arial, sans-serif;
+    font-size: 16px; /*DanielChao*/
+}
+
+p{
+    font-family: "Avenir-Roman", Arial, sans-serif;
+}
+
+p.cent{
+    font-family: "Avenir-Roman", Arial, sans-serif;
+    text-align: center;
+    font-size: 16px; /*DanielChao*/
+}
+
+h1{
+    color: rgb(0,85,111);
+	font-family: "Avenir-Black", Arial, sans-serif;
+	padding-bottom:15px;
+}
+
+h2{
+    color: rgb(0,85,111);
+    margin-bottom: 0%;
+	font-family: "Avenir-Black", Arial, sans-serif;
+	padding-bottom:15px;
+}
+
+body{
+	background-color: rgba(102, 102, 93, 0.25)
+}
+
+td{
+    text-align: center;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+
+table{
+    max-width: 90%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+table#t01{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+    text-align: left;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table#t01 tr:nth-child(odd) {
+    background-color: #fff;
+    text-align: left;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table#t01 th {
+    color: white;
+    background-color: rgb(0,85,111);
+    text-align: left;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table#t01 td {
+    text-align: left;
+    padding: 1%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.button{
+    background-color: rgba(0, 131, 123, 0.75);
+    border: none;
+    color: white;
+    padding: 2%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2%;
+    width: 80%;
+}
+
+/*
+img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+*/
+
+select{
+    max-width: 100%;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    font-size: 100%;
+}
+
+.button1{
+    background-color: rgba(0,131,123,0.75);
+    border: none;
+    color: white;
+    padding: 1%;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 1%;
+}
+
+.button2{
+    background-color: rgba(0,131,123,0.25);
+    border: none;
+    color: rgb(0,85,111);
+    padding: 1%;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 1%;
+    width: 30%;
+}
+
+.button3{
+    background-color: rgb(85, 50, 120);
+    border: none;
+    color: white;
+    padding: 1%;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 1%;
+}
+
+span{
+    color: rgb(85, 50, 120);
+    font-weight:1000;
+}
+
+a{
+    color:rgb(85, 50, 120);
+	font-weight:1000;
+}
+.container{
+	background: #fff;
+	width: 90%;
+	margin-top:5%;
+	padding:2%;
+	max-width:1000px;
+}
+.img-responsive{
+	margin:0 auto;
+}
+.footer{
+	background-color: rgb(0,131,123);
+	margin-top:0;
+	padding:2%;
+	margin-bottom:5%;	
+}
+.fa{
+	color:rgb(237, 170, 0);
+}
+/*DanielChao*/
+ul {
+	list-style-type: disc;
+	list-style-position: inside;
+    text-align: left;
+    font-size: 16px; 
+}
