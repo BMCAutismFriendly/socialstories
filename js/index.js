@@ -73,7 +73,7 @@ function restart(start, building, department){
 }
 
 function medicalprocedures(){
-    window.location.assign("medicalprocedures.html");
+    window.location.assign("https://bmcautismfriendly.github.io/socialstories/medical-procedures/");
 }
 
 function bloodpressure(){
@@ -96,7 +96,7 @@ function previous1(pos, story){
     var p=0;
     
     if (pos===0){
-        window.location.assign("medicalprocedures.html");
+        window.location.assign("https://bmcautismfriendly.github.io/socialstories/medical-procedures");
     }
     
     else{
