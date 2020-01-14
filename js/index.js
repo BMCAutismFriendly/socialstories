@@ -42,7 +42,7 @@ function previous(pos, start, building, department){
     var p=0;
     
     if (pos===0){
-        window.location.assign("https://bmcautismfriendly.github.io/doctorsoffice/settings/");
+        window.location.assign("https://bmcautismfriendly.github.io/socialstories/doctorsoffice/settings/");
     }
     
     else{
