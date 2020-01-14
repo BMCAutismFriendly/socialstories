@@ -205,5 +205,5 @@ function configureDropDownLists(building,department) {
     }
     
     function map(){
-        window.location.assign("map.html");
+        window.location.assign("https://bmcautismfriendly.github.io/socialstories/doctorsoffice/map/");
     }
