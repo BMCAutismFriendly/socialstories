@@ -96,7 +96,7 @@ function previous1(pos, story){
     var p=0;
     
     if (pos===0){
-        window.location.assign("https://bmcautismfriendly.github.io/socialstories/medical-procedures");
+        window.location.assign("https://bmcautismfriendly.github.io/socialstories/medical-procedures/");
     }
     
     else{
