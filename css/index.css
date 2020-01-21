@@ -237,6 +237,7 @@ a:hover {
     margin-bottom:5%;
     border-radius: 0 0 10px 10px;
     text-align: center;
+    color: white;
 }
 .fa{
     color:rgb(237, 170, 0);
