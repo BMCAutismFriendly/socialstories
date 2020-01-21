@@ -190,6 +190,11 @@ a:hover {
 .footer a {
 	text-decoration: none;
 	margin-bottom: 5px;
+	color: white;
+}
+
+.footer a:hover {
+	color: #f2f2f2;
 }
 
 .container{
