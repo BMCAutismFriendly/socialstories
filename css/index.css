@@ -105,6 +105,11 @@ img{
 	}
 }
 
+.grid-img {
+	width: 40px;
+	margin: 3px;
+}
+
 .slide-img {
 	transition: height 1s ease-in-out;
 }
