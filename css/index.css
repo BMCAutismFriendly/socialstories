@@ -131,6 +131,10 @@ img{
 	}
 }
 
+.slide-img {
+	transition: height .5s ease-in-out;
+}
+
 select{
     max-width: 100%;
     border: none;
