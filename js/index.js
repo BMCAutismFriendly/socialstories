@@ -81,7 +81,7 @@ function shot(){
 }
 
 function blooddraw(){
-    window.location.assign("blooddraw.html?pos=0");
+    window.location.assign("https://bmcautismfriendly.github.io/socialstories/blood-draw/");
 }
 
 function resume1(pos, story){
