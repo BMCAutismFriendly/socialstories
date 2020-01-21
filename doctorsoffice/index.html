@@ -20,13 +20,13 @@ and open the template in the editor.
     </head>
 <body id="body">
 <div class="container" style="text-align:center">
-<h2 class="w3-center">Doctor's Office</h2>
+<h2>Doctor's Office</h2>
 
-<div class="w3-content w3-display-container">
-  <img class="mySlides" src="../img/gettingtoBMC/elevator.jpg">
-  <img class="mySlides" src="../img/gettingtoBMC/follownurse.jpg">
-  <img class="mySlides" src="../img/gettingtoBMC/waitingroom.jpg">
-  <img class="mySlides" src="../img/gettingtoBMC/hallway.jpg">
+<div class="slide-container">
+  <img class="slide" src="../img/gettingtoBMC/elevator.jpg">
+  <img class="slide" src="../img/gettingtoBMC/follownurse.jpg">
+  <img class="slide" src="../img/gettingtoBMC/waitingroom.jpg">
+  <img class="slide" src="../img/gettingtoBMC/hallway.jpg">
 
   <button class="prev" onclick="plusDivs(-1)">&#10094;</button>
   <button class="next" onclick="plusDivs(1)">&#10095;</button>
@@ -47,7 +47,7 @@ function plusDivs(n) {
 
 function showDivs(n) {
   var i;
-  var x = document.getElementsByClassName("mySlides");
+  var x = document.getElementsByClassName("slide");
   if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
