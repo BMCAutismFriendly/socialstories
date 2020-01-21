@@ -1,27 +1,27 @@
 @font-face {
-	font-family: 'Avenir-Roman';
-	src: url('../fonts/Avenir/Avenir-Roman.eot');
-	src: url('../fonts/Avenir/Avenir-Roman.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Avenir/Avenir-Roman.otf')  format('opentype'),
-		url('../fonts/Avenir/Avenir-Roman.woff2') format('woff2'),
-		url('../fonts/Avenir/Avenir-Roman.woff') format('woff'),
-		url('../fonts/Avenir/Avenir-Roman.ttf') format('truetype'),
-		url('../fonts/Avenir/Avenir-Roman.svg#Avenir-Roman') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Avenir-Roman';
+    src: url('../fonts/Avenir/Avenir-Roman.eot');
+    src: url('../fonts/Avenir/Avenir-Roman.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir/Avenir-Roman.otf')  format('opentype'),
+        url('../fonts/Avenir/Avenir-Roman.woff2') format('woff2'),
+        url('../fonts/Avenir/Avenir-Roman.woff') format('woff'),
+        url('../fonts/Avenir/Avenir-Roman.ttf') format('truetype'),
+        url('../fonts/Avenir/Avenir-Roman.svg#Avenir-Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'Avenir-Black';
-	src: url('../fonts/Avenir/Avenir-Black.eot');
-	src: url('../fonts/Avenir/Avenir-Black.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Avenir/Avenir-Black.otf')  format('opentype'),
-		url('../fonts/Avenir/Avenir-Black.woff2') format('woff2'),
-		url('../fonts/Avenir/Avenir-Black.woff') format('woff'),
-		url('../fonts/Avenir/Avenir-Black.ttf') format('truetype'),
-		url('../fonts/Avenir/Avenir-Black.svg#Avenir-Black') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Avenir-Black';
+    src: url('../fonts/Avenir/Avenir-Black.eot');
+    src: url('../fonts/Avenir/Avenir-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir/Avenir-Black.otf')  format('opentype'),
+        url('../fonts/Avenir/Avenir-Black.woff2') format('woff2'),
+        url('../fonts/Avenir/Avenir-Black.woff') format('woff'),
+        url('../fonts/Avenir/Avenir-Black.ttf') format('truetype'),
+        url('../fonts/Avenir/Avenir-Black.svg#Avenir-Black') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 *{
     font-family: "Avenir-Roman", Arial, sans-serif;
@@ -29,7 +29,7 @@
 }
 
 *:focus {
-	outline: none;
+    outline: none;
 }
 
 p{
@@ -44,19 +44,19 @@ p.cent{
 
 h1{
     color: rgb(0,85,111);
-	font-family: "Avenir-Black", Arial, sans-serif;
-	padding-bottom:15px;
+    font-family: "Avenir-Black", Arial, sans-serif;
+    padding-bottom:15px;
 }
 
 h2{
     color: rgb(0,85,111);
     margin-bottom: 0%;
-	font-family: "Avenir-Black", Arial, sans-serif;
-	padding-bottom:15px;
+    font-family: "Avenir-Black", Arial, sans-serif;
+    padding-bottom:15px;
 }
 
 body{
-	background-color: rgba(227,216,159,.5)
+    background-color: rgba(227,216,159,.5)
 }
 
 /*
@@ -69,77 +69,95 @@ img{
 */
 
 .grid-container {
-	display: grid;
-	padding: 10px;
-	grid-gap: 3px;
+    display: grid;
+    padding: 5px;
+    max-width: 750px;
+    margin: auto;
 }
 
 .grid-item {
-	padding: 5px;
-	text-align: center;
-}
-
-@media only screen and (max-width: 600px) {
-	.slide-img {
-		margin-top: 10px;
-		margin-bottom: 10px;
-		margin: auto;
-		max-height: 150px;
-	}
-	
-	.grid.container {
-		grid-template-columns: auto auto;
-	}
-}
-
-@media only screen and (min-width: 600px) {
-	.slide-img {
-		margin-top: 20px;
-		margin-bottom: 20px;
-		margin: auto;
-		max-height: 300px;
-	}
-	
-	.grid.container {
-		grid-template-columns: auto auto auto;
-	}
+    padding: 2px;
+    text-align: center;
 }
 
 .grid-img {
-	width: 40px;
-	margin-right: 3px;
+    width: 100px;
+    margin: 10px 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .slide-img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin: auto;
+        max-height: 150px;
+    }
+    
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .main-button {
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .slide-img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin: auto;
+        max-height: 300px;
+    }
+    
+    .grid-container {
+        grid-template-columns: auto auto auto;
+    }
 }
 
 .slide-img {
-	transition: height 1s ease-in-out;
+    transition: height 1s ease-in-out;
 }
 
 button {
-	border: none;
-	color: white;
-	padding: 1% 20px 1% 20px;
-	font-size: 18px;
-	font-weight: 600px;
-	margin: 10px 2.5px;
-	border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 1% 20px 1% 20px;
+    font-size: 18px;
+    font-weight: 600px;
+    margin: 10px 2.5px;
+    border-radius: 10px;
 }
 
 .slide-button {
-	background-color: rgba(208,213,101);
+    background-color: rgba(208,213,101);
 }
 
 .slide-button:hover {
-	background-color: rgba(208,213,101,.75);
-	transition: background-color .15s ease-in-out;
+    background-color: rgba(208,213,101,.75);
+    transition: background-color .15s ease-in-out;
 }
 
 .restart-button {
-	background-color: rgba(225,88,41,.75);
+    background-color: rgba(225,88,41,.75);
 }
 
 .restart-button:hover {
-	background-color: rgba(225,88,41,.5);
-	transition: background-color .15s ease-in-out;
+    background-color: rgba(225,88,41,.5);
+    transition: background-color .15s ease-in-out;
+}
+
+.main-button {
+    background-color: rgba(0,131,123,.5);
+    margin: 2px;
+}
+
+.main-button:hover {
+    background-color: rgba(0,131,123,.25);
+    transition: background-color .15s ease-in-out;
 }
 
 .button1{
@@ -180,52 +198,53 @@ span{
 
 a{
     color:rgb(85, 50, 120);
-	font-weight:1000;
+    font-weight:1000;
 }
 
 a:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .footer a {
-	text-decoration: none;
-	margin-bottom: 5px;
-	color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: normal;
 }
 
 .footer a:hover {
-	color: #f2f2f2;
+    color: #f2f2f2;
 }
 
 .container{
-	background: #fff;
-	width: 90%;
-	margin-top:3%;
-	padding-left:50px;
-	padding-right: 50px;
-	padding-bottom: 15px;
-	padding-top: 15px;
-	max-width:1000px;
-	border-radius: 10px 10px 0 0;
+    background: #fff;
+    width: 90%;
+    margin-top:3%;
+    padding-left:50px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    max-width:1000px;
+    border-radius: 10px 10px 0 0;
 }
 .img-responsive{
-	margin:0 auto;
+    margin:0 auto;
 }
 .footer{
-	background-color: rgb(0,131,123,.5);
-	margin-top:0;
-	padding:2%;
-	margin-bottom:5%;
-	border-radius: 0 0 10px 10px;
-	text-align: center;
+    background-color: #80c1bd;
+    margin-top:0;
+    padding:2%;
+    margin-bottom:5%;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
 }
 .fa{
-	color:rgb(237, 170, 0);
+    color:rgb(237, 170, 0);
 }
 /*DanielChao*/
 ul {
-	list-style-type: disc;
-	list-style-position: inside;
+    list-style-type: disc;
+    list-style-position: inside;
     text-align: left;
     font-size: 16px; 
 }
