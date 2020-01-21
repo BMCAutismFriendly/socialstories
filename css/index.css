@@ -55,48 +55,6 @@ body{
 	background-color: rgba(227,216,159,.5)
 }
 
-td{
-    text-align: center;
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
-}
-
-table{
-    max-width: 90%;
-    margin-top: 1%;
-    margin-left: auto;
-    margin-right: auto;
-}
-table#t01{
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-table#t01 tr:nth-child(even) {
-    background-color: #eee;
-    text-align: left;
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-table#t01 tr:nth-child(odd) {
-    background-color: #fff;
-    text-align: left;
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-table#t01 th {
-    color: white;
-    background-color: rgb(0,85,111);
-    text-align: left;
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-table#t01 td {
-    text-align: left;
-    padding: 1%;
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
 /*
 img{
     display: block;
