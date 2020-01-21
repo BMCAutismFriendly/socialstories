@@ -52,7 +52,7 @@ h2{
 }
 
 body{
-	background-color: rgba(102, 102, 93, 0.25)
+	background-color: rgba(227,216,159,.5)
 }
 
 td{
@@ -131,13 +131,20 @@ select{
 }
 
 .slide-button {
-	background-color: rgba(0,131,123,0.75);
+	background-color: rgba(208,213,101);
 	border: none;
 	color: white;
-	padding: 1%;
+	padding: 1% 20px 1% 20px;
 	font-size: 18px;
-	font-weight: bold;
-	margin: 1%;
+	font-weight: 600px;
+	margin: 2.5px;
+	margin-bottom: 10px; 
+	border-radius: 10px;
+}
+
+.slide-button:hover {
+	background-color: rgba(208,213,101,.75);
+	transition: background-color .15s ease-in-out;
 }
 
 .button1{
@@ -189,15 +196,17 @@ a{
 	padding-bottom: 15px;
 	padding-top: 15px;
 	max-width:1000px;
+	border-radius: 10px 10px 0 0;
 }
 .img-responsive{
 	margin:0 auto;
 }
 .footer{
-	background-color: rgb(0,131,123);
+	background-color: rgb(0,131,123,.5);
 	margin-top:0;
 	padding:2%;
-	margin-bottom:5%;	
+	margin-bottom:5%;
+	border-radius: 0 0 10px 10px;
 }
 .fa{
 	color:rgb(237, 170, 0);
