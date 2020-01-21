@@ -97,17 +97,6 @@ table#t01 td {
     border-collapse: collapse;
 }
 
-.button{
-    background-color: rgba(0, 131, 123, 0.75);
-    border: none;
-    color: white;
-    padding: 2%;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 2%;
-    width: 80%;
-}
-
 /*
 img{
     display: block;
