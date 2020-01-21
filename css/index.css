@@ -135,14 +135,6 @@ img{
 	transition: height .5s ease-in-out;
 }
 
-select{
-    max-width: 100%;
-    border: none;
-    border-radius: 4px;
-    background-color: #f1f1f1;
-    font-size: 100%;
-}
-
 .slide-button {
 	background-color: rgba(208,213,101);
 	border: none;
