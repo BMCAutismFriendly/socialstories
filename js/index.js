@@ -68,10 +68,6 @@ function previous(pos, start, building, department){
     }
 }
 
-function restart(start, building, department){
-    window.location.assign("https://bmcautismfriendly.github.io/socialstories/doctorsoffice/gettingtoBMC.html?"+"pos=0"+"&start="+start+"&building="+building+"&department="+department);
-}
-
 function medicalprocedures(){
     window.location.assign("https://bmcautismfriendly.github.io/socialstories/medical-procedures/");
 }
