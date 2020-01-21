@@ -10,7 +10,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- jQuery -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!-- Bootstrap 3 -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -20,20 +20,23 @@ and open the template in the editor.
     <body>
     <div class="container">
         <h1 align="center">My Autism Friendly Visit</h1>
-	    <div class="grid-container">
-		    <div class="grid-item">
-			    <button class="slide-button" onclick="doctorsoffice()"><img class="grid-img" src="img/stethoscope.png"/>
-Getting to the doctor's office</button></div>
-		    <div class="grid-item">
-			    <button class="slide-button" onclick="medicalprocedures()"><img class="grid-img" src="img/medical-procedures.png"/>Common medical procedures</button></div>
-	    </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <button class="main-button" onclick="doctorsoffice()"><img class="grid-img" src="img/stethoscope.png"/>
+                    <p>Getting to the doctor's office</p>
+                    </button></div>
+            <div class="grid-item">
+                <button class="main-button" onclick="medicalprocedures()"><img class="grid-img" src="img/medical-procedures.png"/>
+                    <p>Common medical procedures</p>
+                    </button></div>
+        </div>
         <a href = "https://www.bmc.org/" target="_blank"><img src="img/logo.jpg" alt="BMC logo" class="img-responsive"></a>
         <p class = "cent">For questions or comments, please email <a href="mailto:autismprogram@bmc.org?Subject=App%20User%20Comment">autismprogram@bmc.org</a></p>
-	</div><!-- END .container -->
-	<div class="container footer">
-		<p><a href="https://www.bmc.org/" target="_new"><img src="img/logo_white.png" alt="BMC logo" class="img-responsive"></a></p>
-		<p><a onclick="aboutapp()">about app</a> | <a onclick="aboutbmcautism()">BMC Autism Program</a></p>
+    </div><!-- END .container -->
+    <div class="container footer">
+        <p><a href="https://www.bmc.org/" target="_new"><img src="img/logo_white.png" alt="BMC logo" class="img-responsive"></a></p>
+        <p><a onclick="aboutapp()">about app</a> | <a onclick="aboutbmcautism()">BMC Autism Program</a></p>
     </div>
-		<script src="js/index.js" type="text/javascript"></script>
+        <script src="js/index.js" type="text/javascript"></script>
     </body>
 </html>
