@@ -121,7 +121,7 @@ img{
 }
 
 .slide-img {
-	transition: height .5s ease-in-out;
+	transition: height 1s ease-in-out;
 }
 
 .slide-button {
