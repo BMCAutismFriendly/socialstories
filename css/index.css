@@ -177,6 +177,15 @@ a{
     color:rgb(85, 50, 120);
 	font-weight:1000;
 }
+
+a:hover {
+	cursor: pointer;
+}
+
+.footer a {
+	text-decoration: none;
+}
+
 .container{
 	background: #fff;
 	width: 90%;
