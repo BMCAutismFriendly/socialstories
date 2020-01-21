@@ -150,14 +150,35 @@ button {
     transition: background-color .15s ease-in-out;
 }
 
-.main-button {
-    background-color: rgba(0,131,123,.5);
-    margin: 2px;
+.green {
+    background-color: rgba(208,213,101);
 }
 
-.main-button:hover {
+.green:hover {
+    background-color: rgba(208,213,101,.75);
+    transition: background-color .15s ease-in-out;
+}
+
+.red {
+    background-color: rgba(225,88,41,.75);
+}
+
+.red:hover {
+    background-color: rgba(225,88,41,.5);
+    transition: background-color .15s ease-in-out;
+}
+
+.teal {
+    background-color: rgba(0,131,123,.5);
+}
+
+.teal:hover {
     background-color: rgba(0,131,123,.25);
     transition: background-color .15s ease-in-out;
+}
+
+.main-button {
+    margin: 2px;
 }
 
 .button1{
