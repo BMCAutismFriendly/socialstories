@@ -168,6 +168,15 @@ button {
     transition: background-color .15s ease-in-out;
 }
 
+.purple {
+    background-color: rgba(85,50,120,.75);
+}
+
+.purple:hover {
+    background-color: rgba(85,50,120,.5);
+    transition: background-color .15s ease-in-out;
+}
+
 .teal {
     background-color: rgba(0,131,123,.5);
 }
