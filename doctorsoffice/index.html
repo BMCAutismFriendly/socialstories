@@ -63,6 +63,7 @@ and open the template in the editor.
   </div>
 
   <button class="slide-button prev" onclick="plusDivs(-1)">&#10094; PREV</button>
+    <button class="slide-button" onclick="restart()">&#x21BA;</button>
   <button class="slide-button next" onclick="plusDivs(1)">NEXT &#10095;</button>
 </div>
 </div>
@@ -74,6 +75,10 @@ and open the template in the editor.
 <script>
 var slideIndex = 1;
 showDivs(slideIndex);
+    
+function restart() {
+    slideIndex = 1;
+}
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
