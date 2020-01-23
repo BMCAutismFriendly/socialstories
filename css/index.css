@@ -109,7 +109,7 @@ img{
 }
 
 .slide-img {
-    margin-top: 20px;
+    margin: 25px 0px;
     display: block;
     transition: height 1s ease-in-out;
 }
