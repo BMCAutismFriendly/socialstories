@@ -19,10 +19,10 @@ There's a chunk that appears like this:
 <img class="slide-img" src="../img/EDIT">
 </div>
 ```
-This represents a page of the story. Copy and paste this as many times as necessary. The "EDIT" here can be replaced with the text for that page. Replace the "EDIT" in the image src attribute to represent the file path of the image. If you followed Step 1 correctly, this should look something like src="../img/story-image-folder-name/1.jpg".
+This represents a page of the story. Copy and paste this as many times as necessary. The "EDIT" here can be replaced with the text for that page. Replace the "EDIT" in the image src attribute to represent the file path of the image. If you followed Step 1 correctly, this should look something like ```src="../img/story-image-folder-name/1.jpg"```.
 
 #### 4
-Finally, there is an "EDIT" in a function called "restart" which tells the restart button where to return to. Replace "EDIT" with the name of the story folder — the complete URL should look like "https://bmcautismfriendly.github.io/socialstories/story-folder-name/".
+Finally, there is an "EDIT" in a function called "restart" which tells the restart button where to return to. Replace "EDIT" with the name of the story folder — the complete code should look like ```window.location.assign("https://bmcautismfriendly.github.io/socialstories/story-folder-name/")```.
   
 ## Updating JavaScript
 If an image is not appearing, it may have an incorrect reference address. Check the "src" attribute of the image and make sure that it directs to the appropriate file. For help on how to do this, read this article on file paths: https://www.w3schools.com/html/html_filepaths.asp.
