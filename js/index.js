@@ -31,21 +31,9 @@ function dentist(){
 }
 
 function shot(){
-    window.location.assign("shot.html?pos=0");
+    window.location.assign("https://bmcautismfriendly.github.io/socialstories/getting-a-shot/");
 }
 
 function blooddraw(){
     window.location.assign("https://bmcautismfriendly.github.io/socialstories/blood-draw/");
 }
-    
-    function physicalexam(){
-        window.location.assign("physicalexam.html?pos=0");
-    }
-    
-    function dentist(){
-        window.location.assign("dentist.html?pos=0");
-    }
-    
-    function map(){
-        window.location.assign("https://bmcautismfriendly.github.io/socialstories/doctorsoffice/map/");
-    }
