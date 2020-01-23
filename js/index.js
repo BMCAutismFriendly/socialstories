@@ -30,6 +30,10 @@ function begin(){
 	window.location.assign("https://bmcautismfriendly.github.io/socialstories/doctorsoffice/gettingtoBMC.html?pos=0"+str);
 }
 
+function exit(){
+	window.location.assign("https://bmcautismfriendly.github.io/socialstories/");
+}
+
 function settings(){
     window.location.assign("https://bmcautismfriendly.github.io/socialstories/doctorsoffice/settings/");
 }
