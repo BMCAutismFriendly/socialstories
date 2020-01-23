@@ -167,37 +167,6 @@ button {
     margin: 0;
 }
 
-.button1{
-    background-color: rgba(0,131,123,0.75);
-    border: none;
-    color: white;
-    padding: 1%;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 1%;
-}
-
-.button2{
-    background-color: rgba(0,131,123,0.25);
-    border: none;
-    color: rgb(0,85,111);
-    padding: 1%;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 1%;
-    width: 30%;
-}
-
-.button3{
-    background-color: rgb(85, 50, 120);
-    border: none;
-    color: white;
-    padding: 1%;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 1%;
-}
-
 span{
     color: rgb(85, 50, 120);
     font-weight:1000;
