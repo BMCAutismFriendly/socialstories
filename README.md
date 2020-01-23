@@ -48,4 +48,4 @@ Finally, we want to update the main Social Stories page to contain our new story
 You have an option here to change the color of the tile that this story will have on the main page. There are six colors available: blue, teal, orange, red, green, and purple. Type your favorite option in place of "teal" in the section that says ```class="main-button teal"``` above.
 
 ### Step 6: Enjoy the story! 
-Congrats! You've added a Social Story!
+Congrats! You've added a social story!
