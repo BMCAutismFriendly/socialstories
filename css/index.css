@@ -95,7 +95,7 @@ img{
         margin-top: 10px;
         margin-bottom: 10px;
         margin: auto;
-        max-height: 150px;
+        max-height: 250px;
     }
 }
 
@@ -104,12 +104,21 @@ img{
         margin-top: 20px;
         margin-bottom: 20px;
         margin: auto;
-        max-height: 300px;
+        max-height: 325px;
     }
 }
 
 .slide-img {
+    margin-top: 20px;
+    display: block;
     transition: height 1s ease-in-out;
+}
+
+.slide-container {
+    max-width: 500px;
+    text-align: left;
+    overflow: hidden;
+    margin: auto;
 }
 
 button {
@@ -118,7 +127,7 @@ button {
     padding: 1% 20px 1% 20px;
     font-size: 18px;
     font-weight: 600px;
-    margin: 10px 2.5px;
+    margin: 5px 2.5px 20px 2.5px;
     border-radius: 10px;
 }
 
