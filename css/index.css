@@ -127,7 +127,7 @@ button {
     padding: 1% 20px 1% 20px;
     font-size: 18px;
     font-weight: 600px;
-    margin: 5px 2.5px 20px 2.5px;
+    margin: 10px 2.5px 20px 2.5px;
     border-radius: 10px;
 }
 
@@ -232,7 +232,7 @@ a:hover {
 .container{
     background: #fff;
     width: 90%;
-    margin-top:3%;
+    margin-top: 25px;
     padding-left:50px;
     padding-right: 50px;
     padding-bottom: 15px;
@@ -247,7 +247,7 @@ a:hover {
     background-color: #80c1bd;
     margin-top:0;
     padding:2%;
-    margin-bottom:5%;
+    margin-bottom: 25px;
     border-radius: 0 0 10px 10px;
     text-align: center;
     color: white;
