@@ -1,14 +1,3 @@
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-function doctorsoffice(){
-    window.location.assign("https://bmcautismfriendly.github.io/socialstories/doctorsoffice/");
-}
-
 function aboutapp(){
     window.location.assign("https://bmcautismfriendly.github.io/socialstories/about-app/");
 }
@@ -21,6 +10,10 @@ function exit(){
 	window.location.assign("https://bmcautismfriendly.github.io/socialstories/");
 }
 
+function doctorsoffice(){
+    window.location.assign("https://bmcautismfriendly.github.io/socialstories/doctorsoffice/");
+}
+
 function medicalprocedures(){
     window.location.assign("https://bmcautismfriendly.github.io/socialstories/medical-procedures/");
 }
@@ -31,6 +24,10 @@ function bloodpressure(){
 
 function heightandweight(){
 	window.location.assign("https://bmcautismfriendly.github.io/socialstories/height-and-weight/");
+}
+
+function dentist(){
+	window.location.assign("https://bmcautismfriendly.github.io/socialstories/dentist/");
 }
 
 function shot(){
