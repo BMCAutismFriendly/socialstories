@@ -6,10 +6,10 @@ Create a folder with the name of the story. In that folder, create a file, title
 
 The only parts that need modifying in "index.html" now are all labeled "EDIT". Here are tips on modifying those: 
 #### 1
-The first "EDIT" between ```html <title>``` tags is the title of the page — the label you see on a browser tab.
+The first "EDIT" between ```<title>``` tags is the title of the page — the label you see on a browser tab.
   
 #### 2
-The second "EDIT" between ```html <h2>``` tags is the title of the social story.
+The second "EDIT" between ```<h2>``` tags is the title of the social story.
   
 #### 3
 There's a chunk that appears like this: 
