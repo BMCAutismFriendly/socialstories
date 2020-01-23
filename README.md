@@ -47,5 +47,7 @@ Finally, we want to update the main Social Stories page to contain our new story
 ```
 You have an option here to change the color of the tile that this story will have on the main page. There are six colors available: blue, teal, orange, red, green, and purple. Type your favorite option in place of "teal" in the section that says ```class="main-button teal"``` above.
 
+The title text won't wrap on its own for the buttons, so if the title is too long, you can insert a line break by putting ```<br>``` between the words you want a break for. An example would be ```<p>Really long</br>title here</p>```.
+
 ### Step 6: Enjoy the story! 
 Congrats! You've added a social story!
