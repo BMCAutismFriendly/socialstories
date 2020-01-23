@@ -37,3 +37,7 @@ function shot(){
 function blooddraw(){
     window.location.assign("https://bmcautismfriendly.github.io/socialstories/blood-draw/");
 }
+
+function physicalexam(){
+	window.location.assign("https://bmcautismfriendly.github.io/socialstories/physical-exam/");
+}
