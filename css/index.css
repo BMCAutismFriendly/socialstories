@@ -163,6 +163,24 @@ button {
     transition: background-color .15s ease-in-out;
 }
 
+.blue {
+    background-color: rgba(0,85,111,.5);
+}
+
+.blue:hover {
+    background-color: rgba(0,85,111,.25);   
+    transition: background-color .15s ease-in-out;
+}
+
+.orange {
+    background-color: rgba(237,170,0,.75);
+}
+
+.orange:hover {
+    background-color: rgba(237,170,0,.5);
+    transition: background-color .15s ease-in-out;
+}
+
 .main-button {
     width: 100%;
     height: 100%;
