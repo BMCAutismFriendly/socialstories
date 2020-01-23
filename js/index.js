@@ -29,16 +29,16 @@ function bloodpressure(){
     window.location.assign("https://bmcautismfriendly.github.io/socialstories/blood-pressure/");
 }
 
+function heightandweight(){
+	window.location.assign("https://bmcautismfriendly.github.io/socialstories/height-and-weight/");
+}
+
 function shot(){
     window.location.assign("shot.html?pos=0");
 }
 
 function blooddraw(){
     window.location.assign("https://bmcautismfriendly.github.io/socialstories/blood-draw/");
-}
-
-function heightandweight(){
-    window.location.assign("heightandweight.html?pos=0");
 }
     
     function physicalexam(){
