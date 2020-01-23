@@ -131,24 +131,6 @@ button {
     border-radius: 10px;
 }
 
-.slide-button {
-    background-color: rgba(208,213,101);
-}
-
-.slide-button:hover {
-    background-color: rgba(208,213,101,.75);
-    transition: background-color .15s ease-in-out;
-}
-
-.restart-button {
-    background-color: rgba(225,88,41,.75);
-}
-
-.restart-button:hover {
-    background-color: rgba(225,88,41,.5);
-    transition: background-color .15s ease-in-out;
-}
-
 .green {
     background-color: rgba(208,213,101);
 }
