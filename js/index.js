@@ -26,7 +26,7 @@ function medicalprocedures(){
 }
 
 function bloodpressure(){
-    window.location.assign("bloodpressure.html?pos=0");
+    window.location.assign("https://bmcautismfriendly.github.io/socialstories/blood-pressure/");
 }
 
 function shot(){
