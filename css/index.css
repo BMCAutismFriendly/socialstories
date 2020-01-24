@@ -132,7 +132,7 @@ button {
 }
 
 .green {
-    background-color: rgba(208,213,101);
+    background-color: rgba(208,213,101,1);
 }
 
 .green:hover {
