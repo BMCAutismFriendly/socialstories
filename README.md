@@ -75,7 +75,7 @@ Simply change the "green" in ```class="main-button green"``` to one of the BMC c
 #### Title
 Change the text between the tags ```<p>``` and ```</p>``` to your desired title. To break the text (if you want the title to be on more than one line), add ```</br>``` wherever you want a break.
 
-### Icon
+#### Icon
 Upload an icon into the "img" folder. Then update ```src``` to reflect the new icon. See "Relative links" section below.
 
 ### Where the button goes 
