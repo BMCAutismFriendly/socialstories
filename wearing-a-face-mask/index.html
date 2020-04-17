@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Face Mask</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Bootstrap 3 -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+        <!--Font Awesome-->
+        <script src="https://use.fontawesome.com/808b665924.js"></script> <!--DanielChao-->
+    </head>
+    
+    <body id="body" background="">
+    <div class="container" style="text-align:center">
+        <h2>Wearing a Face Mask</h2>
+        <div>
+          <button class="green" onclick="plusDivs(-1)">&#10094; PREV</button>
+            <button class="purple" onclick="exit()">&#x2573;</button>
+            <button class="red" onclick="restart()">&#x21BA;</button>
+          <button class="green" onclick="plusDivs(1)">NEXT &#10095;</button>
+        </div>
+        <div class="slide-container">
+          <div class="slide">
+            <p>A face mask, or covering, can protect me from germs that can make me feel sick.</p>
+            <img class="slide-img" src="../img/EDIT">
+          </div>
+          <div class="slide">
+            <p>A face mask is something that covers my mouth and nose, but I can still breathe. Kids AND grownups can wear masks to stay healthy.</p>
+            <img class="slide-img" src="../img/wearing-a-face-mask/1.jpg">
+          </div>
+          <div class="slide">
+            <p>Some face masks are made of a paper-like material.</p>
+            <img class="slide-img" src="../img/wearing-a-face-mask/2.jpg">
+          </div>
+          <div class="slide">
+            <p>Some face masks are made of cloth.</p>
+            <img class="slide-img" src="../img/wearing-a-face-mask/3.jpg">
+          </div>
+          <div class="slide">
+            <p>Some people wear a scarf or bandana instead of a face mask.</p>
+            <img class="slide-img" src="../img/wearing-a-face-mask/4.jpg">
+          </div>
+          <div class="slide">
+            <p>Face masks or coverings can protect me from germs that make me feel sick.</p>
+            <img class="slide-img" src="../img/wearing-a-face-mask/5.jpg">
+          </div>
+          <div class="slide">
+            <p>It might feel funny the first time I wear a face mask. It might feel funny on my ears or on my nose.</p>
+            <img class="slide-img" src="../img/wearing-a-face-mask/6.jpg">
+          </div>
+          <div class="slide">
+            <p>A grown-up can help put on my mask, and make it feel better on my face.</p>
+            <img class="slide-img" src="../img/wearing-a-face-mask/7.jpg">
+          </div>
+          <div class="slide">
+            <p>I might need to practice wearing this. I can even have my toys practice!</p>
+            <img class="slide-img" src="../img/wearing-a-face-mask/8.jpg">
+          </div>
+          <div class="slide">
+            <p>It is important to remember to listen to grown-ups about the important rules for wearing a mask.</p>
+            <img class="slide-img" src="../img/Ewearing-a-face-mask/9.jpg">
+          </div>
+          <div class="slide">
+            <p>To keep the germs away, it is important to try and not touch my face.</p>
+            <img class="slide-img" src="../img/wearing-a-face-mask/10.jpg">
+          </div>
+          <div class="slide">
+            <p>I can also keep my hands clean by washing them. I know how to wash my hands, and a grown-up can help me.</p>
+            <img class="slide-img" src="../img/wearing-a-face-mask/11.jpg">
+          </div>
+          <div class="slide">
+            <p>My family will be so proud when I wear my face mask and keep my hands clean.</p>
+            <img class="slide-img" src="../img/wearing-a-face-mask/12.jpg">
+          </div>
+          <div class="slide">
+            <p>I am staying healthy! Hooray!</p>
+            <img class="slide-img" src="../img/star1.gif">
+          </div>
+        </div>
+                <script src="../js/index.js" type="text/javascript"></script>
+        <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+            
+        function restart() {
+            window.location.assign('https://bmcautismfriendly.github.io/socialstories/wearing-a-face-mask/');
+        }
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("slide");
+          if (n > x.length) {window.location.assign('https://bmcautismfriendly.github.io/socialstories/')}
+          if (n < 1) {window.location.assign('https://bmcautismfriendly.github.io/socialstories/')}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>  
+        </div><!-- END .container -->
+    <div class="container footer">
+        <a href="https://www.bmc.org/" target="_new"><img src="../img/logo_white.png" alt="BMC logo" class="img-responsive"></a>
+    </div>
+        <script src="../js/index.js" type="text/javascript"></script>
+    </body>
+</html>
