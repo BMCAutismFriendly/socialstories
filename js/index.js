@@ -41,3 +41,7 @@ function blooddraw(){
 function physicalexam(){
 	window.location.assign("https://bmcautismfriendly.github.io/socialstories/physical-exam/");
 }
+
+function facemask(){
+  window.location.assign("https://bmcautismfriendly.github.io/socialstories/wearing-a-face-mask/");
+}
