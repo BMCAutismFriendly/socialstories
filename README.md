@@ -1,7 +1,9 @@
 # Adding a BMC Social Story
 
-## Step 1: Upload images
+## Step 1: Upload images + PDF
 Create a folder in the "img" file with the name of the story. Upload story images into the folder — a good rule is to name them in page order, so like "1.jpg" for the first image, "2.jpg" for the second, etc.
+
+Then, upload the PDF of the social story in the "pdfs" file.
 
 ## Step 2: Create story page
 Create a folder with the name of the story. In that folder, create a file, title it "index.html", and copy and paste the contents of "template.html" into the new file. 
@@ -12,7 +14,9 @@ The first "EDIT" between ```<title>``` tags is the title of the page — the lab
   
 #### 2
 The second "EDIT" between ```<h2>``` tags is the title of the social story.
-  
+
+The third "EDIT" is in this line of code: ```<button class="blue" onclick="window.open('../pdfs/EDIT.pdf','_blank')"><img class="button-img" src="../img/printer.svg"></button>```. Update it to reflect the name of the PDF file for the social story.
+
 #### 3
 There's a chunk that appears like this: 
 ```html
