@@ -45,3 +45,7 @@ function physicalexam(){
 function facemask(){
   window.location.assign("https://bmcautismfriendly.github.io/socialstories/wearing-a-face-mask/");
 }
+
+function earexam(){
+  window.location.assign("https://bmcautismfriendly.github.io/socialstories/ear-exam/");
+}
