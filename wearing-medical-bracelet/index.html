@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Medical Bracelet</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Bootstrap 3 -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+        <!--Font Awesome-->
+        <script src="https://use.fontawesome.com/808b665924.js"></script> <!--DanielChao-->
+    </head>
+    
+    <body id="body" background="">
+    <div class="container" style="text-align:center">
+        <h2>Wearing a Medical Bracelet</h2>
+        <div>
+          <button class="green" onclick="plusDivs(-1)"><img class="button-img" src="../img/left-arrow.svg"></button>
+            <button class="purple" onclick="exit()"><img class="button-img" src="../img/exit-icon.svg"></button>
+            <button class="red" onclick="restart()"><img class="button-img" src="../img/restart-icon.svg"></button>
+            <button class="blue" onclick="window.open('../pdfs/wearingmedicalbracelet.pdf','_blank')"><img class="button-img" src="../img/printer.svg"></button>
+          <button class="green" onclick="plusDivs(1)"><img class="button-img" src="../img/right-arrow.svg"></button>
+        </div>
+        <div class="slide-container">
+          <div class="slide">
+            <p>This story is about learning to wear a medical bracelet.</p>
+            <img class="slide-img" src="../img/wearing-medical-bracelet/1.png">
+          </div>
+          <div class="slide">
+            <p>I am getting a MedicAlert bracelet. I am going to wear this bracelet around my wrist.</p>
+            <img class="slide-img" src="../img/wearing-medical-bracelet/2.png">
+          </div>
+          <div class="slide">
+            <p>I am not going to take my bracelet off. I can eat, sleep, and shower with my bracelet on. My bracelet stays on at all times.</p>
+            <img class="slide-img" src="../img/wearing-medical-bracelet/3.png">
+          </div>
+          <div class="slide">
+            <p>It is VERY important that I keep my bracelet on. My bracelet will help keep me safe. If I ever get lost, the bracelet will help my mom find me.</p>
+            <img class="slide-img" src="../img/wearing-medical-bracelet/4.png">
+          </div>
+        </div>
+        <div class="slide">
+            <p>If I am safe, everyone will be so happy! I will be happy!</p>
+            <img class="slide-img" src="../img/star1.gif">
+          </div>
+        </div>
+                
 
+        <script src="../js/index.js" type="text/javascript"></script>
+        <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+            
+        function restart() {
+            window.location.assign('https://bmcautismfriendly.github.io/socialstories/wearing-medical-bracelet/');
+        }
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("slide");
+          if (n > x.length) {window.location.assign('https://bmcautismfriendly.github.io/socialstories/')}
+          if (n < 1) {window.location.assign('https://bmcautismfriendly.github.io/socialstories/')}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>  
+        </div><!-- END .container -->
+    <div class="container footer">
+        <a href="https://www.bmc.org/" target="_new"><img src="../img/logo_white.png" alt="BMC logo" class="img-responsive"></a>
+    </div>
+        <script src="../js/index.js" type="text/javascript"></script>
+    </body>
+</html>
