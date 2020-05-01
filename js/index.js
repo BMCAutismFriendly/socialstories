@@ -42,10 +42,14 @@ function physicalexam(){
 	window.location.assign("https://bmcautismfriendly.github.io/socialstories/physical-exam/");
 }
 
-function facemask(){
-  window.location.assign("https://bmcautismfriendly.github.io/socialstories/wearing-a-face-mask/");
+function wearing_face_mask(){
+	window.location.assign("https://bmcautismfriendly.github.io/socialstories/wearing-face-mask/");
 }
 
 function earexam(){
-  window.location.assign("https://bmcautismfriendly.github.io/socialstories/ear-exam/");
+	window.location.assign("https://bmcautismfriendly.github.io/socialstories/ear-exam/");
+}
+
+function wearing_medical_bracelet(){
+	window.location.assign("https://bmcautismfriendly.github.io/socialstories/wearing-medical-bracelet/");
 }
