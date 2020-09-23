@@ -53,3 +53,8 @@ function earexam(){
 function wearing_medical_bracelet(){
 	window.location.assign("https://bmcautismfriendly.github.io/socialstories/wearing-medical-bracelet/");
 }
+
+function eyeexam(){
+	window.location.assign("https://bmcautismfriendly.github.io/socialstories/eyeexam/");
+}
+
