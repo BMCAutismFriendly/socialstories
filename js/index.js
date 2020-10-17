@@ -62,3 +62,7 @@ function renal_ultrasound(){
 	window.location.assign("https://bmcautismfriendly.github.io/socialstories/renal_ultrasound/");
 }
 
+function covidtest(){
+	window.location.assign("https://bmcautismfriendly.github.io/socialstories/covidtest/");
+}
+
