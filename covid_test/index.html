@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Getting a COVID Test</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Bootstrap 3 -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+        <!--Font Awesome-->
+        <script src="https://use.fontawesome.com/808b665924.js"></script> <!--DanielChao-->
+    </head>
+    
+    <body id="body" background="">
+    <div class="container" style="text-align:center">
+        <h2>Getting a COVID Test</h2>
+        <div>
+          <button class="green" onclick="plusDivs(-1)"><img class="button-img" src="../img/left-arrow.svg"></button>
+            <button class="purple" onclick="exit()"><img class="button-img" src="../img/exit-icon.svg"></button>
+            <button class="red" onclick="restart()"><img class="button-img" src="../img/restart-icon.svg"></button>
+            <button class="blue" onclick="window.open('../pdfs/covidtest.pdf','_blank')"><img class="button-img" src="../img/printer.svg"></button>
+          <button class="green" onclick="plusDivs(1)"><img class="button-img" src="../img/right-arrow.svg"></button>
+        </div>
+        <div class="slide-container">
+          <div class="slide">
+            <p>This is a story of how I will get a Coronavirus Test. Remember, even if I’ve worn my facemask, I still might need to get a test!</p>
+            <img class="slide-img" src="../img/covidtest/1.jpg">
+          </div>
+          <div class="slide">
+            <p>Getting a Coronavirus test keeps me healthy. Getting a test also helps to keep my family, my friends, and the entire world healthy! 
+              When I’m health, I can do my favorite things! I can play, do my schoolwork, and have fun with my friends!</p>
+            <img class="slide-img" src="../img/covidtest/2.jpg">
+          </div> 
+          <div class="slide">
+            <p>People can get coronavirus tests for different reasons. If I feel sick, I might need to get a test. 
+              If my family or my friends feel sick, and I’ve seen them recently, I might have to get a test too.</p>
+            <img class="slide-img" src="../img/covidtest/3.jpg">
+          </div> 
+          <div class="slide">
+            <p>If I went outside the state, I might need a test as well. Sometimes, I need to get a test before
+              I go to the hospital for a procedure.</p>
+            <img class="slide-img" src="../img/covidtest/4.jpg">
+          </div> 
+          <div class="slide">
+            <p>The person who will help give me my test will look like this:</p>
+            <img class="slide-img" src="../img/covidtest/.5">
+            <p>The person who will give me my test will be wearing protective equipment like a mask, face shield or gown. 
+              This may look funny or different, but it helps keep them and me safe. It is important that we all make safe choices!</p>
+          </div> 
+          <div class="slide">
+            <p>The test could happen in the Doctor’s office, but it might also happen in the car.</p>
+            <img class="slide-img" src="../img/covidtest/.6">
+            <p>When I am in the car, the testing steps are the same. The only difference is that I am in my car and not in the doctor’s office.</p>
+          </div> 
+          <div class="slide">
+            <img class="slide-img" src="../img/covidtest/.7">
+            <p>To get tested for coronavirus, the nurse may test my nose, or she may test my throat.</p>
+          </div> 
+          <div class="slide">
+            <p>To test my nose, the Nurse will take a q-tip and swirl it around the inside of my nose.</p>
+            <img class="slide-img" src="../img/covidtest/.8">
+            <p>This might feel a little funny, but it will be over in just a second. </p>
+          </div> 
+          <div class="slide">
+            <p>For the Nurse to test my throat, I will have to open my mouth super wide! The Nurse will go through my mouth and lightly rub the q-tip on my throat.</p>
+            <img class="slide-img" src="../img/covidtest/.9">
+            <p>This might feel a little funny, but it will be over in just a second. 
+              For the test to work, I have to keep my mouth open until the nurse removes the q-tip from my mouth.</p>
+          </div> 
+          <div class="slide">
+            <p>By taking my Coronavirus test, I helped to keep myself, my family, and my community healthy. 
+              When I do a good job getting my test done, I will feel very proud of myself!</p>
+            <img class="slide-img" src="../img/covidtest/10.jpg">
+          </div> 
+        </div>
+                <script src="../js/index.js" type="text/javascript"></script>
+        <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+            
+        function restart() {
+            window.location.assign('https://bmcautismfriendly.github.io/socialstories/covidtest/');
+        }
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("slide");
+          if (n > x.length) {window.location.assign('https://bmcautismfriendly.github.io/socialstories/')}
+          if (n < 1) {window.location.assign('https://bmcautismfriendly.github.io/socialstories/')}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>  
+        </div><!-- END .container -->
+    <div class="container footer">
+        <a href="https://www.bmc.org/" target="_new"><img src="../img/logo_white.png" alt="BMC logo" class="img-responsive"></a>
+    </div>
+        <script src="../js/index.js" type="text/javascript"></script>
+    </body>
+</html>
 
