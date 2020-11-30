@@ -66,3 +66,7 @@ function covidtest(){
 	window.location.assign("https://bmcautismfriendly.github.io/socialstories/covidtest/");
 }
 
+function takingmedicine(){
+	window.location.assign("https://bmcautismfriendly.github.io/socialstories/takingmedicine/");
+}
+
