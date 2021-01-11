@@ -73,3 +73,7 @@ function takingmedicine(){
 function wearingglasses(){
 	window.location.assign("https://bmcautismfriendly.github.io/socialstories/wearingglasses/");
 }
+
+function mri(){
+	window.location.assign("https://bmcautismfriendly.github.io/socialstories/mri/");
+}
