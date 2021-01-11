@@ -77,3 +77,7 @@ function wearingglasses(){
 function mri(){
 	window.location.assign("https://bmcautismfriendly.github.io/socialstories/mri/");
 }
+
+function period(){
+	window.location.assign("https://bmcautismfriendly.github.io/socialstories/period/");
+}
