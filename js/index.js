@@ -81,3 +81,7 @@ function mri(){
 function period(){
 	window.location.assign("https://bmcautismfriendly.github.io/socialstories/period/");
 }
+
+function inhaler(){
+	window.location.assign("https://bmcautismfriendly.github.io/socialstories/inhaler/");
+}
