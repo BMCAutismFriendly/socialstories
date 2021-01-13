@@ -85,3 +85,7 @@ function period(){
 function inhaler(){
 	window.location.assign("https://bmcautismfriendly.github.io/socialstories/inhaler/");
 }
+
+function allergy(){
+	window.location.assign("https://bmcautismfriendly.github.io/socialstories/allergy/");
+}
