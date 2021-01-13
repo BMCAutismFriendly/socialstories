@@ -260,7 +260,7 @@ ul {
     font-size: 16px; 
 }
 
-.lang {
+ul.lang {
       ul {
           list-style-type: none;
           margin: 0;
