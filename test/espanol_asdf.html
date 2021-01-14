@@ -27,7 +27,7 @@
         </div>
         <div class="slide-container">
           <div class="slide">
-            <p>readline()</p>
+            <p id="line1"></p>
             <img class="slide-img" src="../img/wearingglasses/2.png">
           </div>
           <div class="slide">
@@ -85,9 +85,10 @@
         }
         
         var text=JSON.parse(fs.readFileSync(language+".json"));
-        function readline() {
-            return text["line"+slideIndex.toString()];
+        for (var i in text) {
+            document.getElementById("line"+i.toString()).innerHTML=text[i];
         }
+
         </script>  
         </div><!-- END .container -->
     <div class="container footer">
