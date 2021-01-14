@@ -86,7 +86,8 @@
         
         var text=JSON.parse(fs.readFileSync(language+".json"));
         for (var i in text) {
-            document.getElementById("line"+i.toString()).innerHTML=text[i];
+            var j=i+1
+            document.getElementById("line"+j.toString()).innerHTML=text[i];
         }
 
         </script>  
