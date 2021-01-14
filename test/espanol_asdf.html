@@ -27,7 +27,7 @@
         </div>
         <div class="slide-container">
           <div class="slide">
-            <p>This is a social story about how to wear my glasses and why I need to wear them.</p>
+            <p>readline()</p>
             <img class="slide-img" src="../img/wearingglasses/2.png">
           </div>
           <div class="slide">
@@ -77,6 +77,16 @@
             x[i].style.display = "none";  
           }
           x[slideIndex-1].style.display = "block";  
+        }
+            
+        var language="english";
+        function switchlanguage(lang) {
+            language=lang;
+        }
+        
+        var text=JSON.parse(fs.readFileSync(language+".json"));
+        function readline() {
+            return text[slideIndex];
         }
         </script>  
         </div><!-- END .container -->
