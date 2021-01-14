@@ -86,7 +86,7 @@
         
         var text=JSON.parse(fs.readFileSync(language+".json"));
         function readline() {
-            return text[slideIndex];
+            return text["line"+slideIndex.toString()];
         }
         </script>  
         </div><!-- END .container -->
