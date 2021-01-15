@@ -21,6 +21,7 @@ var language=window.location.hash.substring(1);
 function changelang(x) {
     language=x;
     redir(window.location.href.replace(location.hash,""));
+	location.reload();
 }
         
 function update() {
