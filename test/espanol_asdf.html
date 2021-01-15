@@ -17,7 +17,7 @@
     
     <body id="body" background="">
     <div class="container" style="text-align:center">
-        <h2>Wearing Glasses3</h2>
+        <h2>Wearing Glasses4</h2>
         <div>
           <button class="green" onclick="plusDivs(-1)"><img class="button-img" src="../img/left-arrow.svg"></button>
             <button class="purple" onclick="exit()"><img class="button-img" src="../img/exit-icon.svg"></button>
@@ -31,27 +31,27 @@
             <img class="slide-img" src="../img/wearingglasses/2.png">
           </div>
           <div class="slide">
-            <p>Glasses help me see!</p>
+            <p id="line2"></p>
             <img class="slide-img" src="../img/wearingglasses/3.png">
           </div>
           <div class="slide">
-            <p>I can wear my glasses with a band around my head or resting on my ears.</p>
+            <p id="line3"></p>
             <img class="slide-img" src="../img/wearingglasses/4.PNG">
           </div>
           <div class="slide">
-            <p>If I need a reminder about wearing my glasses, I can check in the mirror to make sure I have them on. </p>
+            <p id="line4"></p>
             <img class="slide-img" src="../img/wearingglasses/5.png">
           </div>
           <div class="slide">
-            <p>A grown-up can also remind me not to forget my glasses.</p>
+            <p id="line5"></p>
             <img class="slide-img" src="../img/wearingglasses/6.png">
           </div>
           <div class="slide">
-            <p>Remember that it might feel uncomfortable to wear my glasses at first, but once I get used to them I’ll be okay!</p>
+            <p id="line6"></p>
             <img class="slide-img" src="../img/wearingglasses/7.png">
           </div>
           <div class="slide">
-            <p>I did a great job learning about wearing glasses!</p>
+            <p id="line7"></p>
             <img class="slide-img" src="../img/wearingglasses/8.png">
           </div>
         </div>
@@ -84,13 +84,25 @@
             language=lang;
         }
         
-        var text=JSON.parse(fs.readFileSync(language+".json"));
-        document.getElementById("line1").innerHTML=text["line1"];
-        document.write(text["line1"]);
-//         for (var i in text) {
-//             var j=i+1
-//             document.getElementById("line"+j.toString()).innerHTML=text[i];
-//         }
+        var english={
+            "line1":"This is a social story about how to wear my glasses and why I need to wear them.",
+            "line2":"Glasses help me see!",
+            "line3":"I can wear my glasses with a band around my head or resting on my ears.",
+            "line4":"If I need a reminder about wearing my glasses, I can check in the mirror to make sure I have them on.",
+            "line5":"A grown-up can also remind me not to forget my glasses.",
+            "line6":"Remember that it might feel uncomfortable to wear my glasses at first, but once I get used to them I’ll be okay!",
+            "line7":"I did a great job learning about wearing glasses!",
+        }
+        
+        var languages={
+            "english":english,
+        }
+        
+        for (lineID in languages[language]) {
+            document.getElementById(lineID).innerHTML=languages[language][lineID];
+        }
+            
+
 
         </script>  
         </div><!-- END .container -->
