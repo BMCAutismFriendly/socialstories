@@ -12,10 +12,10 @@ function exit(){
 
 function changelang(x) {
     language=x;
-    updatelang(x);
+    update(x);
 }
         
-function updatelang(language) {
+function update(language) {
     for (lineID in languages[language?language:"english"]) {
 	document.getElementById(lineID).innerHTML=languages[language?language:"english"][lineID];
     }
