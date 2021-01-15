@@ -10,7 +10,7 @@ function exit(){
 	window.location.assign("https://bmcautismfriendly.github.io/socialstories/");
 }
 
-function switchlanguage(lang) {
+function setlanguage(lang) {
     language=lang;
 }
 
