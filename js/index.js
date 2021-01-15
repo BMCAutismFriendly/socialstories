@@ -10,6 +10,9 @@ function exit(){
 	window.location.assign("https://bmcautismfriendly.github.io/socialstories/");
 }
 
+//Jeffrey Shi language functionality
+var language;
+
 function changelang(x) {
     language=x;
     update(x);
@@ -20,7 +23,9 @@ function update(language) {
 	document.getElementById(lineID).innerHTML=languages[language?language:"english"][lineID];
     }
 }
-            
+
+update()
+//end language functionality
 
 function doctorsoffice(){
     window.location.assign("https://bmcautismfriendly.github.io/socialstories/doctorsoffice/");
