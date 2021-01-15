@@ -15,17 +15,17 @@ function exit(){
     redir("https://bmcautismfriendly.github.io/socialstories/");
 }
 
-//Jeffrey Shi language functionality
+//language functionality
 var language=window.location.hash.substring(1);
 
 function changelang(x) {
     language=x;
-    update();
+    redir(window.location.hash.substring(0));
 }
         
 function update() {
     for (lineID in languages[language?language:"english"]) {
-    document.getElementById(lineID).innerHTML=languages[language?language:"english"][lineID];
+    	document.getElementById(lineID).innerHTML=languages[language?language:"english"][lineID];
     }
 }
 
