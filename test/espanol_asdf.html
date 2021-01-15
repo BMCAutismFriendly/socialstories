@@ -24,7 +24,7 @@
     
     <body id="body" background="">
     <div class="container" style="text-align:center">
-        <h2>Wearing Glasses5</h2>
+        <h2>Wearing Glasses7</h2>
         <div>
           <button class="green" onclick="plusDivs(-1)"><img class="button-img" src="../img/left-arrow.svg"></button>
             <button class="purple" onclick="exit()"><img class="button-img" src="../img/exit-icon.svg"></button>
@@ -98,8 +98,19 @@
             "line7":"I did a great job learning about wearing glasses!",
         }
         
+        var gibberish={
+            "line1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "line2":"Morbi mollis est sagittis volutpat lobortis.",
+            "line3":"Proin semper pulvinar nisi, quis mattis odio ornare sed.",
+            "line4":"Donec orci sem, vehicula et felis sollicitudin, pretium lobortis mi.",
+            "line5":"Nulla dictum vestibulum eros gravida ullamcorper.",
+            "line6":"Etiam et interdum arcu.",
+            "line7":"Nulla ligula tortor, varius eu sodales quis, aliquam ac dui.",
+        }
+        
         var languages={
             "english":english,
+            "gibberish":gibberish,
         }
         
         for (lineID in languages[language?language:"english"]) {
