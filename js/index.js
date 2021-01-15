@@ -88,7 +88,7 @@ function takingmedicine(){
 }
 
 function wearingglasses(){
-	window.location.assign("https://bmcautismfriendly.github.io/socialstories/wearingglasses/");
+	window.location.assign("https://htmlpreview.github.io/?https://github.com/BMCAutismFriendly/socialstories/blob/multi_lang/test/espanol_asdf.html"); //test
 }
 
 function mri(){
