@@ -113,7 +113,7 @@ var slideIndex = 1;
 showDivs(slideIndex);
 
 function restart() {
-    window.location.assign('https://bmcautismfriendly.github.io/socialstories/wearingglasses/');
+    redir('https://bmcautismfriendly.github.io/socialstories/wearingglasses/');
 }
 
 function plusDivs(n) {
@@ -123,8 +123,8 @@ function plusDivs(n) {
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("slide");
-  if (n > x.length) {window.location.assign('https://bmcautismfriendly.github.io/socialstories/')}
-  if (n < 1) {window.location.assign('https://bmcautismfriendly.github.io/socialstories/')}
+  if (n > x.length) {redir('https://bmcautismfriendly.github.io/socialstories/')}
+  if (n < 1) {redir('https://bmcautismfriendly.github.io/socialstories/')}
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
   }
