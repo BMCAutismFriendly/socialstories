@@ -17,8 +17,8 @@
     
     <header>
         <ul class="lang">
-            <button onclick="switchlang('english')">English</button>
-            <button onclick="switchlang('gibberish')">Gibberish</button>
+            <button onclick="changelang('english')">English</button>
+            <button onclick="changelang('gibberish')">Gibberish</button>
         </ul>
     </header>
     
@@ -113,9 +113,18 @@
             "gibberish":gibberish,
         }
         
-        for (lineID in languages[language?language:"english"]) {
-            document.getElementById(lineID).innerHTML=languages[language?language:"english"][lineID];
+        function changelang() {
+            setlang(language);
+            updatelang();
         }
+        
+        function updatelang() {
+            for (lineID in languages[language?language:"english"]) {
+                document.getElementById(lineID).innerHTML=languages[language?language:"english"][lineID];
+            }
+        }
+            
+        updatelang()
             
 
 
