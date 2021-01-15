@@ -14,8 +14,8 @@
     </head>
     <header>
         <ul class="lang">
-            <button onclick="switchlang('english')">English</button>
-            <button onclick="switchlang('gibberish')">Gibberish</button>
+            <button onclick="changelang('english')">English</button>
+            <button onclick="changelang('gibberish')">Gibberish</button>
         </ul>
     </header>
     <body>
@@ -101,5 +101,10 @@
         <p><a onclick="aboutapp()">about app</a> | <a onclick="aboutbmcautism()">BMC Autism Program</a></p>
     </div>
         <script src="js/index.js" type="text/javascript"></script>
+    <script>
+        function changelang(language) {
+            setlang(language);
+            updatepage();
+        }
     </body>
 </html>
