@@ -16,7 +16,7 @@ function exit(){
 }
 
 //Jeffrey Shi language functionality
-var language;
+var language=window.location.hash.substring(1);
 
 function changelang(x) {
     language=x;
