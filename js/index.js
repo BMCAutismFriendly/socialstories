@@ -11,12 +11,14 @@ function exit(){
 }
 
 //Jeffrey Shi language functionality
+var language;
+
 function changelang(x) {
     language=x;
-    update(x);
+    update();
 }
         
-function update(language) {
+function update() {
     for (lineID in languages[language?language:"english"]) {
 	document.getElementById(lineID).innerHTML=languages[language?language:"english"][lineID];
     }
