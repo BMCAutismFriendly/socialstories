@@ -1,6 +1,6 @@
 function redir(url){
 	newurl=url+"#"+language;
-	window.location.assign(newurl);
+	window.location.href=newurl;
 }
 
 function aboutapp(){
