@@ -23,8 +23,6 @@ function update(language) {
 	document.getElementById(lineID).innerHTML=languages[language][lineID];
     }
 }
-
-update()
 //end language functionality
 
 function doctorsoffice(){
