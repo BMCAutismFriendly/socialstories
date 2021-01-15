@@ -10,6 +10,10 @@ function exit(){
 	window.location.assign("https://bmcautismfriendly.github.io/socialstories/");
 }
 
+function switchlanguage(lang) {
+    language=lang;
+}
+
 function doctorsoffice(){
     window.location.assign("https://bmcautismfriendly.github.io/socialstories/doctorsoffice/");
 }
