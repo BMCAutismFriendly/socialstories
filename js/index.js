@@ -1,6 +1,7 @@
 function redir(url){
-	newurl=url+"#"+language
-	window.location.assign(newurl)
+	newurl=url+"#"+language;
+	window.location.assign(newurl);
+}
 
 function aboutapp(){
     redir("https://bmcautismfriendly.github.io/socialstories/about-app/");
