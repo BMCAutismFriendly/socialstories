@@ -17,7 +17,7 @@
     
     <body id="body" background="">
     <div class="container" style="text-align:center">
-        <h2>Wearing Glasses4</h2>
+        <h2>Wearing Glasses5</h2>
         <div>
           <button class="green" onclick="plusDivs(-1)"><img class="button-img" src="../img/left-arrow.svg"></button>
             <button class="purple" onclick="exit()"><img class="button-img" src="../img/exit-icon.svg"></button>
@@ -79,7 +79,7 @@
           x[slideIndex-1].style.display = "block";  
         }
             
-        var language="english";
+        var language;
         function switchlanguage(lang) {
             language=lang;
         }
@@ -98,8 +98,8 @@
             "english":english,
         }
         
-        for (lineID in languages[language]) {
-            document.getElementById(lineID).innerHTML=languages[language][lineID];
+        for (lineID in languages[language?language:"english"]) {
+            document.getElementById(lineID).innerHTML=languages[language?language:"english"][lineID];
         }
             
 
