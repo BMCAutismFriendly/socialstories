@@ -10,6 +10,18 @@ function exit(){
 	window.location.assign("https://bmcautismfriendly.github.io/socialstories/");
 }
 
+function changelang(x) {
+    language=x;
+    updatelang(x);
+}
+        
+function updatelang(language) {
+    for (lineID in languages[language?language:"english"]) {
+	document.getElementById(lineID).innerHTML=languages[language?language:"english"][lineID];
+    }
+}
+            
+
 function doctorsoffice(){
     window.location.assign("https://bmcautismfriendly.github.io/socialstories/doctorsoffice/");
 }
