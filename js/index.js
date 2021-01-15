@@ -28,8 +28,6 @@ function update() {
     document.getElementById(lineID).innerHTML=languages[language?language:"english"][lineID];
     }
 }
-
-update()
 //end language functionality
 
 function doctorsoffice(){
