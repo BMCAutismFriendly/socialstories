@@ -25,13 +25,14 @@
     <body id="body" background="">
     <div class="container" style="text-align:center">
         <h2>Wearing Glasses1</h2>
-        <div>
+<!--         <div>
           <button class="green" onclick="plusDivs(-1)"><img class="button-img" src="../img/left-arrow.svg"></button>
             <button class="purple" onclick="exit()"><img class="button-img" src="../img/exit-icon.svg"></button>
             <button class="red" onclick="restart()"><img class="button-img" src="../img/restart-icon.svg"></button>
             <button class="blue" onclick="window.open('../pdfs/wearingglasses.pdf','_blank')"><img class="button-img" src="../img/printer.svg"></button>
           <button class="green" onclick="plusDivs(1)"><img class="button-img" src="../img/right-arrow.svg"></button>
-        </div>
+        </div> -->
+        <div id="navigationbuttons"></div>
         <div class="slide-container">
           <div class="slide">
             <p id="line1"></p>
@@ -113,6 +114,8 @@
             
         update();
 
+
+        $("navigationbuttons").load("../html/navigationbuttons.html"); 
         </script>  
         </div><!-- END .container -->
     <div class="container footer">
