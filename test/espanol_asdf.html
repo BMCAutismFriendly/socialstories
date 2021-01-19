@@ -30,14 +30,13 @@
     <body id="body" background="">
     <div class="container" style="text-align:center">
         <h2>Wearing Glasses1</h2>
-<!--         <div>
+        <div>
           <button class="green" onclick="plusDivs(-1)"><img class="button-img" src="../img/left-arrow.svg"></button>
             <button class="purple" onclick="exit()"><img class="button-img" src="../img/exit-icon.svg"></button>
             <button class="red" onclick="restart()"><img class="button-img" src="../img/restart-icon.svg"></button>
             <button class="blue" onclick="window.open('../pdfs/wearingglasses.pdf','_blank')"><img class="button-img" src="../img/printer.svg"></button>
           <button class="green" onclick="plusDivs(1)"><img class="button-img" src="../img/right-arrow.svg"></button>
-        </div> -->
-        <div id="navigationbuttons"></div>
+        </div>
         <div class="slide-container">
           <div class="slide">
             <p id="line1"></p>
@@ -70,28 +69,6 @@
         </div>
                 <script src="../js/index.js" type="text/javascript"></script>
         <script>
-//         var slideIndex = 1;
-//         showDivs(slideIndex);
-            
-//         function restart() {
-//             window.location.assign('https://bmcautismfriendly.github.io/socialstories/wearingglasses/');
-//         }
-
-//         function plusDivs(n) {
-//           showDivs(slideIndex += n);
-//         }
-
-//         function showDivs(n) {
-//           var i;
-//           var x = document.getElementsByClassName("slide");
-//           if (n > x.length) {window.location.assign('https://bmcautismfriendly.github.io/socialstories/')}
-//           if (n < 1) {window.location.assign('https://bmcautismfriendly.github.io/socialstories/')}
-//           for (i = 0; i < x.length; i++) {
-//             x[i].style.display = "none";  
-//           }
-//           x[slideIndex-1].style.display = "block";  
-//         }
-              
         var english={
             "line1":"This is a social story about how to wear my glasses and why I need to wear them.",
             "line2":"Glasses help me see!",
@@ -101,7 +78,6 @@
             "line6":"Remember that it might feel uncomfortable to wear my glasses at first, but once I get used to them I’ll be okay!",
             "line7":"I did a great job learning about wearing glasses!",
         }
-        
         var gibberish={
             "line1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "line2":"Morbi mollis est sagittis volutpat lobortis.",
@@ -111,17 +87,12 @@
             "line6":"Etiam et interdum arcu.",
             "line7":"Nulla ligula tortor, varius eu sodales quis, aliquam ac dui.",
         }
-        
         var languages={
             "english":english,
             "gibberish":gibberish,
         }
-            
         update();
-
-
-        $("#navigationbuttons").load("../html/navigationbuttons.html"); 
-        </script>  
+        </script>
         </div><!-- END .container -->
     <div class="container footer">
         <a href="https://www.bmc.org/" target="_new"><img src="../img/logo_white.png" alt="BMC logo" class="img-responsive"></a>
