@@ -1,5 +1,5 @@
 function redir(url){
-	newurl=url+"#"+language;
+	var newurl=language?url+"#"+language:url;
 	window.location.href=newurl;
 }
 
