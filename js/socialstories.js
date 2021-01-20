@@ -23,5 +23,6 @@ function showDivs(n) {
 }
 
 function showPDF(name) {
-    window.open("../pdfs/"+language+"/"+name+".pdf","_blank");
+    var x=language?language:english
+    window.open("../pdfs/"+x+"/"+name+".pdf","_blank");
 }
