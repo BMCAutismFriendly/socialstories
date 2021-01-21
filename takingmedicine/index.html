@@ -23,7 +23,7 @@
     
     <body id="body" background="">
     <div class="container" style="text-align:center">
-        <h2>Taking Your Medicine</h2>
+        <h2 id="title"></h2>
         <div>
           <button class="green" onclick="plusDivs(-1)"><img class="button-img" src="../img/left-arrow.svg"></button>
             <button class="purple" onclick="exit()"><img class="button-img" src="../img/exit-icon.svg"></button>
@@ -33,93 +33,90 @@
         </div>
         <div class="slide-container">
           <div class="slide">
-            <p>This is a story of how I will take my medicine.</p>
+            <p id="line1"></p>
             <img class="slide-img" src="../img/medicine/1.png">
           </div>
           <div class="slide">
-            <p>Taking my medicine keeps me healthy! When I’m healthy, I can do my favorite things! I can play, do my schoolwork, and have fun with my friends.</p>
+            <p id="line2"></p>
             <img class="slide-img" src="../img/medicine/2.png">
           </div>
           <div class="slide">
-            <p>There are different ways to take medicine, and we will find the one that’s right for me! </p> 
-            <p> Adults will help me get my medicine and measure the amount that’s right for me.</p>
+            <p id="line3"></p> 
+            <p id="line3.1"></p>
             <img class="slide-img" src="../img/medicine/3.jpg">
           </div>
           <div class="slide">
-            <p>Some medicines can only be taken at certain times of the day, and some medicines can only be taken while I am eating food! </p>
+            <p id="line4"></p>
             <img class="slide-img" src="../img/medicine/4.jpg">
           </div>
           <div class="slide">
-            <p>Adults will help me take my medicine at the right time, and make sure that I am taking it the right way.</p>
+            <p id="line5"></p>
             <img class="slide-img" src="../img/medicine/5.jpg">
           </div>
           <div class="slide">
-            <p>One way that people take medicine is by swallowing a pill. Here’s how to swallow a pill!</p>
+            <p id="line6"></p>
             <img class="slide-img" src="../img/medicine/6.JPG">
-            <p>First, place the pill in your mouth.</p>
+            <p id="line6.1"></p>
           </div>
           <div class="slide">
-            <p>Next, put some water in your mouth, but not too much!</p>
+            <p id="line7"></p>
             <img class="slide-img" src="../img/medicine/7.JPG">
           </div>
           <div class="slide">
-            <p>The last step is to Swallow! </p>
-            <p> Drink the water and make sure the pill goes down your throat!</p>
+            <p id="line8"></p>
             <img class="slide-img" src="../img/medicine/8.png">
           </div>
           <div class="slide">
-            <p>Sometimes, medicine comes in liquid form.  </p>
-            <p> <center> Like this: </center></p>
+            <p id="line9"></p>
             <img class="slide-img" src="../img/medicine/9.jpg">
           </div>
           <div class="slide">
-            <p>This kind of Medicine is easy. Just drink it! </p>
-            <p>It may taste yucky, so I can have something fun to drink after to make the taste go away!</p>
+            <p id="line10"></p>
             <img class="slide-img" src="../img/medicine/10.JPG">
           </div>
           <div class="slide">
-            <p>Remember, if my body feels bad or uncomfortable after taking a new medicine, I should let an adult know.</p>
+            <p id="line11"></p>
             <img class="slide-img" src="../img/medicine/11.png">
           </div>
           <div class="slide">
-            <p>There are other ways to take medicine too! Adults will help me know what I need to do, and I’ll listen to them. </p>
-            <p>I will take my medicine the way that I need to and only when an adult is watching me.</p>
+            <p id="line12"></p>
             <img class="slide-img" src="../img/medicine/12.png">
           </div>
           <div class="slide">
-            <p>I did a great job learning to take my medicine!</p>
+            <p id="line13"></p>
             <img class="slide-img" src="../img/medicine/13.png">
           </div>
         </div>
-                <script src="../js/index.js" type="text/javascript"></script>
-        <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-            
-        function restart() {
-            window.location.assign('https://bmcautismfriendly.github.io/socialstories/takingmedicine/');
-        }
-
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("slide");
-          if (n > x.length) {window.location.assign('https://bmcautismfriendly.github.io/socialstories/')}
-          if (n < 1) {window.location.assign('https://bmcautismfriendly.github.io/socialstories/')}
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          x[slideIndex-1].style.display = "block";  
-        }
-        </script>  
         </div><!-- END .container -->
     <div class="container footer">
         <a href="https://www.bmc.org/" target="_new"><img src="../img/logo_white.png" alt="BMC logo" class="img-responsive"></a>
     </div>
         <script src="../js/index.js" type="text/javascript"></script>
+        <script src="../js/socialstories.js" type="text/javascript"></script>
+        <script>
+        var english={
+            "title":"Taking Your Medicine",
+            "line1":"This is a story of how I will take my medicine.",
+            "line2":"Taking my medicine keeps me healthy! When I’m healthy, I can do my favorite things! I can play, do my schoolwork, and have fun with my friends.",
+            "line3":"There are different ways to take medicine, and we will find the one that’s right for me! ",
+            "line3.1":"Adults will help me get my medicine and measure the amount that’s right for me.",
+            "line4":"Some medicines can only be taken at certain times of the day, and some medicines can only be taken while I am eating food! ",
+            "line5":"Adults will help me take my medicine at the right time, and make sure that I am taking it the right way.",
+            "line6":"One way that people take medicine is by swallowing a pill. Here’s how to swallow a pill!",
+            "line6.1":"First, place the pill in your mouth.",
+            "line7":"Next, put some water in your mouth, but not too much!",
+            "line8":"The last step is to swallow! Drink the water and make sure the pill goes down your throat!",
+            "line9":"Sometimes, medicine comes in liquid form, like this:",
+            "line10":"This kind of Medicine is easy. Just drink it! It may taste yucky, so I can have something fun to drink after to make the taste go away!",
+            "line11":"Remember, if my body feels bad or uncomfortable after taking a new medicine, I should let an adult know.",
+            "line12":"There are other ways to take medicine too! Adults will help me know what I need to do, and I’ll listen to them. I will take my medicine the way that I need to and only when an adult is watching me.",
+            "line13":"I did a great job learning to take my medicine!",
+        }
+        var languages={
+            "english":english,
+        }
+        update()
+        </script>
     </body>
 </html>
 
