@@ -4,7 +4,7 @@ var slideIndex = 1;
 showDivs(slideIndex);
 
 function restart() {
-    redir('https://bmcautismfriendly.github.io/socialstories/wearingglasses/');
+    redir(window.location);
 }
 
 function plusDivs(n) {
