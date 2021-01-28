@@ -4,7 +4,7 @@ var slideIndex = 1;
 showDivs(slideIndex);
 
 function restart() {
-    redir(window.location);
+    window.location.href=window.location;
 }
 
 function plusDivs(n) {
