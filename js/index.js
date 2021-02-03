@@ -197,3 +197,7 @@ function inhaler(){
 function allergy(){
 	window.location.assign("https://bmcautismfriendly.github.io/socialstories/allergy/");
 }
+
+function xray(){
+	window.location.assign("https://bmcautismfriendly.github.io/socialstories/xray/");
+}
