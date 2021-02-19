@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Getting an X-Ray</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Bootstrap 3 -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+        <!--Font Awesome-->
+        <script src="https://use.fontawesome.com/808b665924.js"></script> <!--DanielChao-->
+    </head>
+    
+    <body id="body" background="">
+    <div class="container" style="text-align:center">
+        <h2>Getting an X-Ray</h2>
+        <div>
+          <button class="green" onclick="plusDivs(-1)"><img class="button-img" src="../img/left-arrow.svg"></button>
+            <button class="purple" onclick="exit()"><img class="button-img" src="../img/exit-icon.svg"></button>
+            <button class="red" onclick="restart()"><img class="button-img" src="../img/restart-icon.svg"></button>
+            <button class="blue" onclick="window.open('../pdfs/xray.pdf','_blank')"><img class="button-img" src="../img/printer.svg"></button>
+          <button class="green" onclick="plusDivs(1)"><img class="button-img" src="../img/right-arrow.svg"></button>
+        </div>
+        <div class="slide-container">
+          <div class="slide">
+            <p>This is a story about getting an X-ray, which helps take special pictures for the doctors, so they can see inside my body and help me feel better!</p>
+            <img class="slide-img" src="../img/xray/1.jpg">
+          </div>
+          <div class="slide">
+            <p>If I feel nervous or scared, I can:
+              <li>Think of something that makes me feel happy and calm</li>
+              <li>Ask someone to hold my hand</li>
+              <li>Wear sunglasses or headphones</li>
+              <li>Remember that I’m staying strong and healthy!</li></p>
+            <img class="slide-img" src="../img/xray/2.png">
+          </div>
+          <div class="slide">
+            <p>I will go to the radiology section of the hospital, which is where they have lots of special machines to take pictures of the inside of my body.</p>
+            <img class="slide-img" src="../img/xray/3.JPG">
+          </div>
+          <div class="slide">
+            <p>I will enter a room with the X-ray technologist, which is the person who works with these special machines.</p>
+            <img class="slide-img" src="../img/xray/4.jpg">
+          </div>
+          <div class="slide">
+            <p>My mom or dad (or another family member) can come into the X-ray room with me to help me feel comfortable and safe.</p>
+            <img class="slide-img" src="../img/xray/5.jpg">
+          </div>
+          <div class="slide">
+            <p>I may have to take off my clothes and put on a hospital robe, but I will be covered.</p>
+            <img class="slide-img" src="../img/xray/6.jpg">
+          </div>
+          <div class="slide">
+            <p>I also may have to wear an apron that will feel heavy, but it won’t hurt me. This is to protect my body.</p>
+            <img class="slide-img" src="../img/xray/7.png">
+          </div>
+          <div class="slide">
+            <p>I can wear sunglasses or headphones (or both!) if that makes me feel better.</p>
+            <img class="slide-img" src="../img/xray/8.jpg">
+          </div>
+          <div class="slide">
+            <p>The X-ray technologist will ask me to stand up or lie down.</p>
+            <img class="slide-img" src="../img/xray/9.jpg">
+          </div>
+          <div class="slide">
+            <p>Then they will use the X-ray to take a picture of the inside of my body, to help see things like my heart, lungs, and bones.</p>
+            <img class="slide-img" src="../img/xray/10.jpg">
+          </div>
+          <div class="slide">
+            <p>The X-ray is just a very big camera that makes humming noises and a tiny light as it takes pictures of what I look like inside!</p>
+            <img class="slide-img" src="../img/xray/11.jpg">
+          </div>
+          <div class="slide">
+            <p>A doctor may come in if the X-ray technologist needs extra help getting a good picture of the inside of my body!</p>
+            <img class="slide-img" src="../img/xray/12.jfif">
+          </div>
+          <div class="slide">
+            <p>It is often quick to take an x-ray picture, but I can ask to take a break if I need one.</p>
+            <img class="slide-img" src="../img/xray/13.png">
+          </div>
+          <div class="slide">
+            <p>I will change back into my regular clothes when the X-ray is over. If I want, I can ask the x-ray technologist to see the special pictures from the x-ray!</p>
+            <img class="slide-img" src="../img/xray/14.jpg">
+          </div>
+          <div class="slide">
+            <p>I did a great job learning about how to get an X-ray!</p>
+            <img class="slide-img" src="../img/star1.gif">
+          </div>
+        </div>
+                <script src="../js/index.js" type="text/javascript"></script>
+        <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+            
+        function restart() {
+            window.location.assign('https://bmcautismfriendly.github.io/socialstories/xray/');
+        }
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("slide");
+          if (n > x.length) {window.location.assign('https://bmcautismfriendly.github.io/socialstories/')}
+          if (n < 1) {window.location.assign('https://bmcautismfriendly.github.io/socialstories/')}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>  
+        </div><!-- END .container -->
+    <div class="container footer">
+        <a href="https://www.bmc.org/" target="_new"><img src="../img/logo_white.png" alt="BMC logo" class="img-responsive"></a>
+    </div>
+        <script src="../js/index.js" type="text/javascript"></script>
+    </body>
+</html>
