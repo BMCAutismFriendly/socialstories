@@ -111,6 +111,7 @@ function period(){
 
 function inhaler(){
     redir("https://bmcautismfriendly.github.io/socialstories/inhaler/");
+}
 
 function allergy(){
 	  redir("https://bmcautismfriendly.github.io/socialstories/allergy/");
