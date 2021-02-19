@@ -31,7 +31,7 @@ function update() {
         var page_lang="english";
     }
 	document.write(page_lang);
-    for (lineID in languages["english"]) {
+    for (lineID in languages[page_lang]) {
 		    if (lineID in languages[page_lang]) {
 			      document.getElementById(lineID).innerHTML=languages[page_lang][lineID];
 		    } else {
