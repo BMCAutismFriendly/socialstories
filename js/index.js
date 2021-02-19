@@ -25,8 +25,8 @@ function changelang(x) {
 }
         
 function update() {
-	var temp_lang=language?language:"english";
-	var page_lang=temp_lang in languages?temp_lang:"english";
+    var temp_lang=language?language:"english";
+    var page_lang=temp_lang in languages?temp_lang:"english";
     for (lineID in languages["english"]) {
 		if (lineID in languages[page_lang] {
 			document.getElementById(lineID).innerHTML=languages[page_lang][lineID];
