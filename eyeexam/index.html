@@ -15,108 +15,78 @@
         <script src="https://use.fontawesome.com/808b665924.js"></script> <!--DanielChao-->
     </head>
     
+    <header>
+        <ul class="lang">
+            <button class="blue" onclick="changelang('english')">English</button>
+        </ul>
+    </header>
+    
     <body id="body" background="">
     <div class="container" style="text-align:center">
-        <h2>Eye Exam</h2>
+        <h2 id="title"></h2>
         <div>
           <button class="green" onclick="plusDivs(-1)"><img class="button-img" src="../img/left-arrow.svg"></button>
             <button class="purple" onclick="exit()"><img class="button-img" src="../img/exit-icon.svg"></button>
             <button class="red" onclick="restart()"><img class="button-img" src="../img/restart-icon.svg"></button>
-            <button class="blue" onclick="window.open('../pdfs/eyeexam.pdf','_blank')"><img class="button-img" src="../img/printer.svg"></button>
+            <button class="blue" onclick="showPDF('eyeexam')"><img class="button-img" src="../img/printer.svg"></button>
           <button class="green" onclick="plusDivs(1)"><img class="button-img" src="../img/right-arrow.svg"></button>
         </div>
         <div class="slide-container">
           <div class="slide">
-            <p>This is a story about getting an eye exam. The doctor 
-            wants to make sure my eyes are healthy and seeing well. 
-            I can tell the doctor at any time if I need a break.</p>
+            <p id="line1"></p>
             <img class="slide-img" src="../img/eyeexam/1.jpg">
           </div>
           <div class="slide">
-            <p>I will enter the doctor’s room and sit down in the exam chair.
-            There are lots of funny looking devices pictures on the wall.
-            I may see letters and numbers on the wall too! </p>
+            <p id="line2"></p>
             <img class="slide-img" src="../img/eyeexam/2.jpg">
           </div>
           <div class="slide">
-            <p>The doctor will ask me to follow their finger as they shine a flashlight into my eye. 
-            I might be asked to look left, right, up and down. </p>
+            <p id="line3"></p>
             <img class="slide-img" src="../img/eyeexam/3.jpg">
           </div>
           <div class="slide">
-            <p>The doctor will ask me to rest my head on special machine 
-            called a “refractor.”
-            This machine helps the doctor see my eyes better.
-            The machine has different lenses. The doctor will adjust 
-            these and ask me to keep looking into the machine. </p>
+            <p id="line4"></p>
             <img class="slide-img" src="../img/eyeexam/4.jpg">
           </div>
           <div class="slide">
-            <p>The doctor might ask me to read letters or look at 
-            pictures that are on the wall. 
-            It is very important that I tell the doctor what 
-            I can see and what I can’t see! </p>
+            <p id="line5"></p>
             <img class="slide-img" src="../img/eyeexam/5.jpg">
           </div>
           <div class="slide">
-            <p>The doctor might need to put special drops in my eyes 
-            which will help them to see my eyes even better.
-            The doctor will need to touch my face and may need 
-            to help open my eyes. 
-            These drops are cold and wet, but they don’t hurt!
-            I can ask someone to hold my hand if I am scared. </p>
+            <p id="line6"></p>
             <img class="slide-img" src="../img/eyeexam/6.jpg">
           </div>
            <div class="slide">
-            <p>When I have eye drops in, the doctor will let me wear 
-            cool sunglasses so the sun doesn’t hurt my eyes.</p>
+            <p id="line7"></p>
             <img class="slide-img" src="../img/eyeexam/7.png">
           </div>
           <div class="slide">
-            <p>I did a great job learning how to get an eye exam.</p>
+            <p id="line8"></p>
             <img class="slide-img" src="../img/eyeexam/8.jpg">
           </div>
         </div>
-                <script src="../js/index.js" type="text/javascript"></script>
-        <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-            
-        function restart() {
-            window.location.assign('https://bmcautismfriendly.github.io/socialstories/eyeexam/');
-        }
-
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("slide");
-          if (n > x.length) {window.location.assign('https://bmcautismfriendly.github.io/socialstories/')}
-          if (n < 1) {window.location.assign('https://bmcautismfriendly.github.io/socialstories/')}
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          x[slideIndex-1].style.display = "block";  
-        }
-        </script>  
         </div><!-- END .container -->
     <div class="container footer">
         <a href="https://www.bmc.org/" target="_new"><img src="../img/logo_white.png" alt="BMC logo" class="img-responsive"></a>
     </div>
         <script src="../js/index.js" type="text/javascript"></script>
+        <script src="../js/socialstories.js" type="text/javascript"></script>
+        <script>
+        var english={
+            "title":"Eye Exam",
+            "line1":"This is a story about getting an eye exam. The doctor wants to make sure my eyes are healthy and seeing well. I can tell the doctor at any time if I need a break.",
+            "line2":"I will enter the doctor’s room and sit down in the exam chair. There are lots of funny looking devices pictures on the wall. I may see letters and numbers on the wall too! ",
+            "line3":"The doctor will ask me to follow their finger as they shine a flashlight into my eye. I might be asked to look left, right, up and down. ",
+            "line4":"The doctor will ask me to rest my head on special machine called a “refractor.” This machine helps the doctor see my eyes better. The machine has different lenses. The doctor will adjust these and ask me to keep looking into the machine. ",
+            "line5":"The doctor might ask me to read letters or look at pictures that are on the wall. It is very important that I tell the doctor what I can see and what I can’t see! ",
+            "line6":"The doctor might need to put special drops in my eyes which will help them to see my eyes even better. The doctor will need to touch my face and may need to help open my eyes. These drops are cold and wet, but they don’t hurt! I can ask someone to hold my hand if I am scared. ",
+            "line7":"When I have eye drops in, the doctor will let me wear cool sunglasses so the sun doesn’t hurt my eyes.",
+            "line8":"I did a great job learning how to get an eye exam.",
+        }
+        var languages={
+            "english":english,
+        }
+        update()
+        </script>
     </body>
 </html>
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About

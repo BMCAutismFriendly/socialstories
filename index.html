@@ -12,81 +12,87 @@
         <!-- Custom CSS -->
         <link rel="stylesheet" type="text/css" href="css/index.css">
     </head>
+    <header>
+        <ul class="lang">
+            <button class="blue" onclick="changelang('english')">English</button>
+            <button class="purple" onclick="changelang('gibberish')">Gibberish1</button>
+        </ul>
+    </header>
     <body>
     <div class="container">
-        <h1 align="center">Autism Friendly Social Stories</h1>
+        <h1 align="center" id="title"></h1>
         <div class="grid-container">
             <div class="grid-item">
                 <button class="main-button green" onclick="doctorsoffice()"><img class="grid-img" src="img/hospital.png"/>
-                    <p>Getting to the</br>Doctor's Office</p>
+                    <p id="story1"></p>
                     </button></div>
             <div class="grid-item">
                 <button class="main-button purple" onclick="shot()"><img class="grid-img" src="img/getting-a-shot.png"/>
-                    <p>Getting</br>a Shot</p>
+                    <p id="story2"></p>
                     </button></div>
             <div class="grid-item">
                 <button class="main-button red" onclick="blooddraw()"><img class="grid-img" src="img/blood-draw.png"/>
-                    <p>Blood Draw</p>
+                    <p id="story3"></p>
                 </button></div>
             <div class="grid-item">
                 <button class="main-button teal" onclick="bloodpressure()"><img class="grid-img" src="img/bloodpressure.png"/>
-                    <p>Blood Pressure</p>
+                    <p id="story4"></p>
                 </button></div>
             <div class="grid-item">
                 <button class="main-button orange" onclick="heightandweight()"><img class="grid-img" src="img/height-and-weight.png"/>
-                    <p>Height</br>and Weight</p>
+                    <p id="story5"></p>
                 </button></div>
             <div class="grid-item">
                 <button class="main-button blue" onclick="physicalexam()"><img class="grid-img" src="img/physical-exam.png"/>
-                    <p>Physical Exam</p>
+                    <p id="story6"></p>
                 </button></div>
             <div class="grid-item">
                 <button class="main-button green" onclick="dentist()"><img class="grid-img" src="img/dentist.png"/>
-                    <p>Dentist</br>Appointment</p>
+                    <p id="story7"></p>
                 </button></div>
             <div class="grid-item">
                 <button class="main-button purple" onclick="earexam()"><img class="grid-img" src="img/ear-exam.png"/>
-                    <p>Ear Exam</p>
+                    <p id="story8"></p>
                 </button></div>
             <div class="grid-item">
                 <button class="main-button red" onclick="wearing_face_mask()"><img class="grid-img" src="img/face-mask.png"/>
-                    <p>Wearing a</br>Face Mask</p>
+                    <p id="story9"></p>
                 </button></div>
             <div class="grid-item">
                 <button class="main-button teal" onclick="wearing_medical_bracelet()"><img class="grid-img" src="img/medical-bracelet.png"/>
-                    <p>Wearing a</br>Medical Bracelet</p>
+                    <p id="story10"></p>
                 </button></div>
             <div class="grid-item">
                 <button class="main-button orange" onclick="eyeexam()"><img class="grid-img" src="img/eyeexam.png"/>
-                    <p>Eye Exam</p>
+                    <p id="story11"></p>
                 </button></div>
             <div class="grid-item">
                 <button class="main-button red" onclick="renal_ultrasound()"><img class="grid-img" src="img/Renal_Ultrasound.png"/>
-                    <p>Getting a Renal (Belly)</br> Ultrasound</p>
+                    <p id="story12"></p>
                 </button></div>
             <div class="grid-item">
                 <button class="main-button green" onclick="covidtest()"><img class="grid-img" src="img/covidtest.png"/>
-                    <p>Getting a </br> COVID Test</p>
+                    <p id="story13"></p>
                 </button></div>
             <div class="grid-item">
                 <button class="main-button purple" onclick="takingmedicine()"><img class="grid-img" src="img/takingmedicine.png"/>
-                    <p>Taking Your </br> Medicine</p>
+                    <p id="story14"></p>
                 </button></div>
             <div class="grid-item">
                 <button class="main-button blue" onclick="wearingglasses()"><img class="grid-img" src="img/glasses.png"/>
-                    <p>Wearing Glasses</p>
+                    <p id="story15"></p>
                 </button></div>
             <div class="grid-item">
                 <button class="main-button purple" onclick="mri()"><img class="grid-img" src="img/mri.png"/>
-                    <p>Getting </br> an MRI</p>
+                    <p id="story16"></p>
                 </button></div>
             <div class="grid-item">
                 <button class="main-button orange" onclick="period()"><img class="grid-img" src="img/period.png"/>
-                    <p>Getting </br> a Period</p>
+                    <p id="story17"></p>
                 </button></div>
             <div class="grid-item">
                 <button class="main-button teal" onclick="inhaler()"><img class="grid-img" src="img/inhaler.png"/>
-                    <p>Using</br>an Inhaler</p>
+                    <p id="story18"></p>
                 </button></div>
             <div class="grid-item">
                 <button class="main-button red" onclick="allergy()"><img class="grid-img" src="img/allergy.png"/>
@@ -100,8 +106,61 @@
     </div><!-- END .container -->
     <div class="container footer">
         <p><a href="https://www.bmc.org/" target="_new"><img src="img/logo_white.png" alt="BMC logo" class="img-responsive"></a></p>
-        <p><a onclick="aboutapp()">about app</a> | <a onclick="aboutbmcautism()">BMC Autism Program</a></p>
+        <p><a onclick="aboutapp()" id="about app"></a> | <a onclick="aboutbmcautism()" id="bmc autism program"></a></p>
     </div>
-        <script src="js/index.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+    <script>
+        var english={
+            "title":"Autism Friendly Social Stories",
+            "story1":"Getting to the</br>Doctor's Office",
+            "story2":"Getting</br>a Shot",
+            "story3":"Blood Draw",
+            "story4":"Blood Pressure",
+            "story5":"Height</br>and Weight",
+            "story6":"Physical Exam",
+            "story7":"Dentist</br>Appointment",
+            "story8":"Ear Exam",
+            "story9":"Wearing a</br>Face Mask",
+            "story10":"Wearing a</br>Medical Bracelet",
+            "story11":"Eye Exam",
+            "story12":"Getting a Renal (Belly)</br> Ultrasound",
+            "story13":"Getting a </br> COVID Test",
+            "story14":"Taking Your </br> Medicine",
+            "story15":"Wearing Glasses",
+            "story16":"Getting </br> an MRI",
+            "story17":"Getting </br> a Period",
+            "story18":"Using</br>an Inhaler",
+            "about app":"about app",
+            "bmc autism program":"BMC Autism Program",   
+        }
+        var gibberish={
+            "title":"Lorem ipsum",
+            "story1":"Lorem",
+            "story2":"ipsum",
+            "story3":"dolor",
+            "story4":"sit",
+            "story5":"amet,",
+            "story6":"consectetur",
+            "story7":"adipiscing",
+            "story8":"elit.",
+            "story9":"Morbi",
+            "story10":"mollis",
+            "story11":"est",
+            "story12":"sagittis",
+            "story13":"volutpat",
+            "story14":"lobortis.",
+            "story15":"Proin",
+            "story16":"semper",
+            "story17":"pulvinar",
+            "story18":"nisi...",
+            "about app":"asdf",
+            "bmc autism program":"qwerty",
+        }
+        var languages={
+            "english":english,
+            "gibberish":gibberish,
+        }
+        update()
+    </script>
     </body>
 </html>

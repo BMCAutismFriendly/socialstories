@@ -15,102 +15,83 @@
         <script src="https://use.fontawesome.com/808b665924.js"></script> <!--DanielChao-->
     </head>
     
+    <header>
+        <ul class="lang">
+            <button class="blue" onclick="changelang('english')">English</button>
+        </ul>
+    </header>
+    
     <body id="body" background="">
     <div class="container" style="text-align:center">
-        <h2>Getting a Renal (Belly) Ultrasound</h2>
+        <h2 id="title"></h2>
         <div>
           <button class="green" onclick="plusDivs(-1)"><img class="button-img" src="../img/left-arrow.svg"></button>
             <button class="purple" onclick="exit()"><img class="button-img" src="../img/exit-icon.svg"></button>
             <button class="red" onclick="restart()"><img class="button-img" src="../img/restart-icon.svg"></button>
-            <button class="blue" onclick="window.open('../pdfs/Getting_a_Renal_(Belly)_Ultrasound.pdf','_blank')"><img class="button-img" src="../img/printer.svg"></button>
+            <button class="blue" onclick="showPDF('Getting_a_Renal_(Belly)_Ultrasound')"><img class="button-img" src="../img/printer.svg"></button>
           <button class="green" onclick="plusDivs(1)"><img class="button-img" src="../img/right-arrow.svg"></button>
         </div>
         <div class="slide-container">
           <div class="slide">
-            <p><center>This is a story about getting pictures of my belly.
-                </br>The doctor wants to make sure my belly is healthy! </center></p>
+            <p id="line1"></p>
             <img class="slide-img" src="../img/renal_ultrasound/1.jpg">
           </div>
             <div class="slide">
-            <p>If I feel scared, I can:
-                <li>Ask someone to hold my hand</li>
-                <li>Think of something that makes me happy</li>
-                <li>Remember that I am staying healthy and strong</li> </p>
+            <p id="line2"></p>
             <img class="slide-img" src="../img/renal_ultrasound/2.jpg">
           </div>
             <div class="slide">
-            <p><center>I will take off my clothes so I can put on the 
-                special robe!</center></p>
+            <p id="line3"></p>
             <img class="slide-img" src="../img/renal_ultrasound/3.jpg">
           </div>
             <div class="slide">
-            <p><center>An ultrasound technician with gloves will come into the 
-                room. They will take the pictures of my belly. 
-                </br>I will lay down on the table and someone can hold my 
-                hand </br>if I need it. </center></p>
+            <p id="line4"></p>
             <img class="slide-img" src="../img/renal_ultrasound/4.jpg">
           </div>
             <div class="slide">
-            <p><center>The ultrasound technician will put a warm sticky jelly 
-                on my belly or back.
-                </br>They will place a magic wand on my belly or back.
-                The wand helps them to take pictures. 
-                </br>There will be a screen where I can see the pictures 
-                of my belly. How cool! </center></p>
+            <p id="line5"></p>
             <img class="slide-img" src="../img/renal_ultrasound/5.jpg">
           </div>
             <div class="slide">
-            <p>I will remember that if I feel scared, I can:
-                <li>Ask someone to hold my hand.</li>
-                <li>Think of something that makes me happy.</li>
-                <li>Remember that I am staying healthy and strong!</li> </p>
+            <p id="line6"> </p>
             <img class="slide-img" src="../img/renal_ultrasound/6.jpg">
           </div>
             <div class="slide">
-            <p><center>After the pictures are done, I can wipe the sticky 
-                jelly off my back or belly with a paper towel. 
-                </br>Someone will help me with this if I need it. </center></p>
+            <p id="line7"></p>
             <img class="slide-img" src="../img/renal_ultrasound/7.jpg">
           </div>
           <div class="slide">
-            <p><center>I will now take off the comfortable special robe 
-                and put on my clothes.</center></p>
+            <p id="line8"></p>
             <img class="slide-img" src="../img/renal_ultrasound/8.jpg">
           </div>
           <div class="slide">
-            <p><center>I did a great job learning how to get pictures of my belly. 
-               </br>I am so brave! </center></p>
+            <p id="line9"></p>
             <img class="slide-img" src="../img/renal_ultrasound/9.jpg">
           </div>
         </div>
-                <script src="../js/index.js" type="text/javascript"></script>
-        <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-            
-        function restart() {
-            window.location.assign('https://bmcautismfriendly.github.io/socialstories/renal_ultrasound/');
-        }
-
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("slide");
-          if (n > x.length) {window.location.assign('https://bmcautismfriendly.github.io/socialstories/')}
-          if (n < 1) {window.location.assign('https://bmcautismfriendly.github.io/socialstories/')}
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          x[slideIndex-1].style.display = "block";  
-        }
-        </script>  
         </div><!-- END .container -->
     <div class="container footer">
         <a href="https://www.bmc.org/" target="_new"><img src="../img/logo_white.png" alt="BMC logo" class="img-responsive"></a>
     </div>
         <script src="../js/index.js" type="text/javascript"></script>
+        <script src="../js/socialstories.js" type="text/javascript"></script>
+        <script>
+        var english={
+            "title":"Getting a Renal (Belly) Ultrasound",
+            "line1":"This is a story about getting pictures of my belly.</br>The doctor wants to make sure my belly is healthy!",
+            "line2":"If I feel scared, I can:<ul><li>Ask someone to hold my hand</li><li>Think of something that makes me happy</li><li>Remember that I am staying healthy and strong</li></ul> ",
+            "line3":"I will take off my clothes so I can put on the special robe!",
+            "line4":"An ultrasound technician with gloves will come into the room. They will take the pictures of my belly. I will lay down on the table and someone can hold my hand if I need it. ",
+            "line5":"The ultrasound technician will put a warm sticky jelly on my belly or back. They will place a magic wand on my belly or back. The wand helps them to take pictures. There will be a screen where I can see the pictures of my belly. How cool! ",
+            "line6":"I will remember that if I feel scared, I can:<ul><li>Ask someone to hold my hand.</li><li>Think of something that makes me happy.</li><li>Remember that I am staying healthy and strong!</li></ul>",
+            "line7":"After the pictures are done, I can wipe the sticky jelly off my back or belly with a paper towel. Someone will help me with this if I need it.",
+            "line8":"I will now take off the comfortable special robe and put on my clothes.",
+            "line9":"I did a great job learning how to get pictures of my belly. I am so brave!",
+        }
+        var languages={
+            "english":english,
+        }
+        update()
+        </script>
     </body>
 </html>

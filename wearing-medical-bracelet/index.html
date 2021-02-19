@@ -15,69 +15,64 @@
         <script src="https://use.fontawesome.com/808b665924.js"></script> <!--DanielChao-->
     </head>
     
+    <header>
+        <ul class="lang">
+            <button class="blue" onclick="changelang('english')">English</button>
+        </ul>
+    </header>
+    
     <body id="body" background="">
     <div class="container" style="text-align:center">
-        <h2>Wearing a Medical Bracelet</h2>
+        <h2 id="title"></h2>
         <div>
           <button class="green" onclick="plusDivs(-1)"><img class="button-img" src="../img/left-arrow.svg"></button>
             <button class="purple" onclick="exit()"><img class="button-img" src="../img/exit-icon.svg"></button>
             <button class="red" onclick="restart()"><img class="button-img" src="../img/restart-icon.svg"></button>
-            <button class="blue" onclick="window.open('../pdfs/wearingmedicalbracelet.pdf','_blank')"><img class="button-img" src="../img/printer.svg"></button>
+            <button class="blue" onclick="showPDF('wearingmedicalbracelet')"><img class="button-img" src="../img/printer.svg"></button>
           <button class="green" onclick="plusDivs(1)"><img class="button-img" src="../img/right-arrow.svg"></button>
         </div>
         <div class="slide-container">
           <div class="slide">
-            <p>This story is about learning to wear a medical bracelet.</p>
+            <p id="line1"></p>
             <img class="slide-img" src="../img/wearing-medical-bracelet/1.png">
           </div>
           <div class="slide">
-            <p>I am getting a MedicAlert bracelet. I am going to wear this bracelet around my wrist.</p>
+            <p id="line2"></p>
             <img class="slide-img" src="../img/wearing-medical-bracelet/2.png">
           </div>
           <div class="slide">
-            <p>I am not going to take my bracelet off. I can eat, sleep, and take a bath with my bracelet on. My bracelet stays on at all times.</p>
+            <p id="line3"></p>
             <img class="slide-img" src="../img/wearing-medical-bracelet/3.png">
           </div>
           <div class="slide">
-            <p>It is VERY important that I keep my bracelet on. My bracelet will help keep me safe. If I ever get lost, the bracelet will help my parents find me.</p>
+              <p id="line4"></p>
             <img class="slide-img" src="../img/wearing-medical-bracelet/4.png">
           </div>
         </div>
         <div class="slide">
-            <p>I did a great job learning about my medical bracelet. If I am safe, everyone will be happy. I will be happy, too!</p>
+            <p id="line5"></p>
             <img class="slide-img" src="../img/star1.gif">
           </div>
         </div>
-                
-
-        <script src="../js/index.js" type="text/javascript"></script>
-        <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-            
-        function restart() {
-            window.location.assign('https://bmcautismfriendly.github.io/socialstories/wearing-medical-bracelet/');
-        }
-
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("slide");
-          if (n > x.length) {window.location.assign('https://bmcautismfriendly.github.io/socialstories/')}
-          if (n < 1) {window.location.assign('https://bmcautismfriendly.github.io/socialstories/')}
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          x[slideIndex-1].style.display = "block";  
-        }
-        </script>  
         </div><!-- END .container -->
     <div class="container footer">
         <a href="https://www.bmc.org/" target="_new"><img src="../img/logo_white.png" alt="BMC logo" class="img-responsive"></a>
     </div>
         <script src="../js/index.js" type="text/javascript"></script>
+        <script src="../js/socialstories.js" type="text/javascript"></script>
+        <script>
+        var english={
+            "title":"Wearing a Medical Bracelet",
+            "line1":"This story is about learning to wear a medical bracelet.",
+            "line2":"I am getting a MedicAlert bracelet. I am going to wear this bracelet around my wrist.",
+            "line3":"I am not going to take my bracelet off. I can eat, sleep, and take a bath with my bracelet on. My bracelet stays on at all times.",
+            "line4":"It is <b>very</b> important that I keep my bracelet on. My bracelet will help keep me safe. If I ever get lost, the bracelet will help my parents find me.",
+            "line5":"I did a great job learning about my medical bracelet. If I am safe, everyone will be happy. I will be happy, too!",
+        }
+        var languages={
+            "english":english,
+        }
+        update()
+        </script>
     </body>
 </html>
