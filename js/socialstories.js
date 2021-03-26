@@ -23,6 +23,7 @@ function showDivs(n) {
 }
 
 function showPDF(name) {
-    var x=language?language:"english"
+    var y=language?language:"english";
+    var x=(language in languages)?language:"english";
     window.open("../pdfs/"+x+"/"+name+".pdf","_blank");
 }
