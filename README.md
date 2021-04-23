@@ -39,7 +39,7 @@ var languages={
 ```
 This is where you will tell the code what to put into each of the tags. Start with the text in English. 
 
-## Step 3: Update JavaScript
+## Step 4: Update JavaScript
 Pop into the "js" file and open the page called "index.js". Create a function that links to your story. For example, if the story was about a root canal, we might store the story in a folder called "root-canal", and name our function "rootcanal". The code would look like this:
 ```javascript
 function rootcanal(){
@@ -47,10 +47,10 @@ function rootcanal(){
 }
 ```
 
-## Step 4: Upload an icon for the main page
+## Step 5: Upload an icon for the main page
 When the story appears as a button on the main page, we want it to have a cute icon! A good resource for these is https://thenounproject.com/, but there are lots of other icon-finding and icon-making resources online. Find an icon, and save it in the "img" file with a name that makes sense for the story (like "root-canal.png").
 
-## Step 5: Update landing page
+## Step 6: Update landing page
 Finally, we want to update the main Social Stories page to contain our new story. Open "index.html" from the main GitHub page, and scroll down to the section with a list of items with the class "grid-item". Add another item to this list. Using our same example of a root canal above, we might add code that looks like this: 
 ```html
 <div class="grid-item">
@@ -62,7 +62,7 @@ You have an option here to change the color of the tile that this story will hav
 
 The title text won't wrap on its own for the buttons, so if the title is too long, you can insert a line break by putting ```<br>``` between the words you want a break for. An example would be ```<p>Really long</br>title here</p>```.
 
-### Step 6: Enjoy the story! 
+### Step 7: Enjoy the story! 
 Congrats! You've added a social story!
 
 # Adding Languages
@@ -86,7 +86,9 @@ On each page you update, be sure to create a new variable for the language JSON 
 ```
 Special characters can be directly copied and pasted into Github. In the event that does not work, there are tools online to convert strings of characters to 6-character HTML codes. 
 
-Finally, upload the PDF of the social story. This must be manually created and stored under pdfs/<LANGUAGE>/<STORY>.pdf. The PDF should have the same name as the English version, but just in a different folder. 
+Upload the PDF of the social story. This must be manually created and stored under pdfs in a dedicated folder for that language. The PDF should have the same name as the English version, but just in a different folder. 
+
+Finally, don't forget to update the title of the story in the landing page!
 
 # Switching to Categories
 
