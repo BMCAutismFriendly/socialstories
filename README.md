@@ -3,7 +3,7 @@
 ## Step 1: Upload images + PDF
 Create a folder in the "img" file with the name of the story. Upload story images into the folder — a good rule is to name them in page order, so like "1.jpg" for the first image, "2.jpg" for the second, etc.
 
-Then, upload the PDF of the social story in the "pdfs" file.
+Then, upload the PDF of the social story in the "pdfs" file. If this is a PDF for a non-English language, upload it to the appropriate folder and ensure it is named the same as the English version. 
 
 ## Step 2: Create story page
 Create a folder with the name of the story. In that folder, create a file, title it "index.html", and copy and paste the contents of "template.html" into the new file. 
@@ -13,23 +13,32 @@ The only parts that need modifying in "index.html" now are all labeled "EDIT". H
 The first "EDIT" between ```<title>``` tags is the title of the page — the label you see on a browser tab.
   
 #### 2
-The second "EDIT" between ```<h2>``` tags is the title of the social story.
-
-The third "EDIT" is in this line of code: ```<button class="blue" onclick="window.open('../pdfs/EDIT.pdf','_blank')"><img class="button-img" src="../img/printer.svg"></button>```. Update it to reflect the name of the PDF file for the social story.
+The second "EDIT" is in this line of code: ```<button class="blue" onclick="showPDF('EDIT')"><img class="button-img" src="../img/printer.svg"></button>```. Update it to reflect the name of the PDF file for the social story.
 
 #### 3
 There's a chunk that appears like this: 
 ```html
 <div class="slide">
-<p>EDIT</p>
+<p id="line1"></p>
 <img class="slide-img" src="../img/EDIT">
 </div>
 ```
-This represents a page of the story. Copy and paste this as many times as necessary. The "EDIT" here can be replaced with the text for that page. Replace the "EDIT" in the image src attribute to represent the file path of the image. If you followed Step 1 correctly, this should look something like ```src="../img/story-image-folder-name/1.jpg"```.
+This represents a page of the story. Copy and paste this as many times as necessary, changing the line number as necessary. Replace the "EDIT" in the image src attribute to represent the file path of the image. If you followed Step 1 correctly, this should look something like ```src="../img/story-image-folder-name/1.jpg"```.
 
-#### 4
-Finally, there is an "EDIT" in a function called "restart" which tells the restart button where to return to. Replace "EDIT" with the name of the story folder — the complete code should look like ```window.location.assign("https://bmcautismfriendly.github.io/socialstories/story-folder-name/")```.
-  
+## Step 3: Update the text
+You should now have tags that mark locations in the code. Near the bottom, you will see a chunk 
+```<script>
+var english={
+  "title":"TITLE",
+  "line1":"Line1",
+}
+var languages={
+  "english":english,
+}
+</script>
+```
+This is where you will tell the code what to put into each of the tags. Start with the text in English. 
+
 ## Step 3: Update JavaScript
 Pop into the "js" file and open the page called "index.js". Create a function that links to your story. For example, if the story was about a root canal, we might store the story in a folder called "root-canal", and name our function "rootcanal". The code would look like this:
 ```javascript
@@ -55,6 +64,29 @@ The title text won't wrap on its own for the buttons, so if the title is too lon
 
 ### Step 6: Enjoy the story! 
 Congrats! You've added a social story!
+
+# Adding Languages
+As of February 2021, the website now can support multiple languages! The website allows manual inputting of text from other languages for each page and an option to show a PDF of a different language that we upload. If the page has not been updated with a language, it will remain in English. 
+
+On every page that you add a language, you should add a corresponding language button at the top of the page. Find the code 
+```
+<header>
+  <ul class="lang">
+    <button class="blue" onclick="changelang('english')">English</button>
+  </ul>
+</header>
+```
+and add a button. For example, adding Korean would entail adding the code ```<button class="red" onclick="changelang('korean')">한국어</button>```.
+
+On each page you update, be sure to create a new variable for the language JSON object to tell the code to use different text when a different language is selected. Every pair of "line" and "text" will tell the code to put the text where the line shows up. To add a language, be sure to also update the ```languages``` JSON object. For example, if a ```korean``` JSON with Korean text were added, then the ```languages``` object should become 
+```var languages={
+  "english":english,
+  "korean":korean,
+}
+```
+Special characters can be directly copied and pasted into Github. In the event that does not work, there are tools online to convert strings of characters to 6-character HTML codes. 
+
+Finally, upload the PDF of the social story. This must be manually created and stored under pdfs/<LANGUAGE>/<STORY>.pdf. The PDF should have the same name as the English version, but just in a different folder. 
 
 # Switching to Categories
 
