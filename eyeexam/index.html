@@ -18,6 +18,7 @@
     <header>
         <ul class="lang">
             <button class="blue" onclick="changelang('english')">English</button>
+            <button class="orange" onclick="changelang('spanish')">Español</button>
             <button class="red" onclick="changelang('korean')">한국어</button>
         </ul>
     </header>
@@ -76,6 +77,17 @@
         var english={
             "title":"Eye Exam",
             "line1":"This is a story about getting an eye exam. The doctor wants to make sure my eyes are healthy and seeing well. I can tell the doctor at any time if I need a break.",
+            "line2":"Entraré en la sala del médico y me sentaré en la silla del examen. Hay un montón de imágenes y dispositivos de aspecto gracioso en la pared. ¡También puedo ver letras y números en la pared! ",
+            "line3":"El médico me pedirá que siga su dedo mientras me hacen brillar una linterna en el ojo. Se me podría pedir que mirara a la izquierda, a la derecha, hacia arriba y hacia abajo.",
+            "line4":'El médico me pedirá que descanse la cabeza en una máquina especial llamada "refractor". Esta máquina ayuda al médico a ver mejor mis ojos. La máquina tiene diferentes lentes. El médico los ajustará y me pedirá que siga buscando en la máquina.',
+            "line5":"El médico podría pedirme que lea cartas o que mire las imágenes que están en la pared. ¡Es muy importante que le diga al médico lo que puedo ver y lo que no puedo ver!",
+            "line6":"Es posible que el médico tenga que poner gotas especiales en mis ojos que les ayudarán a ver mis ojos aún mejor. El médico tendrá que tocarme la cara y es posible que necesite ayudarme a abrir los ojos. Estas gotas son frías y húmedas, ¡pero no duelen! Puedo pedirle a alguien que me sostenga de la mano si tengo miedo.",
+            "line7":"Cuando tengo gotas para los ojos, el médico me permitirá usar gafas de sol para que el sol no me lastime los ojos.",
+            "line8":"¡Hice un gran trabajo aprendiendo cómo hacerme un examen de la vista!",
+        }
+        var spanish={
+            "title":"Examen de la Vista",
+            "line1":"Esta es una historia sobre hacerse un examen de la vista. El médico quiere asegurarse de que mis ojos estén sanos. Puedo decirle al médico en cualquier momento si necesito un descanso.",
             "line2":"I will enter the doctor’s room and sit down in the exam chair. There are lots of funny looking devices pictures on the wall. I may see letters and numbers on the wall too! ",
             "line3":"The doctor will ask me to follow their finger as they shine a flashlight into my eye. I might be asked to look left, right, up and down. ",
             "line4":"The doctor will ask me to rest my head on special machine called a “refractor.” This machine helps the doctor see my eyes better. The machine has different lenses. The doctor will adjust these and ask me to keep looking into the machine. ",
@@ -97,6 +109,7 @@
         }
         var languages={
             "english":english,
+            "spanish":spanish,
             "korean":korean,
         }
         update()
