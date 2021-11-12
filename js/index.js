@@ -124,3 +124,7 @@ function xray(){
 function cast(){
 	redir("https://bmcautismfriendly.github.io/socialstories/cast/");
 }
+
+function catscan(){
+	redir("https://bmcautismfriendly.github.io/socialstories/catscan/");
+}
