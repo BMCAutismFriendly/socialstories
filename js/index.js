@@ -120,3 +120,7 @@ function allergy(){
 function xray(){
 	  redir("https://bmcautismfriendly.github.io/socialstories/xray/");
 }
+
+function cast(){
+	redir("https://bmcautismfriendly.github.io/socialstories/cast/");
+}
