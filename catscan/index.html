@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EDIT</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Bootstrap 3 -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+        <!--Font Awesome-->
+        <script src="https://use.fontawesome.com/808b665924.js"></script> <!--DanielChao-->
+    </head>
+    
+    <header>
+        <ul class="lang">
+            <button class="blue" onclick="changelang('english')">English</button>
+        </ul>
+    </header>
+    
+    <body id="body" background="">
+    <div class="container" style="text-align:center">
+        <h2 id="title"></h2>
+        <div>
+          <button class="green" onclick="plusDivs(-1)"><img class="button-img" src="../img/left-arrow.svg"></button>
+            <button class="purple" onclick="exit()"><img class="button-img" src="../img/exit-icon.svg"></button>
+            <button class="red" onclick="restart()"><img class="button-img" src="../img/restart-icon.svg"></button>
+            <button class="blue" onclick="showPDF('catscan')"><img class="button-img" src="../img/printer.svg"></button>
+          <button class="green" onclick="plusDivs(1)"><img class="button-img" src="../img/right-arrow.svg"></button>
+        </div>
+        <div class="slide-container">
+          <div class="slide">
+            <p id="line1"></p>
+            <img class="slide-img" src="../img/1">
+          </div>
+          <div class="slide">
+            <p id="line2"></p>
+            <img class="slide-img" src="../img/2">
+          </div>
+          <div class="slide">
+            <p id="line3"></p>
+            <img class="slide-img" src="../img/3">
+          </div>
+          <div class="slide">
+            <p id="line4"></p>
+            <img class="slide-img" src="../img/4">
+          </div>
+          <div class="slide">
+            <p id="line5"></p>
+            <img class="slide-img" src="../img/5">
+          </div>
+          <div class="slide">
+            <p id="line6"></p>
+            <img class="slide-img" src="../img/6">
+          </div>
+
+        </div>
+        </div><!-- END .container -->
+    <div class="container footer">
+        <a href="https://www.bmc.org/" target="_new"><img src="../img/logo_white.png" alt="BMC logo" class="img-responsive"></a>
+    </div>
+        <script src="../js/index.js" type="text/javascript"></script>
+        <script src="../js/socialstories.js" type="text/javascript"></script>
+        <script>
+            var english={
+                "title":"Getting a CAT Scan",
+                "line1":"Today I am getting a CAT scan done! I will wait in the waiting room until it is my turn.",
+                "line2":"Then, I will go to the room where I have to do my CAT scan. The machine that does the scans is called an X-Ray machine, and it looks like a big donut!",
+                "line3":"The X-Ray Machine takes pictures of my bones and insides. It will only take 1-2 minutes, but I need to stay still! I can watch my favorite TV show on a phone if I get bored!",
+                "line4":"The X-Ray Machine makes sounds like an airplane, so it may be noisy. I can imagine that I am about to take off on a rocket!",
+                "line5":"I can ask a helper to count down while my picture is being taken. They can tell me how many minutes are left!",
+                "line6":"After my pictures have been taken, I’m done! I did a great job! ",
+            }
+            var languages={
+                "english":english,
+            }
+        </script>
+    </body>
+</html>
