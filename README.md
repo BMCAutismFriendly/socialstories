@@ -40,12 +40,13 @@ var languages={
 This is where you will tell the code what to put into each of the tags. Start with the text in English. 
 
 ## Step 4: Update JavaScript
-Pop into the "js" file and open the page called "index.js". Create a function that links to your story. For example, if the story was about a root canal, we might store the story in a folder called "root-canal", and name our function "rootcanal". The code would look like this:
+Pop into the "js" folder and open the page called "index.js". Unless you're changing the way the website fundamentally operates, you shouldn't need to change "socialstories.js". Create a function that links to your story. For example, if the story was about a shot, we might store the story in a folder called "shot", and name our function "shot". The code would look like this:
 ```javascript
-function rootcanal(){
-  window.location.assign("https://bmcautismfriendly.github.io/socialstories/root-canal/");
+function shot(){
+    redir("https://bmcautismfriendly.github.io/socialstories/getting-a-shot/");
 }
 ```
+    
 
 ## Step 5: Upload an icon for the main page
 When the story appears as a button on the main page, we want it to have a cute icon! A good resource for these is https://thenounproject.com/, but there are lots of other icon-finding and icon-making resources online. Find an icon, and save it in the "img" file with a name that makes sense for the story (like "root-canal.png").
@@ -54,11 +55,20 @@ When the story appears as a button on the main page, we want it to have a cute i
 Finally, we want to update the main Social Stories page to contain our new story. Open "index.html" from the main GitHub page, and scroll down to the section with a list of items with the class "grid-item". Add another item to this list. Using our same example of a root canal above, we might add code that looks like this: 
 ```html
 <div class="grid-item">
-  <button class="main-button teal" onclick="rootcanal()"><img class="grid-img" src="img/root-canal.png"/>
-    <p>Root canal</p>
-  </button></div>
+    <button class="main-button purple" onclick="shot()"><img class="grid-img" src="img/getting-a-shot.png"/>
+        <p id="story2"></p>
+        </button></div>
 ```
 You have an option here to change the color of the tile that this story will have on the main page. There are six colors available: blue, teal, orange, red, green, and purple. Type your favorite option in place of "teal" in the section that says ```class="main-button teal"``` above.
+
+At the bottom, you should update the Javascript JSON object for the languages you're adding the social story for. This should follow the format 
+```javascript
+var english={
+    "title":"Autism Friendly Social Stories",
+    "story1":"Getting to the</br>Doctor's Office",
+    "story2":"Getting</br>a Shot",
+}
+```
 
 The title text won't wrap on its own for the buttons, so if the title is too long, you can insert a line break by putting ```<br>``` between the words you want a break for. An example would be ```<p>Really long</br>title here</p>```.
 
