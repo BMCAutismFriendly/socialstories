@@ -49,7 +49,7 @@ function shot(){
     
 
 ## Step 5: Upload an icon for the main page
-When the story appears as a button on the main page, we want it to have a cute icon! A good resource for these is https://thenounproject.com/, but there are lots of other icon-finding and icon-making resources online. Find an icon, and save it in the "img" file with a name that makes sense for the story (like "root-canal.png").
+When the story appears as a button on the main page, we want it to have a cute icon! A good resource for these is https://thenounproject.com/, but there are lots of other icon-finding and icon-making resources online. Find an icon, and save it in the "img" file with a name that makes sense for the story (like "shot.png"). As an additional note, icons downloaded from https://thenounproject.com/ and many other sites are black with transparent background. Websites such as https://pinetools.com/invert-image-colors are able to invert the color to white with white background, which we want for our website. 
 
 ## Step 6: Update landing page
 Finally, we want to update the main Social Stories page to contain our new story. Open "index.html" from the main GitHub page, and scroll down to the section with a list of items with the class "grid-item". Add another item to this list. Using our same example of a root canal above, we might add code that looks like this: 
