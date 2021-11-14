@@ -128,3 +128,7 @@ function cast(){
 function catscan(){
 	redir("https://bmcautismfriendly.github.io/socialstories/catscan/");
 }
+
+function dentalfilling(){
+	redir("https://bmcautismfriendly.github.io/socialstories/dentalfilling/");
+}
