@@ -136,3 +136,7 @@ function dentalfilling(){
 function physicaltherapy(){
 	redir("https://bmcautismfriendly.github.io/socialstories/physicaltherapy/");
 }
+
+function occupationaltherapy(){
+	redir("https://bmcautismfriendly.github.io/socialstories/occupationaltherapy/");
+}
