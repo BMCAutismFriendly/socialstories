@@ -132,3 +132,7 @@ function catscan(){
 function dentalfilling(){
 	redir("https://bmcautismfriendly.github.io/socialstories/dentalfilling/");
 }
+
+function physicaltherapy(){
+	redir("https://bmcautismfriendly.github.io/socialstories/physicaltherapy/");
+}
