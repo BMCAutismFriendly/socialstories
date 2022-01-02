@@ -19,6 +19,7 @@
         <ul class="lang">
             <button class="blue" onclick="changelang('english')">English</button>
             <button class="orange" onclick="changelang('spanish')">Español</button>
+            <button class="green" onclick="changelang('portuguese')">Português</button>
             <button class="red" onclick="changelang('korean')">한국어</button>
         </ul>
     </header>
@@ -88,12 +89,24 @@
         var spanish={
             "title":"Examen de la Vista",
             "line1":"Esta es una historia sobre hacerse un examen de la vista. El médico quiere asegurarse de que mis ojos estén sanos. Puedo decirle al médico en cualquier momento si necesito un descanso.",
-            "line3":"The doctor will ask me to follow their finger as they shine a flashlight into my eye. I might be asked to look left, right, up and down. ",
-            "line4":"The doctor will ask me to rest my head on special machine called a “refractor.” This machine helps the doctor see my eyes better. The machine has different lenses. The doctor will adjust these and ask me to keep looking into the machine. ",
-            "line5":"The doctor might ask me to read letters or look at pictures that are on the wall. It is very important that I tell the doctor what I can see and what I can’t see! ",
-            "line6":"The doctor might need to put special drops in my eyes which will help them to see my eyes even better. The doctor will need to touch my face and may need to help open my eyes. These drops are cold and wet, but they don’t hurt! I can ask someone to hold my hand if I am scared. ",
-            "line7":"When I have eye drops in, the doctor will let me wear cool sunglasses so the sun doesn’t hurt my eyes.",
-            "line8":"I did a great job learning how to get an eye exam!",
+            "line2":"Entraré en la sala del médico y me sentaré en la silla del examen. Hay un montón de imágenes y dispositivos de aspecto gracioso en la pared. ¡También puedo ver letras y números en la pared!",
+            "line3":"El médico me pedirá que siga su dedo mientras me hacen brillar una linterna en el ojo. Se me podría pedir que mirara a la izquierda, a la derecha, hacia arriba y hacia abajo.",
+            "line4":'El médico me pedirá que descanse la cabeza en una máquina especial llamada "refractor". Esta máquina ayuda al médico a ver mejor mis ojos. La máquina tiene diferentes lentes. El médico los ajustará y me pedirá que siga buscando en la máquina.',
+            "line5":"El médico podría pedirme que lea cartas o que mire las imágenes que están en la pared. ¡Es muy importante que le diga al médico lo que puedo ver y lo que no puedo ver!",
+            "line6":"Es posible que el médico tenga que poner gotas especiales en mis ojos que les ayudarán a ver mis ojos aún mejor. El médico tendrá que tocarme la cara y es posible que necesite ayudarme a abrir los ojos. Estas gotas son frías y húmedas, ¡pero no duelen! Puedo pedirle a alguien que me sostenga de la mano si tengo miedo.",
+            "line7":"Cuando tengo gotas para los ojos, el médico me permitirá usar gafas de sol para que el sol no me lastime los ojos.",
+            "line8":"¡Hice un gran trabajo aprendiendo cómo hacerme un examen de la vista!",
+        }
+        var portuguese={
+            "title":"Exame de Vista",
+            "line1":"Essa é uma história sobre um exame de vista. O médico quer ter certeza de que meus olhos estão saudáveis e enxergando bem. Posso dizer ao médico a qualquer momento se precisar de uma pausa.",
+            "line2":"Vou entrar na sala do médico e me sentar na cadeira de exame. Há muitas fotos de dispositivos engraçados na parede. Posso ver letras e números na parede também! ",
+            "line3":"O médico vai me pedir para seguir seu dedo enquanto eles apontam uma lanterna para meu olho. Pode ser que me peçam para olhar para a esquerda, direita, para cima e para baixo.",
+            "line4":"O médico vai me pedir para descansar minha cabeça em uma máquina especial chamada de “refrator”. Essa máquina ajuda o médico a ver melhor meus olhos. A máquina possui lentes diferentes. O médico vai ajustar isso e me pedir para continuar olhando para a máquina. ",
+            "line5":"O médico pode me pedir para ler letras ou olhar as fotos que estão na parede. É muito importante que eu diga ao médico o que posso ver e o que não posso ver! ",
+            "line6":"O médico pode precisar colocar colírios especiais em meus olhos, o que os ajudará a ver meus olhos ainda melhor. O médico precisará tocar meu rosto e talvez precise ajudar a abrir meus olhos. Essas gotas são frias e úmidas, más não doem! Posso pedir a alguém que segure minha mão se estiver com medo. ",
+            "line7":"Quando eu colocar o colírio, o médico me deixará usar óculos de sol legais para que o sol não machuque meus olhos. ",
+            "line8":"Fiz um ótimo trabalho aprendendo a fazer um exame de vista! ",
         }
         var korean={
             "title":"시력 검사",
@@ -109,6 +122,7 @@
         var languages={
             "english":english,
             "spanish":spanish,
+            "portuguese":portuguese,
             "korean":korean,
         }
         update()
