@@ -140,3 +140,7 @@ function physicaltherapy(){
 function occupationaltherapy(){
 	redir("https://bmcautismfriendly.github.io/socialstories/occupationaltherapy/");
 }
+
+function ekg(){
+    redir("https://bmcautismfriendly.github.io/socialstories/ekg/");
+}
