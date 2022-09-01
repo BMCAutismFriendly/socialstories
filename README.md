@@ -1,7 +1,7 @@
 # Adding a BMC Social Story
 
 ## Step 1: Upload images + PDF
-Create a folder in the "img" file with the name of the story. Upload story images into the folder — a good rule is to name them in page order, so like "1.jpg" for the first image, "2.jpg" for the second, etc.
+Create a folder in the "img" file with the name of the story. Upload story images into the folder and name them in page order, so like "1.jpg" for the first image, "2.jpg" for the second, etc.
 
 Then, upload the PDF of the social story in the "pdfs" file. If this is a PDF for a non-English language, upload it to the appropriate folder and ensure it is named the same as the English version. 
 
