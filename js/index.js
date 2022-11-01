@@ -152,3 +152,8 @@ function speechtherapy(){
 function eeg(){
     redir("https://bmcautismfriendly.github.io/socialstories/eeg/");
 }
+
+function ambulance(){
+    redir("https://bmcautismfriendly.github.io/socialstories/ambulance/");
+}
+
