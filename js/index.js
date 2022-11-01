@@ -148,3 +148,7 @@ function ekg(){
 function speechtherapy(){
     redir("https://bmcautismfriendly.github.io/socialstories/speechtherapy/");
 }
+
+function eeg(){
+    redir("https://bmcautismfriendly.github.io/socialstories/eeg/");
+}
