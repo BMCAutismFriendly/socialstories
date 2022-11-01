@@ -160,3 +160,7 @@ function ambulance(){
 function anesthesia(){
     redir("https://bmcautismfriendly.github.io/socialstories/anesthesia/");
 }
+
+function therapy(){
+    redir("https://bmcautismfriendly.github.io/socialstories/therapy/");
+}
