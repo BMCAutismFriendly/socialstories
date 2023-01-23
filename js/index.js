@@ -164,3 +164,6 @@ function anesthesia(){
 function therapy(){
     redir("https://bmcautismfriendly.github.io/socialstories/therapy/");
 }
+function surgery(){
+    redir("https://bmcautismfriendly.github.io/socialstories/preparing-for-surgery/");
+}
