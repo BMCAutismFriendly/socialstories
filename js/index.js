@@ -172,3 +172,7 @@ function surgery(){
 function gettinganiv(){
     redir("https://bmcautismfriendly.github.io/socialstories/gettinganiv/");
 }
+
+function tryingnewfoods(){
+    redir("https://bmcautismfriendly.github.io/socialstories/tryingnewfoods/");
+}
