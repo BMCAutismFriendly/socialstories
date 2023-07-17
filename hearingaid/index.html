@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Getting a Hearing Aid</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Bootstrap 3 -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+        <!--Font Awesome-->
+        <script src="https://use.fontawesome.com/808b665924.js"></script> <!--DanielChao-->
+    </head>
+    
+    <header>
+        <ul class="lang">
+            <button class="blue" onclick="changelang('english')">English</button>
+        </ul>
+    </header>
+    
+    <body id="body" background="">
+    <div class="container" style="text-align:center">
+        <h2 id="title"></h2>
+        <div>
+          <button class="green" onclick="plusDivs(-1)"><img class="button-img" src="../img/left-arrow.svg"></button>
+            <button class="purple" onclick="exit()"><img class="button-img" src="../img/exit-icon.svg"></button>
+            <button class="red" onclick="restart()"><img class="button-img" src="../img/restart-icon.svg"></button>
+            <button class="blue" onclick="showPDF('hearingaid.pdf')"><img class="button-img" src="../img/printer.svg"></button>
+          <button class="green" onclick="plusDivs(1)"><img class="button-img" src="../img/right-arrow.svg"></button>
+        </div>
+        <div class="slide-container">
+          <div class="slide">
+            <p id="title"></p>
+            <img class="slide-img" src="../img/hearingaid/1.png">
+          </div>
+          <div class="slide">
+            <p id="line1"></p>
+            <img class="slide-img" src="../img/hearingaid/2.png">
+          </div>
+          <div class="slide">
+            <p id="line2"></p>
+            <img class="slide-img" src="../img/hearingaid/3.png">
+          </div>
+          <div class="slide">
+            <p id="line3"></p>
+            <img class="slide-img" src="../img/hearingaid/4.png">
+          </div>
+          <div class="slide">
+            <p id="line4"></p>
+            <img class="slide-img" src="../img/hearingaid/5.png">
+          </div>
+          <div class="slide">
+            <p id="line5"></p>
+            <img class="slide-img" src="../img/hearingaid/6.png">
+          </div>
+          <div class="slide">
+            <p id="line6"></p>
+            <img class="slide-img" src="../img/hearingaid/7.png">
+          </div>
+          <div class="slide">
+            <p id="line7"></p>
+            <img class="slide-img" src="../img/hearingaid/8.png">
+          </div>
+          <div class="slide">
+            <p id="line8"></p>
+            <img class="slide-img" src="../img/hearingaid/9.png">
+          </div>
+        </div>
+        </div><!-- END .container -->
+    <div class="container footer">
+        <a href="https://www.bmc.org/" target="_new"><img src="../img/logo_white.png" alt="BMC logo" class="img-responsive"></a>
+    </div>
+        <script src="../js/index.js" type="text/javascript"></script>
+        <script src="../js/socialstories.js" type="text/javascript"></script>
+        <script>
+            var english={
+                "title":"Getting a Hearing Aid",
+                "line1":"This is a story about getting a hearing aid! I’m getting my hearing aid to help me hear sounds.",
+                "line2":"They will make a mold of my ear so that my hearing aid fits.",
+                "line3":"It will take about four weeks for my hearing aid to arrive.",
+                "line4":"Someone will help me try on my hearing aid to make sure that it fits.",
+                "line5":"Someone will turn on my hearing aid and things will sound different.",
+                "line6":"Someone will set the volume for what I need to hear sounds around me. It might take me time to adjust to all the new sounds I am hearing, and that is ok!",
+                "line7":"Someone will show me and my family how to take care of my hearing aid.",
+                "line8":"I did a great job learning how to wear my hearing aid!",
+            }
+            var languages={
+                "english":english,
+            }
+            update()
+        </script>
+    </body>
+</html>
