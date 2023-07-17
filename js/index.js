@@ -180,3 +180,7 @@ function tryingnewfoods(){
 function hearingaid(){
     redir("https://bmcautismfriendly.github.io/socialstories/hearingaid/");
 }
+
+function petscan(){
+    redir("https://bmcautismfriendly.github.io/socialstories/petscan/");
+}
