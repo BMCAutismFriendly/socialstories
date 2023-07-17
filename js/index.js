@@ -176,3 +176,7 @@ function gettinganiv(){
 function tryingnewfoods(){
     redir("https://bmcautismfriendly.github.io/socialstories/tryingnewfoods/");
 }
+
+function hearingaid(){
+    redir("https://bmcautismfriendly.github.io/socialstories/hearingaid/");
+}
