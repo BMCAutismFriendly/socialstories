@@ -184,3 +184,7 @@ function hearingaid(){
 function petscan(){
     redir("https://bmcautismfriendly.github.io/socialstories/petscan/");
 }
+
+function sleepstudy(){
+    redir("https://bmcautismfriendly.github.io/socialstories/sleepstudy/");
+}
