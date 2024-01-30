@@ -188,3 +188,7 @@ function petscan(){
 function sleepstudy(){
     redir("https://bmcautismfriendly.github.io/socialstories/sleepstudy/");
 }
+
+function papsmear(){
+	redir("https://bmcautismfriendly.github.io/socialstories/papsmear/");
+}
