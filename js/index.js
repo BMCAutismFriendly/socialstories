@@ -192,3 +192,7 @@ function sleepstudy(){
 function papsmear(){
 	redir("https://bmcautismfriendly.github.io/socialstories/papsmear/");
 }
+
+function echocardiogram(){
+	redir("https://bmcautismfriendly.github.io/socialstories/echocardiogram/");
+}
