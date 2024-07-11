@@ -18,6 +18,7 @@
     <header>
         <ul class="lang">
             <button class="blue" onclick="changelang('english')">English</button>
+            <button class="orange" onclick="changelang('chinese')">中文(简体)</button>
         </ul>
     </header>
     
@@ -74,7 +75,7 @@
         <script src="../js/index.js" type="text/javascript"></script>
         <script src="../js/socialstories.js" type="text/javascript"></script>
         <script>
-            var english={
+        var english={
             "title":"Getting an Echocardiogram",
             "line1":"This is a story about getting pictures of my heart.<br>The doctor wants to make sure my heart is healthy!<br><br>If I feel nervous, I can: <br><b>Think of something that makes me feel calm</b><br><b>Ask someone to hold my hand</b><br><b>Remember that I am staying healthy and strong</b>",
             "line2":"I will take off my clothes and put on my special gown!",
@@ -85,10 +86,22 @@
             "line7":"The technologist will wipe the gel off my chest. I can take off my special gown and wear my clothes.",
             "line8":"I did an amazing job learning how to get pictures of my heart.<br><br>I am so brave!",
         }
-            var languages={
+        var chinese={
+            "title":"获取超声心动图",
+            "line1":"这是一个关于拍摄心脏照片的故事。医生想确保我的心脏健康！<br><br>如果我感到紧张，我可以：<br><b>想一想能让我感到平静的事情</b><br><b>找人牵我的手</b><br><b>记住我保持健康和强壮</b>",
+            "line2":"我要脱掉衣服，穿上我的特制礼服！",
+            "line3":"我会左侧躺在桌子上，背后可以有一个枕头作为支撑。我会记住我是健康和强壮的！如果需要，我可以请别人握住我的手！",
+            "line4":"我将被连接到一个监视器上，在那里我可以看到我心脏内的情况。房间会变暗，这样技术专家就能看到监视器上的图像。",
+            "line5":"技术专家会在我的胸口放置温热的凝胶和一根魔棒。他们可能会将魔棒放在不同的位置，以拍摄我心脏内的不同情况。",
+            "line6":"技术专家可能会要求我屏住呼吸并做深呼吸。如果有任何让我不舒服的地方，我会告诉技术专家。",
+            "line7":"技术专家会擦去我胸前的凝胶。我可以脱下特制的手术服，穿上自己的衣服。",
+            "line8":"我在学习如何拍摄心脏照片方面做得非常出色。<br><br>我很勇敢！",
+        }
+        var languages={
                 "english":english,
-            }
-            update()
+                "chinese":chinese,
+        }
+        update()
         </script>
     </body>
 </html>
