@@ -1,244 +1,219 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Getting a Dental Filling</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Bootstrap 3 -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="../css/index.css">
-    <!--Font Awesome-->
-    <script src="https://use.fontawesome.com/808b665924.js"></script> <!--DanielChao-->
-</head>
-
-<body id="body" background="">
-<header>
-    <ul class="lang">
-        <button class="blue" onclick="changelang('english')">English</button>
-        <button class="orange" onclick="changelang('spanish')">Español</button>
-        <button class="green" onclick="changelang('portuguese')">Português</button>
-        <button class="purple" onclick="changelang('traditional_chinese')">中文(繁體)</button>
-        <button class="orange" onclick="changelang('chinese')">中文(简体)</button>
-        <button class="blue" onclick="changelang('russian')">Русский</button>
-        <button class="purple" onclick="changelang('albanian')">Shqip</button>
-        <button class="green" onclick="changelang('greek')">ελληνικά</button>
-    </ul>
-</header>
-
-<div class="container" style="text-align:center">
-    <h2 id="title"></h2>
-    <div>
-        <button class="green" onclick="plusDivs(-1)"><img class="button-img" src="../img/left-arrow.svg"></button>
-        <button class="purple" onclick="exit()"><img class="button-img" src="../img/exit-icon.svg"></button>
-        <button class="red" onclick="restart()"><img class="button-img" src="../img/restart-icon.svg"></button>
-        <button class="blue" onclick="showPDF('dentalfilling.pdf')"><img class="button-img" src="../img/printer.svg"></button>
-        <button class="green" onclick="plusDivs(1)"><img class="button-img" src="../img/right-arrow.svg"></button>
-    </div>
-    <div class="slide-container">
-        <div class="slide">
+    <head>
+        <title>Getting a Dental Filling</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Bootstrap 3 -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+        <!--Font Awesome-->
+        <script src="https://use.fontawesome.com/808b665924.js"></script> <!--DanielChao-->
+    </head>
+    
+    <header>
+        <ul class="lang">
+            <button class="blue" onclick="changelang('english')">English</button>
+            <button class="orange" onclick="changelang('spanish')">Español</button>
+            <button class="green" onclick="changelang('portuguese')">Português</button>
+            <button class="purple" onclick="changelang('traditional_chinese')">中文(繁體)</button>
+            <button class="orange" onclick="changelang('chinese')">中文(简体)</button>
+            <button class="blue" onclick="changelang('russian')">Русский</button>
+            <button class="purple" onclick="changelang('albanian')">Shqip</button>
+            <button class="green" onclick="changelang('greek')">ελληνικά</button>
+        </ul>
+    </header>
+    
+    <body id="body" background="">
+    <div class="container" style="text-align:center">
+        <h2 id="title"></h2>
+        <div>
+          <button class="green" onclick="plusDivs(-1)"><img class="button-img" src="../img/left-arrow.svg"></button>
+            <button class="purple" onclick="exit()"><img class="button-img" src="../img/exit-icon.svg"></button>
+            <button class="red" onclick="restart()"><img class="button-img" src="../img/restart-icon.svg"></button>
+            <button class="blue" onclick="showPDF('dentalfilling')"><img class="button-img" src="../img/printer.svg"></button>
+          <button class="green" onclick="plusDivs(1)"><img class="button-img" src="../img/right-arrow.svg"></button>
+        </div>
+        <div class="slide-container">
+          <div class="slide">
             <p id="line1"></p>
             <img class="slide-img" src="../img/dentalfilling/1.jpg">
-        </div>
-        <div class="slide">
+          </div>
+          <div class="slide">
             <p id="line2"></p>
             <img class="slide-img" src="../img/dentalfilling/2.jpg">
-        </div>
-        <div class="slide">
+          </div>
+          <div class="slide">
             <p id="line3"></p>
             <img class="slide-img" src="../img/dentalfilling/3.jpg">
-        </div>
-        <div class="slide">
+          </div>
+          <div class="slide">
             <p id="line4"></p>
             <img class="slide-img" src="../img/dentalfilling/4.jpg">
-        </div>
-        <div class="slide">
+          </div>
+          <div class="slide">
             <p id="line5"></p>
             <img class="slide-img" src="../img/dentalfilling/5.jpg">
-        </div>
-        <div class="slide">
+          </div>
+          <div class="slide">
             <p id="line6"></p>
             <img class="slide-img" src="../img/dentalfilling/6.jpg">
-        </div>
-        <div class="slide">
+          </div>
+          <div class="slide">
             <p id="line7"></p>
             <img class="slide-img" src="../img/dentalfilling/7.jpg">
-        </div>
-        <div class="slide">
+          </div>
+          <div class="slide">
             <p id="line8"></p>
             <img class="slide-img" src="../img/dentalfilling/8.jpg">
-        </div>
-        <div class="slide">
+          </div>
+          <div class="slide">
             <p id="line9"></p>
             <img class="slide-img" src="../img/dentalfilling/9.jpg">
-        </div>
-        <div class="slide">
+          </div>
+          <div class="slide">
             <p id="line10"></p>
             <img class="slide-img" src="../img/dentalfilling/10.jpg">
-        </div>
-        <div class="slide">
+          </div>
+          <div class="slide">
             <p id="line11"></p>
             <img class="slide-img" src="../img/dentalfilling/11.jpg">
-        </div>
+          </div>
+
+        </div><!-- END .container -->
+    <div class="container footer">
+        <a href="https://www.bmc.org/" target="_new"><img src="../img/logo_white.png" alt="BMC logo" class="img-responsive"></a>
     </div>
-</div><!-- END .container -->
-
-<div class="container footer">
-    <a href="https://www.bmc.org/" target="_new"><img src="../img/logo_white.png" alt="BMC logo" class="img-responsive"></a>
-</div>
-
-<script>
-    var english = {
-        "title": "Getting a Dental Filling",
-        "line1": "This social story is about getting a dental filling at the dentist.",
-        "line2": "I need a dental filling when my tooth has a cavity or sugar spot that has caused a small hole. The filling will help make my tooth strong and healthy!",
-        "line3": "First, I will sit in a big chair that can recline.",
-        "line4": "The dentist will use a special light to see inside my mouth. It might be bright. If I want to, I can wear a pair of sunglasses!",
-        "line5": "Then, a dentist will use a tool inside my mouth to help make it feel better during the procedure. This might hurt, but only for a minute. If I feel nervous I can:<ul><li>Think of something that makes me happy</li><li>Listen to my favorite song</li><li>Ask someone to hold my hand</li><li>Close my eyes</li><li>Remember that I’m staying strong and healthy</li></ul>",
-        "line6": "One of the tools the dentist might use helps to suck up my spit. It kind of sounds like a vacuum cleaner.",
-        "line7": "The dentist might need to use a tooth pillow and some cotton rolls inside my mouth to keep my mouth open. These do not hurt.",
-        "line8": "The dentist will then use a special toothbrush with water to clean inside of my tooth! The tool might sound like a shower.",
-        "line9": 'The dentist will then add a “filling” to my teeth, to make sure that the inside of my tooth stays clean and safe! This should not hurt…if it does, I can tap my dentists arm.',
-        "line10": "The dentist might need to polish my new healthy tooth with a special toothbrush.",
-        "line11": "I did a great job learning about getting a dental filling! It will be important for me to continue brushing and flossing my teeth to keep them healthy!",
-    }
-    var spanish = {
-        "title": "Obteniendo un empaste dental",
-        "line1": "Esto cuento social trata de obteniendo un empaste dental al dentista.",
-        "line2": "Necesito un empaste dental cuando el diente tiene cavidad o agujero pequeño a causa de punto de azúcar. El empaste dental ayudará hacer el diento fuerte y saludable.",
-        "line3": "Primero, me sentaré en una silla grande que puede reclinar.",
-        "line4": "El dentista usará una luz especial para ver a dentro la boca. Puede ser brillante. Si quero, puedo llevar anteojos.",
-        "line5": "Próximo, el dentista usará una herramienta a dentro de mi boca para ayudarme sentir mejor durante el procedimiento. Esto puede dolerme, pero solo por un minuto. Si estoy nervioso, puedo:<ul><li>Pensar en algo que me hace contento</li><li>Escuchar a mi canción favorita</li><li>Preguntarle a alguien a sostenerme la mano</li><li>Cerrar los ojos</li><li>Recordar que mantengo mi fuerza y salud</li></ul>",
-        "line6": "Una de las herramientas puede use ayuda chupar la saliva. Sona un poco como la aspiradora.",
-        "line7": "El dentista puede necesite usar una almohada para los dientes y unos rollos del algodón para mantener la boca abierta.",
-        "line8": "Próximo el dentista usará un cepillo de dientes especial con agua para limpiar a dentro del diente. La herramienta puede sonar como una ducha.",
-        "line9": "El dentista luego añadirá relleno a los dientes, para asegurarse que el dentro del diente se mantiene limpio y seguro. No debe dolerme… si me duele, puedo dar un golpecito al brazo del dentista.",
-        "line10": "El dentista puede necesitar pulir el diente nuevo y saludable con un cepillo de dientes especial.",
-        "line11": "¡Yo hice un bien hecho en obtener un empaste dental! Será importante que siga cepillarse los dientes y limpiar con hilo dental para mantenerlos saludables.",
-    }
-    var portuguese = {
-        "title": "Obturação Dentária ",
-        "line1": "Essa história é sobre como obter uma obturação dentária no dentista. ",
-        "line2": "Eu preciso de uma obturação dentária quando o meu dente tem uma cárie ou mancha de açúcar que causou um pequeno buraco. O enchimento ajudará a tornar meu dente forte e saudável!",
-        "line3": "Primeiro, eu sentarei em uma cadeira grande que pode reclinar. ",
-        "line4": "O dentista usará uma luz especial para ver o interior da minha boca. Isso pode ser brilhante. Se eu quiser, posso usar um par de óculos! ",
-        "line5": "Depois, o dentista vai usar uma ferramenta dentro da minha boca para ajudar a fazer com que ela se sinta melhor durante o procedimento. Isso pode doer, mas apenas por um minuto. Se eu me sentir nervoso, posso: <ul><li>Pensar em algo que me faz feliz</li><li>Escutar a minha música favorita</li><li>Pedir a alguém para segurar a minha mão</li><li>Fechar os meus olhos</li><li>Lembrar que eu estou me mantendo forte e saudável</li></ul>",
-        "line6": "Uma das ferramentas que o dentista pode usar ajuda a sugar minha saliva. Parece um aspirador de pó.",
-        "line7": "O dentista pode usar uma almofada dentária e alguns algodões no interior da minha boca para mantê-la aberta. Esses não machucam. ",
-        "line8": "O dentista vai usar uma escova de dentes especial com água para limpar o interior do meu dente! A ferramenta pode soar como um chuveiro.  ",
-        "line9": 'O dentista vai adicionar uma “obturação” aos meus dentes para se certificar que o interior dos meus dentes fique limpo e seguro! Isso não deve doer... mas se doer, posso dar um tapinha no braço do meu dentista. ',
-        "line10": "O dentista pode precisar polir o meu novo dente saudável com uma escova especial. ",
-        "line11": "Eu fiz um ótimo trabalho aprendendo sobre obter uma obturação dentária! Será importante que eu continue escovando e passando fio de dental no meu dente para mantê-los saudáveis!  ",
-    }
-    var traditional_chinese = {
-        "title": "補牙 ",
-        "line1": "這個社會故事是關於在牙醫補牙的。",
-        "line2": "當我長蟲牙了我會需要補牙。補牙會保証我的牙齒健康。",
-        "line3": "首先，我會坐在一張可以斜倚的大椅子上。",
-        "line4": "牙醫會使用特殊的燈來觀察我的口腔內部。 它可能很亮。 如果我想要，我可以戴一副太陽眼鏡！",
-        "line5": "然後，牙醫會在我的嘴巴裡使用一個工具來幫助我在手術過程中感覺更好。 這可能會痛，但很快就會不疼。如果我感到緊張，我可以：<ul><li>想一些讓我開心的事</li><li>聽我最喜歡的歌</li><li>請別人握住我的手</li><li>記住補牙幫助我保持健康</li></ul>",
-        "line6": "牙醫可能使用的一種工具可以幫助吸掉我的口水。 聽起來有點像吸塵器。",
-        "line7": "牙醫可能需要在我嘴裡使用牙枕和一些棉捲來保持嘴巴張開。 它們不會傷害我疼",
-        "line8": "然後，牙醫將使用特殊的牙刷清潔我的牙齒內部！這工具可能聽起來像淋浴。",
-        "line9": "然後牙醫會在我的牙齒上添加“填充物”，以確保我的牙齒內部保持清潔和安全！ 這不應該疼。如果疼，我可以輕拍我的牙醫手臂。",
-        "line10": "牙醫可能需要用特殊的牙刷擦亮我新的健康牙齒。",
-        "line11": "我在學習補牙方麵做得很好！對我來説，繼續刷牙和使用牙線，保持牙齒健康很重要！",
-    }
-    var chinese = {
-        "title": "补牙 ",
-        "line1": "这个社会故事是关于在牙医补牙的。",
-        "line2": "当我长虫牙了我会需要补牙。补牙会保证我的牙齿健康。",
-        "line3": "首先，我会坐在一张可以斜倚的大椅子上。",
-        "line4": "牙医会使用特殊的灯来观察我的口腔内部。 它可能很亮。 如果我想要，我可以戴一副太阳眼镜！",
-        "line5": "然后，牙医会在我的嘴巴里使用一个工具来帮助我在手术过程中感觉更好。 这可能会痛，但很快就会不疼。如果我感到紧张，我可以：<ul><li>想一些让我开心的事</li><li>听我最喜欢的歌</li><li>请别人握住我的手</li><li>记住补牙帮助我保持健康</li></ul>",
-        "line6": "牙医可能使用的一种工具可以帮助吸掉我的口水。 听起来有点像吸尘器。",
-        "line7": "牙医可能需要在我嘴里使用牙枕和一些棉卷来保持嘴巴张开。 它们不会伤害我疼",
-        "line8": "然后，牙医将使用特殊的牙刷清洁我的牙齿内部！这工具可能听起来像淋浴。",
-        "line9": "然后牙医会在我的牙齿上添加“填充物”，以确保我的牙齿内部保持清洁和安全！ 这不应该疼。如果疼，我可以轻拍我的牙医手臂。",
-        "line10": "牙医可能需要用特殊的牙刷擦亮我新的健康牙齿。",
-        "line11": "我在学习补牙方面做得很好！对我来说，继续刷牙和使用牙线，保持牙齿健康很重要！",
-    }
-    var russian = {
-        "title": "Получение зубной пломбы",
-        "line1": "Эта история о том, как мне поставили пломбу у дантиста.",
-        "line2": "Мне нужна зубная пломба, когда в моем зубе есть полость(дырка). Пломба поможет сделать мой зуб крепким и здоровым!",
-        "line3": "Во-первых, я сяду в большое кресло, которое можно откинуть.",
-        "line4": "Дантист будет использовать специальный свет, чтобы заглянуть внутрь моего рта. Может быть ярко. Если я хочу, я могу носить солнцезащитные очки!",
-        "line5": "Затем дантист будет использовать инструмент внутри моего рта, чтобы улучшить самочувствие во время процедуры. Это может быть больно, но только на минуту. Если я нервничаю, я могу<ul><li>Подумайте о чем-то, что делает меня счастливым</li><li>Послушай мою любимую песню</li><li>Попросите кого-нибудь взять меня за руку</li><li>Закрываю глаза</li><li>Помни, что я остаюсь сильным и здоровым</li></ul>",
-        "line6": "Один из инструментов, который может использовать дантист, помогает всасывать мою слюну. Звучит как пылесос. ",
-        "line7": "Дантисту, возможно, придется использовать зубную подушку и несколько ватных тампонов во рту, чтобы держать рот открытым. Это не больно. ",
-        "line8": "Затем дантист будет использовать специальную зубную щетку с водой, чтобы очистить мой зуб изнутри! Инструмент может звучать как душ.",
-        "line9": "Затем дантист поставит «пломбу» на мои зубы, чтобы убедиться, что внутренняя часть моего зуба остается чистой и безопасной! Это не должно быть больно, но если это не так , я могу похлопать по руке своего дантиста.",
-        "line10": "Дантисту может понадобиться отполировать мой новый здоровый зуб специальной зубной щеткой.",
-        "line11": "Я проделал/проделала большую работу, узнав о том, как поставить зубную пломбу! Для меня будет важно продолжать чистить зубы и пользоваться зубной нитью, чтобы сохранить их здоровыми!",
-    }
-    var albanian = {
-        "title": "Marrja e një mbushjeje dentare",
-        "line1": "Kjo histori sociale ka të bëjë me marrjen e një mbushje dentare te dentisti.",
-        "line2": "Unë kam nevojë për një mbushje dentare kur dhëmbi im ka një zgavër ose njollë sheqeri që ka shkaktuar një vrimë të vogël. Mbushja do të ndihmojë për ta bërë dhëmbin tim të fortë dhe të shëndetshëm!",
-        "line3": "Së pari, do të ulem në një karrige të madhe që mund të mbështetet.",
-        "line4": "Dentisti do të përdorë një dritë të veçantë për të parë brenda gojës sime. Mund të jetë e ndritshme. Nëse dua, mund të mbaj një palë syze dielli!",
-        "line5": "Më pas, një dentist do të përdorë një mjet brenda gojës sime për ta bërë atë të ndjehet më mirë gjatë procedurës. Kjo mund të dhemb, por vetëm për një minutë. Nëse ndihem nervoz mund të:<ul><li>Mendoj për diçka që më bën të lumtur</li><li>Dëgjoj këngën time të preferuar</li><li>Kërkoj dikujt të më mbajë dorën</li><li>Mbyll sytë e mi</li><li>Mos harro se unë jam i fortë dhe i shëndetshëm</li></ul>",
-        "line6": "Një nga mjetet që mund të përdorë dentisti ndihmon për të thithur pështymën time. Tingëllon si një fshesë me korrent.",
-        "line7": "Dentistit mund t'i duhet të përdorë një jastëk dhëmbi dhe disa rrotulla pambuku brenda gojës sime për të mbajtur gojën time të hapur. Këto nuk dëmtojnë.",
-        "line8": "Dentisti më pas do të përdorë një furçë dhëmbësh të veçantë me ujë për të pastruar brendësinë e dhëmbit tim! Mjeti mund të tingëllojë si një dush.",
-        "line9": 'Dentisti më pas do të shtojë një "mbushje" në dhëmbët e mi, për t&#39u siguruar që pjesa e brendshme e dhëmbit tim të mbetet e pastër dhe e sigurt! Kjo nuk duhet të dëmtojë… nëse ndodh, unë mund t&#39i prek krahun e dentistit tim.',
-        "line10": "Dentisti mund të ketë nevojë të lustrojë dhëmbin tim të ri të shëndetshëm me një furçë dhëmbësh të veçantë.",
-        "line11": "Bëra një punë të shkëlqyer duke mësuar për marrjen e një mbushjeje dentare! Do të jetë e rëndësishme për mua të vazhdoj të laj dhëmbët dhe t'i pastroj dhëmbët me fill për t'i mbajtur ata të shëndetshëm!",
-    }
-    var greek = {
-        "title": "Βάζω σφράγισμα",
-        "line1": "Αυτή είναι μία ιστορία που πάω να βάλω σφράγισμα στο οδοντιατρείο.",
-        "line2": "Χρειάζομαι σφράγισμα όταν το δόντι μου έχει τρύπα. Το σφράγισμα θα βοηθάει το δόντι μου να γίνει δυνατό και υγιής",
-        "line3": "Πρώτα απ’ όλα θα καθίσω σε μία καρέκλα που ξαπλώνει.",
-        "line4": "Οδοντίατρος θα χρησιμοποιήσει ενα φως να δει μέσα στο στόμα μου. Μπορεί να είναι Φωτεινό. Αν θέλω θα φορέσω γυαλιά!",
-        "line5": "Μετά ο οδοντίατρος θα χρησιμοποιήσει ένα εργαλείο μέσα στο στόμα μου να με βοηθήσει να νιώσω καλύτερα κατά τη διάρκεια της επέμβασης. Αν νιώθω άγχος μπορώ να:<ul><li>Σκεφτώ κάτι που με κάνει χαρούμενος</li><li>Άκουσα το αγαπημένο μου τραγούδι</li><li>Να κρατηθώ χέρι χέρι με κάποιον</li><li>Κλείσω τα μάτια μου</li><li>Θυμηθώ ότι θα μείνω δυνατός και υγιής</li></ul>",
-        "line6": "Ένα εργαλείο βοηθάει να Ρουφήξει σάλιο. Ακούγεται σαν ηλεκτρική σκούπα.",
-        "line7": "Ο οδοντίατρος Μπορεί να βάλει βαμβάκι σε μπάλες μέσα στο στόμα μου. Αυτό δεν πονάει.",
-        "line8": "Μετά ο οδοντίατρος θα χρησιμοποιήσει μια οδοντόβουρτσα με νερό να πλύνει μέσα στο δόντι μου. Ακούγεται σαν βροχή!",
-        "line9": "Ο οδοντίατρος θα βάλει σφράγισμα στο δόντι μου να εξασφαλίσει ότι μέσα στο δόντι μου θα μείνει καθαρό. Δεν πρέπει να πονάει. Αν πονάει μπορώ να αγγίξω το χέρι του",
-        "line10": "Ο οδοντίατρος μπορεί να θέλει να γυαλίσει το καινούργιο και υγιείς δόντι μου με οδοντόβουρτσα.",
-        "line11": "Έκανα καλή δουλειά! Τώρα έχω σφράγισμα! Θα είναι σημαντικό να συνεχίσω να βουρτσίσω τα δόντια μου και χρησιμοποιήσω οδοντικό νήμα!",
-    }
-    var languages = {
-        "english": english,
-        "spanish": spanish,
-        "portuguese": portuguese,
-        "traditional_chinese": traditional_chinese,
-        "chinese": chinese,
-        "russian": russian,
-        "albanian": albanian,
-        "greek": greek,
-    }
-
-    function changelang(language) {
-        var lang = languages[language];
-        document.getElementById("title").innerHTML = lang.title;
-        document.getElementById("line1").innerHTML = lang.line1;
-        document.getElementById("line2").innerHTML = lang.line2;
-        document.getElementById("line3").innerHTML = lang.line3;
-        document.getElementById("line4").innerHTML = lang.line4;
-        document.getElementById("line5").innerHTML = lang.line5;
-        document.getElementById("line6").innerHTML = lang.line6;
-        document.getElementById("line7").innerHTML = lang.line7;
-        document.getElementById("line8").innerHTML = lang.line8;
-        document.getElementById("line9").innerHTML = lang.line9;
-        document.getElementById("line10").innerHTML = lang.line10;
-        document.getElementById("line11").innerHTML = lang.line11;
-    }
-
-    function update() {
-        changelang('english');
-    }
-
-    function showPDF(pdfFileName) {
-        window.open('../pdf/' + pdfFileName, '_blank');
-    }
-
-    window.onload = update;
-</script>
-</body>
+        <script src="../js/index.js" type="text/javascript"></script>
+        <script src="../js/socialstories.js" type="text/javascript"></script>
+        <script>
+            var english={
+                "title":"Getting a Dental Filling",
+                "line1":"This social story is about getting a dental filling at the dentist.",
+                "line2":"I need a dental filling when my tooth has a cavity or sugar spot that has caused a small hole.  The filling will help make my tooth strong and healthy!",
+                "line3":"First, I will sit in a big chair that can recline.",
+                "line4":"The dentist will use a special light to see inside my mouth. It might be bright. If I want to, I can wear a pair of sunglasses!",
+                "line5":"Then, a dentist will use a tool inside my mouth to help make it feel better during the procedure. This might hurt, but only for a minute. If I feel nervous I can:<ul><li>Think of something that makes me happy</li><li>Listen to my favorite song</li><li>Ask someone to hold my hand</li><li>Close my eyes</li><li>Remember that I’m staying strong and healthy</li></ul>",
+                "line6":"One of the tools the dentist might use helps to suck up my spit. It kind of sounds like a vacuum cleaner. ",
+                "line7":"The dentist might need to use a tooth pillow and some cotton rolls inside my mouth to keep my mouth open. These do not hurt. ",
+                "line8":"The dentist will then use a special toothbrush with water to clean inside of my tooth! The tool might sound like a shower. ",
+                "line9":'The dentist will then add a “filling” to my teeth, to make sure that the inside of my tooth stays clean and safe! This should not hurt…if it does, I can tap my dentists arm. ',
+                "line10":"The dentist might need to polish my new healthy tooth with a special toothbrush.",
+                "line11":"I did a great job learning about getting a dental filling! It will be important for me to continue brushing and flossing my teeth to keep them healthy! ",
+            }
+            var spanish={
+                "title":"Obteniendo un empaste dental",
+                "line1":"Esto cuento social trata de obteniendo un empaste dental al dentista.",
+                "line2":"Necesito un empaste dental cuando el diente tiene cavidad o agujero pequeño a causa de punto de azúcar. El empaste dental ayudará hacer el diento fuerte y saludable.",
+                "line3":"Primero, me sentaré en una silla grande que puede reclinar.",
+                "line4":"El dentista usará una luz especial para ver a dentro la boca. Puede ser brillante. Si quero, puedo llevar anteojos.",
+                "line5":"Próximo, el dentista usará una herramienta a dentro de mi boca para ayudarme sentir mejor durante el procedimiento. Esto puede dolerme, pero solo por un minuto. Si estoy nervioso, puedo:<ul><li>Pensar en algo que me hace contento</li><li>Escuchar a mi canción favorita</li><li>Preguntarle a alguien a sostenerme la mano</li><li>Cerrar los ojos</li><li>Recordar que mantengo mi fuerza y salud</li></ul>",
+                "line6":"Una de las herramientas puede use ayuda chupar la saliva. Sona un poco como la aspiradora.",
+                "line7":"El dentista puede necesite usar una almohada para los dientes y unos rollos del algodón para mantener la boca abierta.",
+                "line8":"Próximo el dentista usará un cepillo de dientes especial con agua para limpiar a dentro del diente. La herramienta puede sonar como una ducha.",
+                "line9":"El dentista luego añadirá relleno a los dientes, para asegurarse que el dentro del diente se mantiene limpio y seguro. No debe dolerme… si me duele, puedo dar un golpecito al brazo del dentista.",
+                "line10":"El dentista puede necesitar pulir el diente nuevo y saludable con un cepillo de dientes especial.",
+                "line11":"¡Yo hice un bien hecho en obtener un empaste dental! Será importante que siga cepillarse los dientes y limpiar con hilo dental para mantenerlos saludables.",
+            }
+            var portuguese={
+                "title":"Obturação Dentária ",
+                "line1":"Essa história é sobre como obter uma obturação dentária no dentista. ",
+                "line2":"Eu preciso de uma obturação dentária quando o meu dente tem uma cárie ou mancha de açúcar que causou um pequeno buraco. O enchimento ajudará a tornar meu dente forte e saudável!",
+                "line3":"Primeiro, eu sentarei em uma cadeira grande que pode reclinar. ",
+                "line4":"O dentista usará uma luz especial para ver o interior da minha boca. Isso pode ser brilhante. Se eu quiser, posso usar um par de óculos! ",
+                "line5":"Depois, o dentista vai usar uma ferramenta dentro da minha boca para ajudar a fazer com que ela se sinta melhor durante o procedimento. Isso pode doer, mas apenas por um minuto. Se eu me sentir nervoso, posso: <ul><li>Pensar em algo que me faz feliz</li><li>Escutar a minha música favorita</li><li>Pedir a alguém para segurar a minha mão</li><li>Fechar os meus olhos</li><li>Lembrar que eu estou me mantendo forte e saudável</li></ul>",
+                "line6":"Uma das ferramentas que o dentista pode usar ajuda a sugar minha saliva. Parece um aspirador de pó.",
+                "line7":"O dentista pode usar uma almofada dentária e alguns algodões no interior da minha boca para mantê-la aberta. Esses não machucam. ",
+                "line8":"O dentista vai usar uma escova de dentes especial com água para limpar o interior do meu dente! A ferramenta pode soar como um chuveiro.  ",
+                "line9":'O dentista vai adicionar uma “obturação” aos meus dentes para se certificar que o interior dos meus dentes fique limpo e seguro! Isso não deve doer... mas se doer, posso dar um tapinha no braço do meu dentista. ',
+                "line10":"O dentista pode precisar polir o meu novo dente saudável com uma escova especial. ",
+                "line11":"Eu fiz um ótimo trabalho aprendendo sobre obter uma obturação dentária! Será importante que eu continue escovando e passando fio de dental no meu dente para mantê-los saudáveis!  ",
+            }
+            var traditional_chinese={
+                "title":"補牙 ",
+                "line1":"這個社會故事是關於在牙醫補牙的。",
+                "line2":"當我長蟲牙了我會需要補牙。補牙會保証我的牙齒健康。",
+                "line3":"首先，我會坐在一張可以斜倚的大椅子上。",
+                "line4":"牙醫會使用特殊的燈來觀察我的口腔內部。 它可能很亮。 如果我想要，我可以戴一副太陽眼鏡！",
+                "line5":"然後，牙醫會在我的嘴巴裡使用一個工具來幫助我在手術過程中感覺更好。 這可能會痛，但很快就會不疼。如果我感到緊張，我可以：<ul><li>想一些讓我開心的事</li><li>聽我最喜歡的歌</li><li>請別人握住我的手</li><li>記住補牙幫助我保持健康</li></ul>",
+                "line6":"牙醫可能使用的一種工具可以幫助吸掉我的口水。 聽起來有點像吸塵器。",
+                "line7":"牙醫可能需要在我嘴裡使用牙枕和一些棉捲來保持嘴巴張開。 它們不會傷害我疼",
+                "line8":"然後，牙醫將使用特殊的牙刷清潔我的牙齒內部！這工具可能聽起來像淋浴。",
+                "line9":'然後牙醫會在我的牙齒上添加“填充物”，以確保我的牙齒內部保持清潔和安全！ 這不應該疼。如果疼，我可以輕拍我的牙醫手臂。',
+                "line10":"牙醫可能需要用特殊的牙刷擦亮我新的健康牙齒。",
+                "line11":"我在學習補牙方麵做得很好！對我來説，繼續刷牙和使用牙線，保持牙齒健康很重要！",
+            }
+            var chinese={
+                "title":"补牙 ",
+                "line1":"这个社会故事是关于在牙医补牙的。",
+                "line2":"当我长虫牙了我会需要补牙。补牙会保证我的牙齿健康。",
+                "line3":"首先，我会坐在一张可以斜倚的大椅子上。",
+                "line4":"牙医会使用特殊的灯来观察我的口腔内部。 它可能很亮。 如果我想要，我可以戴一副太阳眼镜！",
+                "line5":"然后，牙医会在我的嘴巴里使用一个工具来帮助我在手术过程中感觉更好。 这可能会痛，但很快就会不疼。如果我感到紧张，我可以：<ul><li>想一些让我开心的事</li><li>听我最喜欢的歌</li><li>请别人握住我的手</li><li>记住补牙帮助我保持健康</li></ul>",
+                "line6":"牙医可能使用的一种工具可以帮助吸掉我的口水。 听起来有点像吸尘器。",
+                "line7":"牙医可能需要在我嘴里使用牙枕和一些棉卷来保持嘴巴张开。 它们不会伤害我疼",
+                "line8":"然后，牙医将使用特殊的牙刷清洁我的牙齿内部！这工具可能听起来像淋浴。",
+                "line9":'然后牙医会在我的牙齿上添加“填充物”，以确保我的牙齿内部保持清洁和安全！ 这不应该疼。如果疼，我可以轻拍我的牙医手臂。',
+                "line10":"牙医可能需要用特殊的牙刷擦亮我新的健康牙齿。",
+                "line11":"我在学习补牙方面做得很好！对我来说，继续刷牙和使用牙线，保持牙齿健康很重要！",
+            }
+            var russian={
+                "title":"Получение зубной пломбы",
+                "line1":"Эта история о том, как мне поставили пломбу у дантиста.",
+                "line2":"Мне нужна зубная пломба, когда в моем зубе есть полость(дырка). Пломба поможет сделать мой зуб крепким и здоровым!",
+                "line3":"Во-первых, я сяду в большое кресло, которое можно откинуть.",
+                "line4":"Дантист будет использовать специальный свет, чтобы заглянуть внутрь моего рта. Может быть ярко. Если я хочу, я могу носить солнцезащитные очки!",
+                "line5":"Затем дантист будет использовать инструмент внутри моего рта, чтобы улучшить самочувствие во время процедуры. Это может быть больно, но только на минуту. Если я нервничаю, я могу<ul><li>Подумайте о чем-то, что делает меня счастливым</li><li>Послушай мою любимую песню</li><li>Попросите кого-нибудь взять меня за руку</li><li>Закрываю глаза</li><li>Помни, что я остаюсь сильным и здоровым</li></ul>",
+                "line6":"Один из инструментов, который может использовать дантист, помогает всасывать мою слюну. Звучит как пылесос. ",
+                "line7":"Дантисту, возможно, придется использовать зубную подушку и несколько ватных тампонов во рту, чтобы держать рот открытым. Это не больно. ",
+                "line8":"Затем дантист будет использовать специальную зубную щетку с водой, чтобы очистить мой зуб изнутри! Инструмент может звучать как душ.",
+                "line9":"Затем дантист поставит «пломбу» на мои зубы, чтобы убедиться, что внутренняя часть моего зуба остается чистой и безопасной! Это не должно быть больно, но если это не так , я могу похлопать по руке своего дантиста.",
+                "line10":"Дантисту может понадобиться отполировать мой новый здоровый зуб специальной зубной щеткой.",
+                "line11":"Я проделал/проделала большую работу, узнав о том, как поставить зубную пломбу! Для меня будет важно продолжать чистить зубы и пользоваться зубной нитью, чтобы сохранить их здоровыми!",
+            }
+            var albanian={
+                "title":"Marrja e një mbushjeje dentare",
+                "line1":"Kjo histori sociale ka të bëjë me marrjen e një mbushje dentare te dentisti.",
+                "line2":"Unë kam nevojë për një mbushje dentare kur dhëmbi im ka një zgavër ose njollë sheqeri që ka shkaktuar një vrimë të vogël. Mbushja do të ndihmojë për ta bërë dhëmbin tim të fortë dhe të shëndetshëm!",
+                "line3":"Së pari, do të ulem në një karrige të madhe që mund të mbështetet.",
+                "line4":"Dentisti do të përdorë një dritë të veçantë për të parë brenda gojës sime. Mund të jetë e ndritshme. Nëse dua, mund të mbaj një palë syze dielli!",
+                "line5":"Më pas, një dentist do të përdorë një mjet brenda gojës sime për ta bërë atë të ndjehet më mirë gjatë procedurës. Kjo mund të dhemb, por vetëm për një minutë. Nëse ndihem nervoz mund të:<ul><li>Mendoj për diçka që më bën të lumtur</li><li>Dëgjoj këngën time të preferuar</li><li>Kërkoj dikujt të më mbajë dorën</li><li>Mbyll sytë e mi</li><li>Mos harro se unë jam i fortë dhe i shëndetshëm</li></ul>",
+                "line6":"Një nga mjetet që mund të përdorë dentisti ndihmon për të thithur pështymën time. Tingëllon si një fshesë me korrent.",
+                "line7":"Dentistit mund t'i duhet të përdorë një jastëk dhëmbi dhe disa rrotulla pambuku brenda gojës sime për të mbajtur gojën time të hapur. Këto nuk dëmtojnë.",
+                "line8":"Dentisti më pas do të përdorë një furçë dhëmbësh të veçantë me ujë për të pastruar brendësinë e dhëmbit tim! Mjeti mund të tingëllojë si një dush.",
+                "line9":'Dentisti më pas do të shtojë një "mbushje" në dhëmbët e mi, për t&#39u siguruar që pjesa e brendshme e dhëmbit tim të mbetet e pastër dhe e sigurt! Kjo nuk duhet të dëmtojë… nëse ndodh, unë mund t&#39i prek krahun e dentistit tim.',
+                "line10":"Dentisti mund të ketë nevojë të lustrojë dhëmbin tim të ri të shëndetshëm me një furçë dhëmbësh të veçantë.",
+                "line11":"Bëra një punë të shkëlqyer duke mësuar për marrjen e një mbushjeje dentare! Do të jetë e rëndësishme për mua të vazhdoj të laj dhëmbët dhe t'i pastroj dhëmbët me fill për t'i mbajtur ata të shëndetshëm!",
+            }
+            var greek={
+                "title":"Βάζω σφράγισμα",
+                "line1":"Αυτή είναι μία ιστορία που πάω να βάλω σφράγισμα στο οδοντιατρείο.",
+                "line2":"Χρειάζομαι σφράγισμα όταν το δόντι μου έχει τρύπα. Το σφράγισμα θα βοηθάει το δόντι μου να γίνει δυνατό και υγιής",
+                "line3":"Πρώτα απ’ όλα θα καθίσω σε μία καρέκλα που ξαπλώνει.",
+                "line4":"Οδοντίατρος θα χρησιμοποιήσει ενα φως να δει μέσα στο στόμα μου. Μπορεί να είναι Φωτεινό. Αν θέλω θα φορέσω γυαλιά!",
+                "line5":"Μετά ο οδοντίατρος θα χρησιμοποιήσει ένα εργαλείο μέσα στο στόμα μου να με βοηθήσει να νιώσω καλύτερα κατά τη διάρκεια της επέμβασης. Αν νιώθω άγχος μπορώ να:<ul><li>Σκεφτώ κάτι που με κάνει χαρούμενος</li><li>Άκουσα το αγαπημένο μου τραγούδι</li><li>Να κρατηθώ χέρι χέρι με κάποιον</li><li>Κλείσω τα μάτια μου</li><li>Θυμηθώ ότι θα μείνω δυνατός και υγιής</li></ul>",
+                "line6":"Ένα εργαλείο βοηθάει να Ρουφήξει σάλιο. Ακούγεται σαν ηλεκτρική σκούπα.",
+                "line7":"Ο οδοντίατρος Μπορεί να βάλει βαμβάκι σε μπάλες μέσα στο στόμα μου. Αυτό δεν πονάει.",
+                "line8":"Μετά ο οδοντίατρος θα χρησιμοποιήσει μια οδοντόβουρτσα με νερό να πλύνει μέσα στο δόντι μου. Ακούγεται σαν βροχή!",
+                "line9":'Ο οδοντίατρος θα βάλει σφράγισμα στο δόντι μου να εξασφαλίσει ότι μέσα στο δόντι μου θα μείνει καθαρό. Δεν πρέπει να πονάει. Αν πονάει μπορώ να αγγίξω το χέρι του',
+                "line10":"Ο οδοντίατρος μπορεί να θέλει να γυαλίσει το καινούργιο και υγιείς δόντι μου με οδοντόβουρτσα.",
+                "line11":"Έκανα καλή δουλειά! Τώρα έχω σφράγισμα! Θα είναι σημαντικό να συνεχίσω να βουρτσίσω τα δόντια μου και χρησιμοποιήσω οδοντικό νήμα!",
+            }
+            var languages={
+                "english":english,
+                "spanish":spanish,
+                "portuguese":portuguese,
+                "traditional_chinese": traditional_chinese,
+                "chinese":chinese,
+                "russian":russian,
+                "albanian":albanian,
+                "greek":greek,
+            }
+            update()
+        </script>
+    </body>
 </html>
