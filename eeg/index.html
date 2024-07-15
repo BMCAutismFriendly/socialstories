@@ -18,6 +18,7 @@
     <header>
         <ul class="lang">
             <button class="blue" onclick="changelang('english')">English</button>
+            <button class="purple" onclick="changelang('traditional_chinese')">中文(繁體)</button>
             <button class="orange" onclick="changelang('chinese')">中文(简体)</button>
         </ul>
     </header>
@@ -91,6 +92,16 @@
                 "line6":"I may be asked to take a deep breathe or to look at a flashing light.",
                 "line7":"When the test is finished, the technician will remove the wires from my head. I did a great job getting an EEG!",
             }
+            var traditional_chinese={
+                "title":"腦電圖（EEG）測試",
+                "line1":"腦電圖用於觀察您的大腦，以了解大腦的工作情況。",
+                "line2":"我將見到一位與我的醫生一起工作的技術員。技術員將幫助我做好腦電圖檢查的準備。",
+                "line3":"特殊的凝膠會把看起來很滑稽的電線綁在我的頭上。這可能會讓人覺得滑稽，但不會疼！",
+                "line4":"然後，我會被要求閉上眼睛，放鬆並保持不動，以便技術人員研究我的大腦在做什麼！",
+                "line5":"在整個測試過程中，團隊都會檢查我的情況，確保我一切正常。",
+                "line6":"我可能會被要求深呼吸或看閃光燈。",
+                "line7":"測試結束後，技術人員會從我頭上取下電線。我做腦電圖做得很好！",
+            }
             var chinese={
                 "title":"脑电图（EEG）测试",
                 "line1":"脑电图用于观察您的大脑，以了解大脑的工作情况。",
@@ -103,6 +114,7 @@
             }
             var languages={
                 "english":english,
+                "traditional_chinese": traditional_chinese,
                 "chinese":chinese,
             }
             update()
