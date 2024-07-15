@@ -101,7 +101,7 @@
                 "line6":"One of the tools the dentist might use helps to suck up my spit. It kind of sounds like a vacuum cleaner. ",
                 "line7":"The dentist might need to use a tooth pillow and some cotton rolls inside my mouth to keep my mouth open. These do not hurt. ",
                 "line8":"The dentist will then use a special toothbrush with water to clean inside of my tooth! The tool might sound like a shower. ",
-                "line9":'The dentist will then add a “filling” to my teeth, to make sure that the inside of my tooth stays clean and safe! This should not hurt…if it does, I can tap my dentists arm. ',
+                "line9":"The dentist will then add a “filling” to my teeth, to make sure that the inside of my tooth stays clean and safe! This should not hurt…if it does, I can tap my dentist's arm. ",
                 "line10":"The dentist might need to polish my new healthy tooth with a special toothbrush.",
                 "line11":"I did a great job learning about getting a dental filling! It will be important for me to continue brushing and flossing my teeth to keep them healthy! ",
             }
@@ -129,7 +129,7 @@
                 "line6":"Uma das ferramentas que o dentista pode usar ajuda a sugar minha saliva. Parece um aspirador de pó.",
                 "line7":"O dentista pode usar uma almofada dentária e alguns algodões no interior da minha boca para mantê-la aberta. Esses não machucam. ",
                 "line8":"O dentista vai usar uma escova de dentes especial com água para limpar o interior do meu dente! A ferramenta pode soar como um chuveiro.  ",
-                "line9":'O dentista vai adicionar uma “obturação” aos meus dentes para se certificar que o interior dos meus dentes fique limpo e seguro! Isso não deve doer... mas se doer, posso dar um tapinha no braço do meu dentista. ',
+                "line9":"O dentista vai adicionar uma “obturação” aos meus dentes para se certificar que o interior dos meus dentes fique limpo e seguro! Isso não deve doer... mas se doer, posso dar um tapinha no braço do meu dentista. ",
                 "line10":"O dentista pode precisar polir o meu novo dente saudável com uma escova especial. ",
                 "line11":"Eu fiz um ótimo trabalho aprendendo sobre obter uma obturação dentária! Será importante que eu continue escovando e passando fio de dental no meu dente para mantê-los saudáveis!  ",
             }
@@ -213,7 +213,28 @@
                 "albanian":albanian,
                 "greek":greek,
             }
-            update()
+
+            function changelang(language) {
+                var lang = languages[language];
+                document.getElementById("title").innerHTML = lang.title;
+                document.getElementById("line1").innerHTML = lang.line1;
+                document.getElementById("line2").innerHTML = lang.line2;
+                document.getElementById("line3").innerHTML = lang.line3;
+                document.getElementById("line4").innerHTML = lang.line4;
+                document.getElementById("line5").innerHTML = lang.line5;
+                document.getElementById("line6").innerHTML = lang.line6;
+                document.getElementById("line7").innerHTML = lang.line7;
+                document.getElementById("line8").innerHTML = lang.line8;
+                document.getElementById("line9").innerHTML = lang.line9;
+                document.getElementById("line10").innerHTML = lang.line10;
+                document.getElementById("line11").innerHTML = lang.line11;
+            }
+
+            function update() {
+                changelang('english');
+            }
+
+            window.onload = update;
         </script>
     </body>
 </html>
