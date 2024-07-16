@@ -129,24 +129,7 @@
                 "traditional_chinese": traditional_chinese,
                 "chinese":chinese,
             }
-
-            function changelang(language) {
-                var lang = languages[language];
-                document.getElementById("title").innerHTML = lang.title;
-                document.getElementById("line1").innerHTML = lang.line1;
-                document.getElementById("line2").innerHTML = lang.line2;
-                document.getElementById("line3").innerHTML = lang.line3;
-                document.getElementById("line4").innerHTML = lang.line4;
-                document.getElementById("line5").innerHTML = lang.line5;
-                document.getElementById("line6").innerHTML = lang.line6;
-                document.getElementById("line7").innerHTML = lang.line7;
-            }
-
-            function update() {
-                changelang('english');
-            }
-
-            window.onload = update;
+            update()
         </script>
     </body>
 </html>
