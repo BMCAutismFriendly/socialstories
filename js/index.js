@@ -196,3 +196,6 @@ function papsmear(){
 function echocardiogram(){
 	redir("https://bmcautismfriendly.github.io/socialstories/echocardiogram/");
 }
+function wheelchair(){
+	redir("https://bmcautismfriendly.github.io/socialstories/wheelchair/");
+}
