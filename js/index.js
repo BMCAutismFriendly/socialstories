@@ -200,3 +200,6 @@ function echocardiogram(){
 function wheelchair(){
 	redir("https://bmcautismfriendly.github.io/socialstories/wheelchair/");
 }
+function chemotherapy(){
+	redir("https://bmcautismfriendly.github.io/socialstories/chemotherapy/");
+}
