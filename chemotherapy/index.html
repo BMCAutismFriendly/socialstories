@@ -18,6 +18,8 @@
     <header>
         <ul class="lang">
             <button class="blue" onclick="changelang('english')">English</button>
+            <button class="purple" onclick="changelang('traditional_chinese')">中文(繁體)</button>
+            <button class="orange" onclick="changelang('chinese')">中文(简体)</button>
         </ul>
     </header>
     
@@ -86,20 +88,50 @@
         <script>
             var english={
                 "title":"Getting Chemotherapy",
-                "line1":"This story is about how I will get chemotherapy.",
-                "line2":"Chemotherapy is a strong medicine that will help my body get better. Let’s learn how I will get my chemotherapy!",
-                "line3":"First, I will go to a place like a clinic or hospital.",
-                "line4":"If I ever feel nervous, I can<ul><li>Think about something that makes me happy! Like my favorite toy or game.</li><li>Bring my favorite toy, stuffed animal, or blanket with me.</li><li>Hold someone’s hand.</li><li>Remember that I am super brave!</li></ul>",
-                "line5":"A nurse or doctor will check on me to make sure I’m ready.",
-                "line6":"The nurse might put a tiny tube in my hand or arm. This is called an IV. If I have a port, the nurse will use that instead. It might feel like a little pinch, but it will be over quick!",
-                "line7":"The medicine will go into my body slowly. While that’s happening, I can watch a show, read a book, or even take a nap.",
-                "line8":"Sometimes, the medicine might make me feel tired or funny, or maybe a little nauseous. That’s OK! If I feel weird, I can tell someone how my body is feeling, and they will help me feel better.",
-                "line9":"When the medicine is done, the nurse will take out the IV or stop using my port.",
-                "line10":"Afterward, I might feel sleepy or want to rest, and that’s OK too. I can go home and get lots of rest!",
-                "line11":"Everyone is so proud of me for being strong and doing a great job taking care of my body. I did amazing getting my chemotherapy!",
+                    "line1":"This story is about how I will get chemotherapy.",
+                    "line2":"Chemotherapy is a strong medicine that will help my body get better. Let’s learn how I will get my chemotherapy!",
+                    "line3":"First, I will go to a place like a clinic or hospital.",
+                    "line4":"If I ever feel nervous, I can<ul><li>Think about something that makes me happy! Like my favorite toy or game.</li><li>Bring my favorite toy, stuffed animal, or blanket with me.</li><li>Hold someone’s hand.</li><li>Remember that I am super brave!</li></ul>",
+                    "line5":"A nurse or doctor will check on me to make sure I’m ready.",
+                    "line6":"The nurse might put a tiny tube in my hand or arm. This is called an IV. If I have a port, the nurse will use that instead. It might feel like a little pinch, but it will be over quick!",
+                    "line7":"The medicine will go into my body slowly. While that’s happening, I can watch a show, read a book, or even take a nap.",
+                    "line8":"Sometimes, the medicine might make me feel tired or funny, or maybe a little nauseous. That’s OK! If I feel weird, I can tell someone how my body is feeling, and they will help me feel better.",
+                    "line9":"When the medicine is done, the nurse will take out the IV or stop using my port.",
+                    "line10":"Afterward, I might feel sleepy or want to rest, and that’s OK too. I can go home and get lots of rest!",
+                    "line11":"Everyone is so proud of me for being strong and doing a great job taking care of my body. I did amazing getting my chemotherapy!",
+            }
+            var traditional_chinese={
+                "title":"接受化療",
+                    "line1":"這個故事講述了我將如何接受化療。",
+                    "line2":"化療是一種強效藥物，它將幫助我的身體恢複健康。讓我們來了解一下我將如何接受化療吧！",
+                    "line3":"首先，我將前往類似診所或醫院的地方。",
+                    "line4":"如果我感到緊張，我可以：<ul><li>想想讓我開心的事！比如我最喜歡的玩具或遊戲。</li><li>帶上我最喜歡的玩具、毛絨玩具或毯子。</li><li>握住某人的手。</li><li>記住我非常勇敢！</li></ul>",
+                    "line5":"護士或醫生會檢查我，確保我準備就緒。",
+                    "line6":"護士可能會在我手或手臂上插入一根細管。這叫靜脈輸液（IV）。如果我有輸液港，護士會使用那個。可能會有點刺痛，但很快就會結束！",
+                    "line7":"藥物會緩慢進入我的身體。在此過程中，我可以看電視、讀書，甚至小睡一會兒。",
+                    "line8":"有時，藥物可能會讓我感到疲倦、不適，或者有點噁心。這沒關繫！如果我感到不適，可以告訴別人我的身體狀況，他們會幫助我感覺好些。",
+                    "line9":"當藥物輸注完成後，護士會拔掉靜脈輸液管或停止使用我的輸液港。",
+                    "line10":"之後，我可能會感到睏倦或想休息，這也是正常的。我可以回家好好休息！",
+                    "line11":"大家都爲我感到驕傲，因爲我非常堅強，並且很好地照顧了自己的身體。我接受化療的表現非常出色！",
+            }
+            var chinese={
+                "title":"接受化疗",
+                    "line1":"这个故事讲述了我将如何接受化疗。",
+                    "line2":"化疗是一种强效药物，它将帮助我的身体恢复健康。让我们来了解一下我将如何接受化疗吧！",
+                    "line3":"首先，我将前往类似诊所或医院的地方。",
+                    "line4":"如果我感到紧张，我可以：<ul><li>想想让我开心的事！比如我最喜欢的玩具或游戏。</li><li>带上我最喜欢的玩具、毛绒玩具或毯子。</li><li>握住某人的手。</li><li>记住我非常勇敢！</li></ul>",
+                    "line5":"护士或医生会检查我，确保我准备就绪。",
+                    "line6":"护士可能会在我手或手臂上插入一根细管。这叫静脉输液（IV）。如果我有输液港，护士会使用那个。可能会有点刺痛，但很快就会结束！",
+                    "line7":"药物会缓慢进入我的身体。在此过程中，我可以看电视、读书，甚至小睡一会儿。",
+                    "line8":"有时，药物可能会让我感到疲倦、不适，或者有点恶心。这没关系！如果我感到不适，可以告诉别人我的身体状况，他们会帮助我感觉好些。",
+                    "line9":"当药物输注完成后，护士会拔掉静脉输液管或停止使用我的输液港。",
+                    "line10":"之后，我可能会感到困倦或想休息，这也是正常的。我可以回家好好休息！",
+                    "line11":"大家都为我感到骄傲，因为我非常坚强，并且很好地照顾了自己的身体。我接受化疗的表现非常出色！",
             }
             var languages={
                 "english":english,
+                "traditional_chinese": traditional_chinese,
+                "chinese":chinese,
             }
             update()
         </script>
