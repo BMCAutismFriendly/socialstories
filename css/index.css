@@ -81,8 +81,7 @@ img{
 .grid-item {
     padding: 2px;
     text-align: center;
-    flex-grow: 0;
-    width: 160px;
+    flex-grow: 1;
     margin: 3px;
 }
 
