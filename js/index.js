@@ -203,3 +203,6 @@ function wheelchair(){
 function chemotherapy(){
 	redir("https://bmcautismfriendly.github.io/socialstories/chemotherapy/");
 }
+function piccline(){
+	redir("https://bmcautismfriendly.github.io/socialstories/picc-line/");
+}
