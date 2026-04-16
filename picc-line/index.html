@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Getting a PICC Line</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Bootstrap 3 -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+        <!--Font Awesome-->
+        <script src="https://use.fontawesome.com/808b665924.js"></script> <!--DanielChao-->
+    </head>
+    
+    <header>
+        <ul class="lang">
+            <button class="blue" onclick="changelang('english')">English</button>
+        </ul>
+    </header>
+    
+    <body id="body" background="">
+    <div class="container" style="text-align:center">
+        <h2 id="title"></h2>
+        <div>
+          <button class="green" onclick="plusDivs(-1)"><img class="button-img" src="../img/left-arrow.svg"></button>
+            <button class="purple" onclick="exit()"><img class="button-img" src="../img/exit-icon.svg"></button>
+            <button class="red" onclick="restart()"><img class="button-img" src="../img/restart-icon.svg"></button>
+            <button class="blue" onclick="showPDF('piccline.pdf')"><img class="button-img" src="../img/printer.svg"></button>
+          <button class="green" onclick="plusDivs(1)"><img class="button-img" src="../img/right-arrow.svg"></button>
+        </div>
+        <div class="slide-container">
+          <div class="slide">
+            <p id="line1"></p>
+            <img class="slide-img" src="../img/picc-line/1.jpg">
+          </div>
+           <div class="slide">
+            <p id="line1"></p>
+            <img class="slide-img" src="../img/picc-line/2.jpg">
+          </div>
+           <div class="slide">
+            <p id="line1"></p>
+            <img class="slide-img" src="../img/picc-line/3.jpg">
+          </div>
+           <div class="slide">
+            <p id="line1"></p>
+            <img class="slide-img" src="../img/picc-line/4.jpg">
+          </div>
+           <div class="slide">
+            <p id="line1"></p>
+            <img class="slide-img" src="../img/picc-line/5.jpg">
+          </div>
+           <div class="slide">
+            <p id="line1"></p>
+            <img class="slide-img" src="../img/picc-line/6.jpg">
+          </div>
+           <div class="slide">
+            <p id="line1"></p>
+            <img class="slide-img" src="../img/picc-line/7.jpg">
+          </div>
+           <div class="slide">
+            <p id="line1"></p>
+            <img class="slide-img" src="../img/picc-line/8.jpg">
+          </div>
+           <div class="slide">
+            <p id="line1"></p>
+            <img class="slide-img" src="../img/picc-line/9.jpg">
+          </div>
+           <div class="slide">
+            <p id="line1"></p>
+            <img class="slide-img" src="../img/picc-line/10.jpg">
+          </div>
+        </div>
+        </div><!-- END .container -->
+    <div class="container footer">
+        <a href="https://www.bmc.org/" target="_new"><img src="../img/logo_white.png" alt="BMC logo" class="img-responsive"></a>
+    </div>
+        <script src="../js/index.js" type="text/javascript"></script>
+        <script src="../js/socialstories.js" type="text/javascript"></script>
+        <script>
+            var english={
+                "title":"Getting a PICC Line",
+                "line1":"This story is about getting a PICC Line.",
+                "line2":"A PICC line is a small, flexible tube that stays in my arm. It helps my body get the special water and vitamins I need to feel strong!",
+                "line3":"First, I will go to a room with a cozy bed. I can remember to take deep breaths to help me feel calm while waiting for the friendly doctors to arrive.",
+                "line4":"Then I will meet the doctors. They might be wearing a blue hat, mask, and blue clothes called scrubs. They may ask me and my family questions. We can ask them questions too.",
+                "line5":"The nurse will wash my arm with a cold sponge. Then they will put a paper "tent" over my arm.",
+                "line6":"The doctor will help me feel very relaxed. I might take a little nap, or they will use a cream to make my arm feel sleepy. My arm might feel heavy or numb, like it's fallen asleep.",
+                "line7":"The doctor uses a special camera to look inside my arm. They will use some cool gel and a smooth wand. I can see black and white pictures on the screen.",
+                "line8":"Next, the Doctor will place a rubber band on my arm.",
+                "line9":"The doctor will gently slide a tube into my arm. I might feel a little pressure, but it won't be painful.",
+                "line10":"When we are done, the nurse will put a clear, shiny sticker over my arm to keep the tube safe. They might also give me a soft, stretchy sleeve. Now my PICC line is all done, and I was super brave today!",
+            }
+            var languages={
+                "english":english,
+            }
+            update()
+        </script>
+    </body>
+</html>
