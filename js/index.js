@@ -206,3 +206,6 @@ function chemotherapy(){
 function piccline(){
 	redir("https://bmcautismfriendly.github.io/socialstories/picc-line/");
 }
+function urinesample(){
+	redir("https://bmcautismfriendly.github.io/socialstories/urine-sample/");
+}
