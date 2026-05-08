@@ -74,68 +74,68 @@
         <script src="../js/index.js" type="text/javascript"></script>
         <script src="../js/socialstories.js" type="text/javascript"></script>
         <script>
-        var english={
-            "title":"Getting an Echocardiogram",
-            "line1":"This is a story about getting pictures of my heart.<br>The doctor wants to make sure my heart is healthy!<br><br>If I feel nervous, I can: <br><b>Think of something that makes me feel calm</b><br><b>Ask someone to hold my hand</b><br><b>Remember that I am staying healthy and strong</b>",
-            "line2":"I will take off my clothes and put on my special gown!",
-            "line3":"I will lie on a table on my left side and I can have a pillow behind my back for support. I will remember that I’m healthy and strong! I can ask someone to hold my hand if I need to!",
-            "line4":"I will be connected to a monitor, where I can see what’s happening inside my heart. The room will be darkened so that the technologist can see the pictures on the monitor.",
-            "line5":"The technologist will keep warmed gel and a magic wand on my chest. They may keep the wand in different places to take pictures of different things inside my heart.",
-            "line6":"The technologist might ask me to hold my breath and take deep breaths. I will tell the technologist if anything makes me uncomfortable.",
-            "line7":"The technologist will wipe the gel off my chest. I can take off my special gown and wear my clothes.",
-            "line8":"I did an amazing job learning how to get pictures of my heart.<br><br>I am so brave!",
-        }
-        var traditional_chinese={
-            "title":"獲取超聲心動圖",
-            "line1":"這是一個關於拍攝心髒照片的故事。醫生想確保我的心髒健康！<br><br>如果我感到緊張，我可以：<br><b>想一想能讓我感到平靜的事情</b><br><b>找人牽我的手</b><br><b>記住我保持健康和強壯</b>",
-            "line2":"我要脫掉衣服，穿上我的特製禮服！",
-            "line3":"我會左側躺在桌子上，背後可以有一個枕頭作爲支撐。我會記住我是健康和強壯的！如果需要，我可以請別人握住我的手！",
-            "line4":"我將被連接到一個監視器上，在那裡我可以看到我心髒內的情況。房間會變暗，這樣技術專家就能看到監視器上的圖像。",
-            "line5":"技術專家會在我的胸口放置溫熱的凝膠和一根魔棒。他們可能會將魔棒放在不同的位置，以拍攝我心髒內的不同情況。",
-            "line6":"技術專家可能會要求我屏住呼吸並做深呼吸。如果有任何讓我不舒服的地方，我會告訴技術專家。",
-            "line7":"技術專家會擦去我胸前的凝膠。我可以脫下特製的手術服，穿上自己的衣服。",
-            "line8":"我在學習如何拍攝心髒照片方麵做得非常出色。<br><br>我很勇敢！",
-        }
-        var chinese={
-            "title":"获取超声心动图",
-            "line1":"这是一个关于拍摄心脏照片的故事。医生想确保我的心脏健康！<br><br>如果我感到紧张，我可以：<br><b>想一想能让我感到平静的事情</b><br><b>找人牵我的手</b><br><b>记住我保持健康和强壮</b>",
-            "line2":"我要脱掉衣服，穿上我的特制礼服！",
-            "line3":"我会左侧躺在桌子上，背后可以有一个枕头作为支撑。我会记住我是健康和强壮的！如果需要，我可以请别人握住我的手！",
-            "line4":"我将被连接到一个监视器上，在那里我可以看到我心脏内的情况。房间会变暗，这样技术专家就能看到监视器上的图像。",
-            "line5":"技术专家会在我的胸口放置温热的凝胶和一根魔棒。他们可能会将魔棒放在不同的位置，以拍摄我心脏内的不同情况。",
-            "line6":"技术专家可能会要求我屏住呼吸并做深呼吸。如果有任何让我不舒服的地方，我会告诉技术专家。",
-            "line7":"技术专家会擦去我胸前的凝胶。我可以脱下特制的手术服，穿上自己的衣服。",
-            "line8":"我在学习如何拍摄心脏照片方面做得非常出色。<br><br>我很勇敢！",
-        }
-        var russian={
-            "title":"Делать Эхокардиограмму",
-            "line1":"Эта история о том, как врачи сделают снимки моего сердца.<br>Врач хочет убедиться, что мое сердце в порядке!<br><br>Если я нервничаю, я могу: <br><b>Подумать о чем-нибудь, что поможет мне успокоиться</b><br><b>Попросить кого-нибудь подержать меня за руку</b><br><b>Помнить, что я остаюсь здоровым/здоровой и сильным/сильной</b>",
-            "line2":"Я сниму свою одежду и надену свой особенный халат!",
-            "line3":"Я буду лежать на столе на левом боку, а под спину мне можно подложить подушку для поддержки. Я буду помнить, что я здоров/здорова и силен/сильна! Я могу попросить кого-нибудь подержать меня за руку, если понадобится!",
-            "line4":"Я буду подключен к монитору, на котором смогу видеть, что происходить в моем сердце. Комната будет затемнена, чтобы технолог мог видеть изображения на мониторе.",
-            "line5":"Технолог будет держать на моей груди разогретый гель и волшебную палочку. Они могут держать палочку в разных местах, чтобы сфотографировать разные вещи в моем сердце.",
-            "line6":"Возможно, что технолог попросить мне задержать дыхание и делать глубокие вдохи. Я скажу технологу, если что-то вызовет у меня дискомфорт.",
-            "line7":"Технолог сотрет гель с моей груди. Я могу снять свой специальный халат и остаться в обычной одежде.",
-            "line8":"Я проделал/проделала отличную работу, узнавая как снимать фотографии моего сердца.<br><br>Я так смелый/смелая!",
-        }
-         var capeverdeancreole={
-            "title":"Ta recebe um Ecocardiograma",
-            "line1":"Es é un stória sobri modi ki N ta bai tira fotografias di nha korason.<br>Médiku kre tene sertesa ma nha korason sta saudável!<br><br>Si N sinti nervózu, N pode: <br><b>Pensa na algu ki ta dexa-m calmo</b><br><b>Pidi algén pa dá-m mon</b><br><b>Lembra ma N sta fica saudável e forte</b>",
-            "line2":"N ta tira nha ropa e N ta bisti nha bata spesial!",
-            "line3":"N ta deita na un mesa na nha lado esquerdo, e N pode ten un travesseiro detrás di nha costa pa suporte. N ta lembra ma ami é saudável e forte! N pode pedi alguém pa dám mon si N precisa!",
-            "line4":"N ta fika konetadu ku un monitor, undi quim N pode odja cuze qui sta kontise dentru di nha korason. Quel quarto ta fika más escuro pa tecnólogo pode odja midjor quel imagen na monitor.",
-            "line5":"Tecnólogo ta usa un gel morno e un “varinha mágico” na nha peitu. El pode muda posição di kel varinha pa pode tra fotografias di difirenti parti di nha korason.",
-            "line6":"Tecnólogo pode pedim pa N segura nha respiração e pa N respira fundo. N ta fla tecnólogo si algum cuza ta faze-m sinti desconfortável.",
-            "line7":"Tecnólogo ta ta limpa kel gel di nha peitu. N pode tira nha bata especial e bisti nha ropa.",
-            "line8":"N fez un trabadju maravilhoso aprendendo modi ki N ta bai tira fotografias di nha korason.<br><br>Я Ami é mutu corajoso !",
-        }
-        var languages={
-                "english":english,
-                "traditional_chinese": traditional_chinese,
-                "chinese":chinese,
-                "russian":russian,
-                "capeverdeancreole":capeverdeancreole,
-        }
+            var english={
+                "title":"Getting an Echocardiogram",
+                "line1":"This is a story about getting pictures of my heart.<br>The doctor wants to make sure my heart is healthy!<br><br>If I feel nervous, I can: <br><b>Think of something that makes me feel calm</b><br><b>Ask someone to hold my hand</b><br><b>Remember that I am staying healthy and strong</b>",
+                "line2":"I will take off my clothes and put on my special gown!",
+                "line3":"I will lie on a table on my left side and I can have a pillow behind my back for support. I will remember that I’m healthy and strong! I can ask someone to hold my hand if I need to!",
+                "line4":"I will be connected to a monitor, where I can see what’s happening inside my heart. The room will be darkened so that the technologist can see the pictures on the monitor.",
+                "line5":"The technologist will keep warmed gel and a magic wand on my chest. They may keep the wand in different places to take pictures of different things inside my heart.",
+                "line6":"The technologist might ask me to hold my breath and take deep breaths. I will tell the technologist if anything makes me uncomfortable.",
+                "line7":"The technologist will wipe the gel off my chest. I can take off my special gown and wear my clothes.",
+                "line8":"I did an amazing job learning how to get pictures of my heart.<br><br>I am so brave!",
+            }
+            var traditional_chinese={
+                "title":"獲取超聲心動圖",
+                "line1":"這是一個關於拍攝心髒照片的故事。醫生想確保我的心髒健康！<br><br>如果我感到緊張，我可以：<br><b>想一想能讓我感到平靜的事情</b><br><b>找人牽我的手</b><br><b>記住我保持健康和強壯</b>",
+                "line2":"我要脫掉衣服，穿上我的特製禮服！",
+                "line3":"我會左側躺在桌子上，背後可以有一個枕頭作爲支撐。我會記住我是健康和強壯的！如果需要，我可以請別人握住我的手！",
+                "line4":"我將被連接到一個監視器上，在那裡我可以看到我心髒內的情況。房間會變暗，這樣技術專家就能看到監視器上的圖像。",
+                "line5":"技術專家會在我的胸口放置溫熱的凝膠和一根魔棒。他們可能會將魔棒放在不同的位置，以拍攝我心髒內的不同情況。",
+                "line6":"技術專家可能會要求我屏住呼吸並做深呼吸。如果有任何讓我不舒服的地方，我會告訴技術專家。",
+                "line7":"技術專家會擦去我胸前的凝膠。我可以脫下特製的手術服，穿上自己的衣服。",
+                "line8":"我在學習如何拍攝心髒照片方麵做得非常出色。<br><br>我很勇敢！",
+            }
+            var chinese={
+                "title":"获取超声心动图",
+                "line1":"这是一个关于拍摄心脏照片的故事。医生想确保我的心脏健康！<br><br>如果我感到紧张，我可以：<br><b>想一想能让我感到平静的事情</b><br><b>找人牵我的手</b><br><b>记住我保持健康和强壮</b>",
+                "line2":"我要脱掉衣服，穿上我的特制礼服！",
+                "line3":"我会左侧躺在桌子上，背后可以有一个枕头作为支撑。我会记住我是健康和强壮的！如果需要，我可以请别人握住我的手！",
+                "line4":"我将被连接到一个监视器上，在那里我可以看到我心脏内的情况。房间会变暗，这样技术专家就能看到监视器上的图像。",
+                "line5":"技术专家会在我的胸口放置温热的凝胶和一根魔棒。他们可能会将魔棒放在不同的位置，以拍摄我心脏内的不同情况。",
+                "line6":"技术专家可能会要求我屏住呼吸并做深呼吸。如果有任何让我不舒服的地方，我会告诉技术专家。",
+                "line7":"技术专家会擦去我胸前的凝胶。我可以脱下特制的手术服，穿上自己的衣服。",
+                "line8":"我在学习如何拍摄心脏照片方面做得非常出色。<br><br>我很勇敢！",
+            }
+            var russian={
+                "title":"Делать Эхокардиограмму",
+                "line1":"Эта история о том, как врачи сделают снимки моего сердца.<br>Врач хочет убедиться, что мое сердце в порядке!<br><br>Если я нервничаю, я могу: <br><b>Подумать о чем-нибудь, что поможет мне успокоиться</b><br><b>Попросить кого-нибудь подержать меня за руку</b><br><b>Помнить, что я остаюсь здоровым/здоровой и сильным/сильной</b>",
+                "line2":"Я сниму свою одежду и надену свой особенный халат!",
+                "line3":"Я буду лежать на столе на левом боку, а под спину мне можно подложить подушку для поддержки. Я буду помнить, что я здоров/здорова и силен/сильна! Я могу попросить кого-нибудь подержать меня за руку, если понадобится!",
+                "line4":"Я буду подключен к монитору, на котором смогу видеть, что происходить в моем сердце. Комната будет затемнена, чтобы технолог мог видеть изображения на мониторе.",
+                "line5":"Технолог будет держать на моей груди разогретый гель и волшебную палочку. Они могут держать палочку в разных местах, чтобы сфотографировать разные вещи в моем сердце.",
+                "line6":"Возможно, что технолог попросить мне задержать дыхание и делать глубокие вдохи. Я скажу технологу, если что-то вызовет у меня дискомфорт.",
+                "line7":"Технолог сотрет гель с моей груди. Я могу снять свой специальный халат и остаться в обычной одежде.",
+                "line8":"Я проделал/проделала отличную работу, узнавая как снимать фотографии моего сердца.<br><br>Я так смелый/смелая!",
+            }
+             var capeverdeancreole={
+                "title":"Ta recebe um Ecocardiograma",
+                "line1":"Es é un stória sobri modi ki N ta bai tira fotografias di nha korason.<br>Médiku kre tene sertesa ma nha korason sta saudável!<br><br>Si N sinti nervózu, N pode: <br><b>Pensa na algu ki ta dexa-m calmo</b><br><b>Pidi algén pa dá-m mon</b><br><b>Lembra ma N sta fica saudável e forte</b>",
+                "line2":"N ta tira nha ropa e N ta bisti nha bata spesial!",
+                "line3":"N ta deita na un mesa na nha lado esquerdo, e N pode ten un travesseiro detrás di nha costa pa suporte. N ta lembra ma ami é saudável e forte! N pode pedi alguém pa dám mon si N precisa!",
+                "line4":"N ta fika konetadu ku un monitor, undi quim N pode odja cuze qui sta kontise dentru di nha korason. Quel quarto ta fika más escuro pa tecnólogo pode odja midjor quel imagen na monitor.",
+                "line5":"Tecnólogo ta usa un gel morno e un “varinha mágico” na nha peitu. El pode muda posição di kel varinha pa pode tra fotografias di difirenti parti di nha korason.",
+                "line6":"Tecnólogo pode pedim pa N segura nha respiração e pa N respira fundo. N ta fla tecnólogo si algum cuza ta faze-m sinti desconfortável.",
+                "line7":"Tecnólogo ta ta limpa kel gel di nha peitu. N pode tira nha bata especial e bisti nha ropa.",
+                "line8":"N fez un trabadju maravilhoso aprendendo modi ki N ta bai tira fotografias di nha korason.<br><br>Я Ami é mutu corajoso !",
+            }
+            var languages={
+                    "english":english,
+                    "traditional_chinese": traditional_chinese,
+                    "chinese":chinese,
+                    "russian":russian,
+                    "capeverdeancreole":capeverdeancreole,
+            }
         update()
         </script>
     </body>
