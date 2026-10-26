@@ -209,3 +209,6 @@ function piccline(){
 function urinesample(){
 	redir("https://bmcautismfriendly.github.io/socialstories/urine-sample/");
 }
+function endoscopy(){
+	redir("https://bmcautismfriendly.github.io/socialstories/endoscopy/");
+}
