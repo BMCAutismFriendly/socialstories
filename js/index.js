@@ -212,3 +212,6 @@ function urinesample(){
 function endoscopy(){
 	redir("https://bmcautismfriendly.github.io/socialstories/endoscopy/");
 }
+function geneticcounseling(){
+	redir("https://bmcautismfriendly.github.io/socialstories/geneticcounseling/");
+}
